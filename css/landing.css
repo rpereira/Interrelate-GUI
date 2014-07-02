@@ -208,7 +208,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
 	background: rgba(255,255,255,.5);
 }
-
+.btn-service {
+    font-size: 25px;
+    min-width: 182px;
+}
 
 
 /********************************************************/
