@@ -1,5 +1,5 @@
 html {
-	background:#505D6E url(../images/body4.jpg) no-repeat center center fixed;
+	background:#505D6E url(../img/LiveConcerts.jpg) no-repeat center center fixed;
 	min-height:100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -286,7 +286,8 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 /*                   Theme: text shadows                   */
 /***********************************************************/
 .text-shadows {
-	text-shadow:0 1px 2px rgba(0,0,0,.2);
+	text-shadow:0 3px 5px rgba(0,0,0,.4);
+	text-shadow:0 3px 5px rgba(0,0,0,.4);
 }
 .text-shadows .title,
 .text-shadows .subtitle,
@@ -328,7 +329,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	background: rgba(0, 0, 0, 0.12);
 }
 .theme-invert .navbar-toggle .icon-bar {
-  background: #333;
+  background: #F0F8FF;
 }
 .theme-invert .mainmenu .dropdown-menu a {
 	color:#000;
@@ -341,7 +342,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .theme-invert .title,
 .theme-invert .subtitle,
 .theme-invert .tagline {
-	color:#222222;
+	color:#ecf0f3;
 }
 
 .theme-invert .btn-default {
