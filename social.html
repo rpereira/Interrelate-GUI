@@ -23,7 +23,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- nav bar -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -36,17 +36,20 @@
             </div>
 
             <!-- Collect stuff for mobile toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <!-- Hidden li included to remove active class -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#for_friends">Friends</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#services">Services</a>
+                        <a href="#for_business">Business</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#pricing">Pricing</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -59,6 +62,48 @@
     </nav>
     <!-- nav bar -->
 
+    <!--<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <span>Novas Tendências Logotipo</span>
+                </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Sobre Nós</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#services">Serviços</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#gallery">Galeria</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#team">Equipa</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contacto</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#footer">Parceiros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- intro section -->
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
@@ -71,19 +116,8 @@
                     <p>This demo is the same sort of scrolling navigation menu we use in our <a href="http://startbootstrap.com/grayscale.php">Grayscale theme</a>. Whenever you want to use the page scrolling feature, make sure the link points to an ID (<code>#about</code> for example), and that the parent of the link has the class <code>.page-scroll</code>. See how the button above and the menu bar links are formatted for a working example.</p>
                 </div>
 
-                <!--<div class="page-scroll">
-                    <a href="#about" class="btn btn-circle">
-                        </i>
-                    </a>
-                </div>-->
-
-                <!--<div class="page-scroll">
-                    <a href="#about" class="scrollto-btn">z</a>
-                </div>-->
-
-
                 <div class="page-scroll">
-                    <a href="#about" class="scrollto-btn">
+                    <a href="#for_friends" class="scrollto-btn">
                         <i class="fa fa-arrow-down"></i>
                     </a>
                 </div>
@@ -91,28 +125,43 @@
             </div>
         </div>
     </section>
+    <!-- /.intro section -->
 
-    <!-- section about -->
-    <section id="about" class="about-section">
+    <!-- friends section -->
+    <section id="for_friends" class="friends-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1>Analytics for Friends</h1>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /.section about -->
+    <!-- friends section -->
 
-    <section id="services" class="services-section">
+    <!-- Business section -->
+    <section id="for_business" class="business-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>Analytics for Business</h1>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Business section -->
+
+    <!-- pricing section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Pricing</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing section -->
 
     <section id="contact" class="contact-section">
         <div class="container">
