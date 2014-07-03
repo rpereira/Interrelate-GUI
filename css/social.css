@@ -245,9 +245,8 @@ section {
     background: url(../img/LiveConcerts.jpg) no-repeat;
     color: #fff;
 }
-<<<<<<< HEAD
+
 /** Packages Section */
-=======
 
 .intro-packages {
     margin-top: 20px;
@@ -256,6 +255,12 @@ section {
 .service-item {
     margin-bottom: 15px;
 }
+
+.service-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
 i.service-icon {
     border: 3px solid #ffffff;
     border-radius: 50%;
@@ -268,11 +273,6 @@ i.service-icon {
     text-align: center;
 }
 
-
-
-
-
->>>>>>> 10ff84a28357a6f44e3bd92c1f9e7531a6e9dcc5
 .packages-section {
     height: 50px;
     background-color: #000;
