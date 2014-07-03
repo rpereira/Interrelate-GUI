@@ -333,20 +333,20 @@ i.service-icon {
     padding-bottom: 68px;
 }
 
-/** showcase **/
-#showcase .showcase-item {
+/** showcase-section **/
+#showcase-section .showcase-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#showcase .showcase-item .showcase-link {
+#showcase-section .showcase-item .showcase-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#showcase .showcase-item .showcase-link .caption {
+#showcase-section .showcase-item .showcase-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -357,11 +357,11 @@ i.service-icon {
     transition: all ease .5s;
 }
 
-#showcase .showcase-item .showcase-link .caption:hover {
+#showcase-section .showcase-item .showcase-link .caption:hover {
     opacity: 1;
 }
 
-#showcase .showcase-item .showcase-link .caption .caption-content {
+#showcase-section .showcase-item .showcase-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -372,21 +372,21 @@ i.service-icon {
     color: #fff;
 }
 
-#showcase .showcase-item .showcase-link .caption .caption-content i {
+#showcase-section .showcase-item .showcase-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#showcase .showcase-item .showcase-link .caption .caption-content h3,
-#showcase .showcase-item .showcase-link .caption .caption-content h4 {
+#showcase-section .showcase-item .showcase-link .caption .caption-content h3,
+#showcase-section .showcase-item .showcase-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#showcase * {
+#showcase-section * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #showcase .showcase-item {
+    #showcase-section .showcase-item {
         margin: 0 0 30px;
     }
 }
