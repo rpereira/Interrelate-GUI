@@ -156,53 +156,35 @@ section {
 .packages-section {
     height: 50px;
     background-color: #000;
-    font-size: 20px
+    padding-top: 0px;
 }
 
 .packages-section a {
     text-decoration: none;
     color: #fff;
-}
-.packages-section span {
-    vertical-align: middle;
+    cursor: pointer;
+
 }
 
-.red-btn-packages{
-    background: #e96656;
+
+.btn-packages{
+    background: transparent;
     display: inline-block !important;
     text-align: center;
     text-transform: uppercase;
-    padding: 13px 35px 13px 35px;
-    border-radius: 4px;
-    margin: 0px;
+    padding: 13px 30px 17px 35px;
     border: none;
     color: #fff;
     font-weight: bold;
     min-width: 145px;
+    transition: background .3s ease-in-out;
+    margin-left:-4px;
 }
-.red-btn-packages:hover {
+.btn-packages:hover {
 	color: #FFF;
-	background: #cb4332;
-    opacity: 1;
-}
+	background-color: rgba(255, 255, 255, .2);
+    opacity: 0.8;
 
-.green-btn-packages{
-	background: #20AA73;
-    isplay: inline-block !important;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 13px 35px 13px 35px;
-    border-radius: 4px;
-    margin: px;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    min-width: 145px;
-}
-.green-btn-packages:hover {
-	color: #FFF;
-	background: #069059;
-    opacity: 1;
 }
 
 .features-section {
