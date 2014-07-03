@@ -90,7 +90,7 @@ html {
     width: 53px;
     height: 53px;
     line-height: 53px;
-    margin: 0;
+    margin: 200px;
     padding: 0;
     border-radius: 50%;
     text-align: center;
@@ -105,7 +105,7 @@ html {
     filter: alpha(opacity=80);
     position: absolute;
     left: 50%;
-    bottom: 90px;
+    /*bottom: 90px;*/
     margin-left: -26.5px;
 }
 .scrollto-btn:hover,
@@ -146,8 +146,63 @@ section {
 .intro-section {
     padding-top: 150px;
     height: 650px;
-    background: #529abb;
-    /*background: url(../img/empire_state_city-wide.jpg);*/
+    background: url(../img/LiveConcerts.jpg) no-repeat;
+    color: #fff;
+    /*background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;*/
+}
+
+.packages-section {
+    height: 50px;
+    background-color: #000;
+    font-size: 20px
+}
+
+.packages-section a {
+    text-decoration: none;
+    color: #fff;
+}
+.packages-section span {
+    vertical-align: middle;
+}
+
+.red-btn-packages{
+    background: #e96656;
+    display: inline-block !important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    margin: 0px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    min-width: 145px;
+}
+.red-btn-packages:hover {
+	color: #FFF;
+	background: #cb4332;
+    opacity: 1;
+}
+
+.green-btn-packages{
+	background: #20AA73;
+    isplay: inline-block !important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    margin: px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    min-width: 145px;
+}
+.green-btn-packages:hover {
+	color: #FFF;
+	background: #069059;
+    opacity: 1;
 }
 
 .features-section {
@@ -155,7 +210,8 @@ section {
 }
 
 .friends-section {
-    background: #1abc9c;
+    background: #edf0eb;
+    /*background: #f9f7eb;*/
 }
 
 .business-section {
