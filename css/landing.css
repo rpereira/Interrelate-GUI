@@ -17,7 +17,7 @@ body {
 	/*font-family: Helvetica, Arial, sans-serif;*/
 	font-family: "Viga", sans-serif;
 	color:#fff;
-	color:rgba(255,255,255,.8);
+	/**color:rgba(255,255,255,.8);*/
 	font-weight: normal;
 }
 
@@ -255,8 +255,11 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 
 
-
-
+/** Landing page colors */
+.text-color h5,
+.text-color p{
+    color: #d3d3d3;
+}
 
 
 
@@ -286,8 +289,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 /*                   Theme: text shadows                   */
 /***********************************************************/
 .text-shadows {
-	text-shadow:0 3px 5px rgba(0,0,0,.4);
-	text-shadow:0 3px 5px rgba(0,0,0,.4);
+	text-shadow:0 3px 5px rgba(0,0,0,.5);
 }
 .text-shadows .title,
 .text-shadows .subtitle,
@@ -331,9 +333,9 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .theme-invert .navbar-toggle .icon-bar {
   background: #F0F8FF;
 }
-.theme-invert .mainmenu .dropdown-menu a {
+/**.theme-invert .mainmenu .dropdown-menu a {
 	color:#000;
-}
+}*/
 .theme-invert .mainmenu .dropdown-menu a:hover {
 	background:rgba(0,0,0,.1);
 	color:#000;
@@ -372,6 +374,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .thumbnail .caption {
 	color: inherit;
 }
+
 
 
 
