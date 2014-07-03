@@ -67,16 +67,22 @@ html {
     font-size: 54px;
     line-height: 1.7;
 }
+#home-row-1 h4 {
+    font-size: 30px;
+    line-height: 1.7;
+}
 #home-row-2 {
     font-size: 25px;
     line-height: 1.1;
 }
-#home-row-2 .col-12 .home-hover:hover {
-    height: 166px;
+.intro-packages .home-hover:hover {
+    height: 180px;
     padding-top: 0;
+    cursor: pointer;
 }
-#home-row-2 .col-12 .home-hover {
-    height: 166px;
+/*#home-row-2 .col-2 .home-hover {*/
+.intro-packages .home-hover {
+    height: 200px;
     overflow: hidden;
     padding-top: 26px;
     transition: all ease-in .5s;
@@ -176,6 +182,9 @@ section {
 .green-bg {
     background: #34d293;
 }
+.red-bg {
+    background: #e96656;
+}
 .price {
     line-height: 120px;
     height: 100px;
@@ -217,6 +226,9 @@ section {
 .green-btn {
     background: #20AA73;
 }
+.red-btn {
+    background: #e96656;
+}
 .custom-button {
 	display: inline-block !important;
 	text-align: center;
@@ -232,11 +244,35 @@ section {
     height: 650px;
     background: url(../img/LiveConcerts.jpg) no-repeat;
     color: #fff;
-    /*background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;*/
 }
+<<<<<<< HEAD
 /** Packages Section */
+=======
+
+.intro-packages {
+    margin-top: 20px;
+}
+
+.service-item {
+    margin-bottom: 15px;
+}
+i.service-icon {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
+
+>>>>>>> 10ff84a28357a6f44e3bd92c1f9e7531a6e9dcc5
 .packages-section {
     height: 50px;
     background-color: #000;
@@ -299,20 +335,20 @@ section {
     padding-bottom: 68px;
 }
 
-/** showcase **/
-#showcase .showcase-item {
+/** showcase-section **/
+#showcase-section .showcase-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#showcase .showcase-item .showcase-link {
+#showcase-section .showcase-item .showcase-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#showcase .showcase-item .showcase-link .caption {
+#showcase-section .showcase-item .showcase-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -323,11 +359,11 @@ section {
     transition: all ease .5s;
 }
 
-#showcase .showcase-item .showcase-link .caption:hover {
+#showcase-section .showcase-item .showcase-link .caption:hover {
     opacity: 1;
 }
 
-#showcase .showcase-item .showcase-link .caption .caption-content {
+#showcase-section .showcase-item .showcase-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -338,21 +374,21 @@ section {
     color: #fff;
 }
 
-#showcase .showcase-item .showcase-link .caption .caption-content i {
+#showcase-section .showcase-item .showcase-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#showcase .showcase-item .showcase-link .caption .caption-content h3,
-#showcase .showcase-item .showcase-link .caption .caption-content h4 {
+#showcase-section .showcase-item .showcase-link .caption .caption-content h3,
+#showcase-section .showcase-item .showcase-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#showcase * {
+#showcase-section * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #showcase .showcase-item {
+    #showcase-section .showcase-item {
         margin: 0 0 30px;
     }
 }
