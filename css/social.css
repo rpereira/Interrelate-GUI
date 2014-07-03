@@ -172,12 +172,13 @@ section {
 .package-header h5 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
     vertical-align: baseline;
+    vertical-align: middle;
 }
 .green-bg {
     background: #34d293;
