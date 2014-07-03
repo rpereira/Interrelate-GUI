@@ -18,12 +18,14 @@
     <!-- Custom CSS -->
     <link href="css/social.css" rel="stylesheet" type="text/css">
 
+    <script src="fancy-box/jquery.fancybox.css"></script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- nav bar -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -36,17 +38,23 @@
             </div>
 
             <!-- Collect stuff for mobile toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <!-- Hidden li included to remove active class -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#features">Features</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#services">Services</a>
+                        <a href="#for_friends">Friends</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#for_business">Business</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#pricing">Pricing</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -57,68 +65,217 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- nav bar -->
+    <!-- /.nav bar -->
 
+    <!-- intro section -->
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <div class="page-scroll">
-                        <a class="btn btn-default" href="#about">Click me!</a>
-                    </div>
+                <div class="col-lg-12" id="home-row-1">
+                    <h1 class="font-semibold">SOCIAL
+                        <span class="font-thin">ANALYTICS</span>
+                    </h1>
+                    <h4>
+                        Breve descrição <strong>com enfâse</strong>
+                    </h4>
                     <br>
-                    <p>This demo is the same sort of scrolling navigation menu we use in our <a href="http://startbootstrap.com/grayscale.php">Grayscale theme</a>. Whenever you want to use the page scrolling feature, make sure the link points to an ID (<code>#about</code> for example), and that the parent of the link has the class <code>.page-scroll</code>. See how the button above and the menu bar links are formatted for a working example.</p>
+                    <br>
+                    <br>
+                </div>
+
+                <div id="home-row-2" class="row clearfix">
+                    <div class="col-12 col-sm-6">
+                        <div class="home-hover page-scroll">
+                            <a href="#for_friends">
+                                <img src="img/s01.png">
+                            </a>
+                        </div>
+                        <span>FRIENDS</span>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="home-hover page-scroll">
+                            <a href="#for_business">
+                                <img src="img/s02.png">
+                            </a>
+                        </div>
+                        <span>BUSINESS</span>
+                    </div>
                 </div>
 
                 <!--<div class="page-scroll">
-                    <a href="#about" class="btn btn-circle">
-                        </i>
-                    </a>
-                </div>-->
-
-                <!--<div class="page-scroll">
-                    <a href="#about" class="scrollto-btn">z</a>
-                </div>-->
-
-
-                <div class="page-scroll">
-                    <a href="#about" class="scrollto-btn">
+                    <a href="#for_friends" class="scrollto-btn">
                         <i class="fa fa-arrow-down"></i>
                     </a>
-                </div>
+                </div>-->
 
             </div>
         </div>
     </section>
+    <!-- /.intro section -->
 
-    <!-- section about -->
-    <section id="about" class="about-section">
+    <!-- features section -->
+    <section id="features" class="features-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1 class="section-header">FEATURES</h1>
+                    <p>olaaaa</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /.section about -->
+    <!-- features section -->
 
-    <section id="services" class="services-section">
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-header">O QUE CHAMAR A ISTO?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20content.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <!-- lightbox container hidden with CSS -->
+                <!--<a href="#_" class="lightbox" id="img1">
+                    <img src="img/screenshots/localhost%209000%20content.png">
+                </a>-->
+
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20content2.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20content3.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20content4.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20fans.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20fans2.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20fans3.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20home.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/screenshots/localhost%209000%20publisher.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- friends section -->
+    <section id="for_friends" class="friends-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1 class="section-header">Analytics for Friends</h1>
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- friends section -->
+
+    <!-- Business section -->
+    <section id="for_business" class="business-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-header">Analytics for Business</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Business section -->
+
+    <!-- pricing section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-header">Pricing</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing section -->
 
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1 class="section-header">Contact Section</h1>
                 </div>
             </div>
         </div>
@@ -138,6 +295,9 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+
+
+    <script src="fancy-box/jquery.fancybox.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/social.js"></script>
