@@ -67,16 +67,22 @@ html {
     font-size: 54px;
     line-height: 1.7;
 }
+#home-row-1 h4 {
+    font-size: 30px;
+    line-height: 1.7;
+}
 #home-row-2 {
     font-size: 25px;
     line-height: 1.1;
 }
-#home-row-2 .col-12 .home-hover:hover {
-    height: 166px;
+.intro-packages .home-hover:hover {
+    height: 180px;
     padding-top: 0;
+    cursor: pointer;
 }
-#home-row-2 .col-12 .home-hover {
-    height: 166px;
+/*#home-row-2 .col-2 .home-hover {*/
+.intro-packages .home-hover {
+    height: 200px;
     overflow: hidden;
     padding-top: 26px;
     transition: all ease-in .5s;
@@ -176,6 +182,9 @@ section {
 .green-bg {
     background: #34d293;
 }
+.red-bg {
+    background: #e96656;
+}
 .price {
     line-height: 120px;
     height: 100px;
@@ -217,6 +226,9 @@ section {
 .green-btn {
     background: #20AA73;
 }
+.red-btn {
+    background: #e96656;
+}
 .custom-button {
 	display: inline-block !important;
 	text-align: center;
@@ -232,10 +244,30 @@ section {
     height: 650px;
     background: url(../img/LiveConcerts.jpg) no-repeat;
     color: #fff;
-    /*background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;*/
 }
+
+.intro-packages {
+    margin-top: 20px;
+}
+
+.service-item {
+    margin-bottom: 15px;
+}
+i.service-icon {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
 
 .packages-section {
     height: 50px;
