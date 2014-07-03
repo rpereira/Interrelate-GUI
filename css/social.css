@@ -134,13 +134,6 @@ html {
   }
 }
 
-/** Sections **/
-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-}
-
 /*.section-header {
     margin-bottom: 60px;
     line-height: 40px;
@@ -161,7 +154,9 @@ section {
     position: relative;
     display: inline-block;
 }
-
+/***************************
+ * PACKAGES
+ */
 .package-header {
     height: 57px;
     color: #FFF;
@@ -184,10 +179,16 @@ section {
     font-weight: bold;
     font-size: 15px;
 }
-.green-bg {
-    background: #34d293;
-}
 .red-bg {
+    background: #c45268;
+}
+.yellow-bg {
+    background: #E7AC44;
+}
+.blue-bg {
+    background: #3ab0e2;
+}
+.orange-bg {
     background: #e96656;
 }
 .price {
@@ -220,19 +221,39 @@ section {
     border-bottom: 1px dotted #dadada;
     list-style: none;
 }
+.package-body {
+    background: #fff;
+}
 .red-btn,
-.green-btn,
 .blue-btn,
 .yellow-btn {
     color: #FFF;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.green-btn {
-    background: #20AA73;
-}
 .red-btn {
+    background: #c45268;
+}
+.red-btn:hover {
+    background: #b44a60;
+}
+.yellow-btn {
+    background: #E7AC44;
+}
+.yellow-btn:hover {
+    background: #d39d3f;
+}
+.blue-btn {
+    background: #3ab0e2;
+}
+.blue-btn:hover {
+    background: #35a1ce;
+}
+.orange-btn {
     background: #e96656;
+}
+.orange-btn:hover {
+    background: #d15a50;
 }
 .custom-button {
 	display: inline-block !important;
@@ -244,17 +265,21 @@ section {
 	border: none;
 }
 
+/** Sections **/
+section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
 .intro-section {
     padding-top: 150px;
     height: 650px;
     background: url(../img/LiveConcerts.jpg) no-repeat;
     color: #fff;
 }
-
 .intro-packages {
     margin-top: 20px;
 }
-
 .service-item {
     margin-bottom: 15px;
 }
@@ -273,25 +298,17 @@ i.service-icon {
     vertical-align: middle;
     text-align: center;
 }
-
-
-
-
-
 .packages-section {
     height: 50px;
     background-color: #000;
     padding-top: 0px;
 }
-
 .packages-section a {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
 
 }
-
-
 .btn-packages{
     background: transparent;
     display: inline-block !important;
@@ -311,24 +328,22 @@ i.service-icon {
     opacity: 0.8;
 
 }
-
 .features-section {
     background: #eee;
 }
-
 .personal-section {
     background: #edf0eb;
+    /*background: #edf0eb;*/
     /*background: #f9f7eb;*/
 }
-
 .enterprise-section {
+    /*background: #34495e;*/
     background: #34495e;
+    height: 1050px;
 }
-
 .pricing-section {
     background: #eee;
 }
-
 .contact-section {
     background: #25221e;
     color: #fff;
