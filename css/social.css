@@ -172,13 +172,17 @@ section {
 .package-header h5 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
-    margin: 0;
+    font-size: 17px;
+    padding-top: 23px;
+    /*margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
-    vertical-align: baseline;
-    vertical-align: middle;
+    vertical-align: baseline;*/
+}
+.package-description {
+    font-weight: bold;
+    font-size: 15px;
 }
 .green-bg {
     background: #34d293;
@@ -312,12 +316,12 @@ i.service-icon {
     background: #eee;
 }
 
-.friends-section {
+.personal-section {
     background: #edf0eb;
     /*background: #f9f7eb;*/
 }
 
-.business-section {
+.enterprise-section {
     background: #34495e;
 }
 
