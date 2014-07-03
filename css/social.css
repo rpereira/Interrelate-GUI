@@ -152,7 +152,7 @@ section {
     -webkit-background-size: cover;
     -moz-background-size: cover;*/
 }
-
+/** Packages Section */
 .packages-section {
     height: 50px;
     background-color: #000;
@@ -166,8 +166,7 @@ section {
 
 }
 
-
-.btn-packages{
+.btn-packages {
     background: transparent;
     display: inline-block !important;
     text-align: center;
@@ -184,7 +183,6 @@ section {
 	color: #FFF;
 	background-color: rgba(255, 255, 255, .2);
     opacity: 0.8;
-
 }
 
 .features-section {
