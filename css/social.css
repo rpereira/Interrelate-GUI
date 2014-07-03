@@ -8,18 +8,81 @@ html {
     height: 100%;
 }
 
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.3);
+}
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-brand:focus {
+    outline: 0;
+}
+.navbar-custom a {
+    color: #fff;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255, 255, 255, .2);
+}
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
-
     .top-nav-collapse {
-        /* Customize the look and feel of the collapsed top nav here */
         padding: 0;
+        background-color: #000;
     }
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        background-color: rgba(0,0,0,0.80); /* transparency */
+    }
+}
+
+#home-row-1 h1 {
+    font-size: 54px;
+    line-height: 1.7;
+}
+#home-row-2 {
+    font-size: 25px;
+    line-height: 1.1;
+}
+#home-row-2 .col-12 .home-hover:hover {
+    height: 166px;
+    padding-top: 0;
+}
+#home-row-2 .col-12 .home-hover {
+    height: 166px;
+    overflow: hidden;
+    padding-top: 26px;
+    transition: all ease-in .5s;
+}
+.navigation-slide {
+    cursor: pointer;
 }
 
 /* scroll to button */
@@ -65,42 +128,47 @@ html {
   }
 }
 
-/* parallax */
-.landing-landing {
-    background: url(../img/LiveConcerts.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+/** Sections **/
+section {
     height: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 60px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-size: 45px !important;
 }
 
 .intro-section {
-    height: 100%;
     padding-top: 150px;
-    text-align: center;
-    background: #fff;
+    height: 650px;
+    background: #529abb;
+    /*background: url(../img/empire_state_city-wide.jpg);*/
 }
 
-.about-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+.features-section {
     background: #eee;
 }
 
-.services-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
+.friends-section {
+    background: #1abc9c;
+}
+
+.business-section {
+    background: #34495e;
+}
+
+.pricing-section {
+    background: #eee;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+    background: #25221e;
+    color: #fff;
 }
 .footer-section {
     background-color: #25221e;
@@ -109,4 +177,70 @@ html {
     line-height: 17px;
     padding-top: 68px;
     padding-bottom: 68px;
+}
+
+/** portfolio **/
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(5, 172, 243, 0.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+/** fonts */
+.font-semibold {
+    font-weight: 800;
+}
+.font-thin {
+    font-weight: 100;
 }
