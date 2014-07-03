@@ -246,8 +246,6 @@ section {
     color: #fff;
 }
 
-/** Packages Section */
-
 .intro-packages {
     margin-top: 20px;
 }
@@ -255,12 +253,10 @@ section {
 .service-item {
     margin-bottom: 15px;
 }
-
 .service-item a {
     text-decoration: none;
     color: #fff;
 }
-
 i.service-icon {
     border: 3px solid #ffffff;
     border-radius: 50%;
@@ -272,6 +268,10 @@ i.service-icon {
     vertical-align: middle;
     text-align: center;
 }
+
+
+
+
 
 .packages-section {
     height: 50px;
@@ -286,7 +286,8 @@ i.service-icon {
 
 }
 
-.btn-packages {
+
+.btn-packages{
     background: transparent;
     display: inline-block !important;
     text-align: center;
@@ -303,6 +304,7 @@ i.service-icon {
 	color: #FFF;
 	background-color: rgba(255, 255, 255, .2);
     opacity: 0.8;
+
 }
 
 .features-section {
