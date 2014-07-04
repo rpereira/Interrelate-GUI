@@ -33,8 +33,8 @@
 		</div> -->
 
         <div class="pull-right lang">
-            <a href="" class="btn btn-default btn-xs">PT</a>
-            <a href="" class="btn btn-default btn-xs">EN</a>
+            <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
+            <button class="btn btn-default btn-xs" id="en-lang">EN</button>
         </div>
 
 	</div>
@@ -48,9 +48,9 @@
 		<div class="row">
 			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
                 <img src="img/interrelate_logo.png"/>
-				<h1 class="title text-shadows">Interrelate Analytics</h1>
+				<h1 class="title text-shadows">INTERRELATE Analytics</h1>
 
-				<h3 class="tagline">
+				<h3 class="tagline" id="lg-subtitle">
 					Please choose one of our applications!<br><br>
                     With the Social app, you can analyze everything about <br> your company's page Facebook  or your personal account
 				</h3>
@@ -122,6 +122,88 @@
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script src="js/modernizer.min.js"></script>
 
+<script type="text/javascript" language="javascript">
+    $("#pt-lang").click(function()
+    {
+        localStorage.setItem('lang', 'portuguese')
+        var language = 'portuguese';
+        $.ajax(
+        {
+            url: 'languages/index-languages.xml',
+            success: function(xml)
+            {
+                $(xml).
+                    find('translation').
+                    each(function()
+                    {
+                        var id = $(this).attr('id');
+                        var text = $(this).find(language).text();
+                        $('#' + id).html(text);
+                    });
+            },
+            error: function(err)
+            {
+              console.log(err)
+            }
+        });
+    });
+
+    $("#en-lang").click(function()
+    {
+        localStorage.setItem('lang', 'english')
+        var language = 'english';
+        $.ajax(
+        {
+            url: 'languages/index-languages.xml',
+            success: function(xml)
+            {
+                $(xml).
+                    find('translation').
+                    each(function()
+                    {
+                        var id = $(this).attr('id');
+                        var text = $(this).find(language).text();
+                        $('#' + id).html(text);
+                    });
+            },
+            error: function(err)
+            {
+              console.log(err)
+            }
+        });
+    });
+
+    $(function()
+    {
+        var language = localStorage.getItem('lang');
+
+        if(language === null)
+        {
+            language = 'english';
+            localStorage.setItem('lang', 'english');
+        }
+
+        $.ajax(
+        {
+            url: 'languages/index-languages.xml',
+            success: function(xml)
+            {
+                $(xml).
+                    find('translation').
+                    each(function()
+                    {
+                        var id = $(this).attr('id');
+                        var text = $(this).find(language).text();
+                        $('#' + id).html(text);
+                    });
+            },
+            error: function(err)
+            {
+              console.log(err)
+            }
+        });
+    });
+</script>
 <!-- Custom JavaScript -->
 <script src="js/landing.js"></script>
 </body>
