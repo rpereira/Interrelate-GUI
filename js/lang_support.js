@@ -72,7 +72,7 @@ $('#pt-lang').click(function()
         });
     });
 
-    $( document ).ready(function()
+    $(function()
     {
         var page = getUrlPage();
         var xml_file = 'languages/' + page + '-languages.xml';
@@ -124,9 +124,13 @@ function getUrlPage()
     {
         return 'index';
     }
-    else
+    else if(parsed_url[parsed_url.length-1] === 'social.html')
     {
         return 'social';
+    }
+    else
+    {
+        return 'index';
     }
 
 }
