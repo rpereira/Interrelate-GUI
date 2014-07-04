@@ -50,7 +50,8 @@ html {
     color: #fff;
 }
 
-.navbar-custom .nav li a {
+.navbar-custom .nav li a
+{
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -451,6 +452,43 @@ i.service-icon {
 
 }
 
+#pt-lang {
+
+    padding: 0px 2px 0px 2px;
+    padding-right: 2px;
+    padding-left:2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left:10px;
+	background: transparent;
+    color: white;
+    border: none;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    cursor: pointer;
+}
+
+#en-lang {
+    padding: 0px 0px 2px 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+	background: transparent;
+    color: white;
+    border: none;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    cursor: pointer;
+}
+
+#pt-lang:hover,
+#en-lang:hover
+{
+    outline: 0;
+    background-color: rgba(255, 255, 255, .2);
+}
+
 /*************************************
  * Personal section
  *************************************/
@@ -613,4 +651,11 @@ i.service-icon {
 
     /** Remove default browser outline style */
     outline: none;
+}
+
+
+button:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
 }
