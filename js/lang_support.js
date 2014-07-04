@@ -72,7 +72,7 @@ $('#pt-lang').click(function()
         });
     });
 
-    $(function()
+    $( document ).ready(function()
     {
         var page = getUrlPage();
         var xml_file = 'languages/' + page + '-languages.xml';
