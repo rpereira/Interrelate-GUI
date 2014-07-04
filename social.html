@@ -417,7 +417,7 @@
     <!-- /.showcase section -->
 
 
-
+    <!-- contact section -->
     <section class="contact-section" id="contact-section">
         <div class="container">
             <div class="section-header">
@@ -426,52 +426,70 @@
             <div class="page-scroll">
                 <a href="#showcase-section" class="scrollto-btn scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
             </div>
-            <!--<a name="contact"></a>-->
 
             <div class="row">
-                <div class="col-sm-5 col-xs-12">
-                    <form class="" action="#contact" method="POST">
-                        <input type="hidden" name="form_name" value="contact">
-
+                <div class="col-md-offset-1 col-md-10">
+                    <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label class="control-label" for="form_name"  id="sc-contact-name"></label>
-                            <input type="text" class="form-control" id="form_name" name="field_name">
+                            <div class="col-md-offset-2 col-md-8">
+                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="form_email"  id="sc-contact-email"></label>
-                            <input type="text" class="form-control" id="form_email" name="field_email">
+                            <div class="col-md-offset-2 col-md-8">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="form_message"  id="sc-contact-comment"></label>
-                            <textarea class="form-control" id="form_message" rows="6" name="field_message"></textarea>
+                            <div class="col-md-offset-2 col-md-8">
+                                <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <div class="controls action">
-                                <button type="submit" class="btn" id="sc-contact-button"></button>
+                            <div class="col-md-offset-2 col-md-8">
+                                <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-8">
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Send message</button>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
 
-                <div class="col-sm-2 hidden-xs">
-                    <div class="vertical-stripe"><i class="fa fa-exchange"></i></div>
-                </div>
-
-                <div class="col-sm-5 col-xs-12 address">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
                     <div class="social social-icons">
-                        <h3  id="sc-contact-tell"></h3>
+                        <h3 id="sc-contact-tell"></h3>
+                        <br>
+                        <br>
+                        <form class="form-horizontal" role="form">
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Your friend's email...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">Send</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+                        <br>
+                        <br>
                         <br>
                         <p>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-google"></a>
+                            <a href="#"><i class="fa fa-twitter fa-4x"></i></a>
+                            <a href="#"><i class="fa fa-facebook fa-4x"></i></a>
+                            <a href="#"><i class="fa fa-google fa-4x"></i></a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
+    <!-- /.contact section -->
 
 
 
