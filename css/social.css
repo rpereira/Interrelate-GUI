@@ -512,7 +512,7 @@ i.service-icon {
  * Contact section
  *************************************/
 .contact-section {
-    background: #25221e;
+    background: #404040;
     color: #fff;
 }
 
@@ -657,9 +657,24 @@ i.service-icon {
     outline: none;
 }
 
-
 button:focus
 {
     outline:0px !important;
     -webkit-appearance:none;
+}
+
+.social {
+    margin-top: 75px;
+}
+
+.social-icons a {
+    display: inline-block;
+    /*width: 24px;
+    height: 24px;*/
+    margin: 10px;
+    vertical-align: middle;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
 }
