@@ -14,7 +14,7 @@
     <link href="css/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/social.css" rel="stylesheet" type="text/css">
@@ -99,7 +99,7 @@
                         </div>
                         <div class="col-md-2 text-center">
                             <div class="service-item home-hover page-scroll">
-                                <a href="#enterprise-section"><i class="service-icon fa fa-suitcase"></i></a>
+                                <a href="#enterprise-section"><i class="service-icon fa fa-university"></i></a>
                                 <h4>Agency</h4>
                             </div>
                         </div>
@@ -502,6 +502,89 @@
     <!-- Custom JavaScript -->
     <script src="js/social.js"></script>
 
+    <script type="text/javascript" language="javascript">
+    $("#pt-lang").click(function()
+    {
+        localStorage.setItem('lang', 'portuguese')
+        var language = 'portuguese';
+        $.ajax(
+        {
+            url: 'languages/social-languages.xml',
+            success: function(xml)
+            {
+                $(xml).
+                    find('translation').
+                    each(function()
+                    {
+                        var id = $(this).attr('id');
+                        var text = $(this).find(language).text();
+                        $('#' + id).html(text);
+                    });
+            },
+            error: function(err)
+            {
+              console.log(err)
+            }
+        });
+    });
+
+    $("#en-lang").click(function()
+    {
+        localStorage.setItem('lang', 'english')
+        var language = 'english';
+        $.ajax(
+        {
+            url: 'languages/social-languages.xml',
+            success: function(xml)
+            {
+                $(xml).
+                    find('translation').
+                    each(function()
+                    {
+                        var id = $(this).attr('id');
+                        var text = $(this).find(language).text();
+                        $('#' + id).html(text);
+                    });
+            },
+            error: function(err)
+            {
+              console.log(err)
+            }
+        });
+    });
+
+    $(function()
+    {
+
+        var language = localStorage.getItem('lang');
+
+        if(language === null)
+        {
+            language = 'english';
+            localStorage.setItem('lang', 'english');
+        }
+
+        $.ajax(
+        {
+            url: 'languages/social-languages.xml',
+            success: function(xml)
+            {
+                $(xml).
+                    find('translation').
+                    each(function()
+                    {
+                        var id = $(this).attr('id');
+                        var text = $(this).find(language).text();
+                        $('#' + id).html(text);
+                    });
+            },
+            error: function(err)
+            {
+              console.log(err)
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
