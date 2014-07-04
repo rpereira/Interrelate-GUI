@@ -25,6 +25,14 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+     <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.0";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
     <!-- nav bar -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -434,27 +442,27 @@
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-8">
-                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                <input type="text" id="sc-form-contact-name" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-8">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <input type="email" id="sc-form-contact-email" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-8">
-                                <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                                <input type="text"  id="sc-form-contact-subject" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-8">
-                                <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                                <textarea name="message"  id="sc-form-contact-message" class="form-control" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-8">
-                                <button type="button" class="btn btn-primary btn-lg btn-block">Send message</button>
+                                <button type="button" id="sc-contact-button" class="btn btn-primary btn-lg btn-block"></button>
                             </div>
                         </div>
                     </form>
@@ -470,22 +478,26 @@
                         <form class="form-horizontal" role="form">
                             <div class="col-md-offset-2 col-md-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Your friend's email...">
+                                    <input type="text" id="sc-contact-tell-email" class="form-control">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-primary" type="button">Send</button>
+                                        <button class="btn btn-primary" id="sc-contact-tell-button" ></button>
                                     </span>
                                 </div>
                             </div>
                             <!-- /input-group -->
                         </form>
+
                         <br>
                         <br>
                         <br>
                         <p>
                             <a href="#"><i class="fa fa-twitter fa-4x"></i></a>
-                            <a href="#"><i class="fa fa-facebook fa-4x"></i></a>
+                            <a href="#"><i class="fa fa-facebook fa-4x" ></i></a>
                             <a href="#"><i class="fa fa-google fa-4x"></i></a>
                         </p>
+
+                    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="icon"></div>
+
                     </div>
                 </div>
             </div>
