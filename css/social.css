@@ -8,41 +8,72 @@ html {
     height: 100%;
 }
 
+/** set container's postion to relative
+ *  in order to place scroll arrows on
+ *  the disired position
+**/
+.container {
+    position: relative;
+}
+
+/*************************************
+ * Fonts
+ *************************************/
+.font-semibold {
+    font-weight: 800;
+}
+
+.font-thin {
+    font-weight: 100;
+}
+
+
+/*************************************
+ * Navbar
+ *************************************/
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     text-transform: uppercase;
     background: rgba(0, 0, 0, 0.3);
 }
+
 .navbar-brand {
     font-weight: 700;
 }
+
 .navbar-brand:focus {
     outline: 0;
 }
+
 .navbar-custom a {
     color: #fff;
 }
+
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
+
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
     background-color: rgba(255, 255, 255, .2);
 }
+
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
 }
+
 .navbar-toggle:focus,
 .navbar-toggle:active {
     outline: 0;
 }
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -59,27 +90,35 @@ html {
     }
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255, 255, 255, .3);
-        background-color: rgba(0,0,0,0.80); /* transparency */
+        background-color: rgba(0, 0, 0, 0.80); /* transparency */
     }
 }
 
+
+/*************************************
+ * Home section
+ *************************************/
 #home-row-1 h1 {
     font-size: 54px;
     line-height: 1.7;
 }
+
 #home-row-1 h4 {
     font-size: 30px;
     line-height: 1.7;
 }
+
 #home-row-2 {
     font-size: 25px;
     line-height: 1.1;
 }
+
 .intro-packages .home-hover:hover {
     height: 180px;
     padding-top: 0;
     cursor: pointer;
 }
+
 /*#home-row-2 .col-2 .home-hover {*/
 .intro-packages .home-hover {
     height: 200px;
@@ -87,12 +126,11 @@ html {
     padding-top: 26px;
     transition: all ease-in .5s;
 }
-.navigation-slide {
-    cursor: pointer;
-}
 
-/* scroll to button */
-.scrollto-btn {
+/*************************************
+ * Section scroller buton
+ *************************************/
+/*.scrollto-btn {
     width: 53px;
     height: 53px;
     line-height: 53px;
@@ -111,14 +149,48 @@ html {
     filter: alpha(opacity=80);
     position: absolute;
     left: 50%;
-    /*bottom: 90px;*/
+    /*bottom: 90px;
     margin-left: -26.5px;
+}*/
+
+.scrollto-btn {
+    color: #eee;
+    opacity: .1;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    font-size: 24px;
+    z-index: 9999999;
+    color: #fff;
 }
+
+.scrollto-btn-dark {
+    color: #404040;
+}
+
+.scrollto-btn-light {
+}
+
+.scrollto-btn-top {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.scrollto-btn-down {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
 .scrollto-btn:hover,
 .scrollto-btn:focus,
 .scrollto-btn.active {
     color: #ffffff;
 }
+
 .scrollto-btn:hover,
 .scrollto-btn:focus,
 .scrollto-btn:active,
@@ -128,17 +200,11 @@ html {
     opacity: 1;
     filter: alpha(opacity=100);
 }
+
 @media (max-width: 480px) {
     .scrollto-btn {
         bottom: 30px;
-  }
-}
-
-/** Sections **/
-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    }
 }
 
 /*.section-header {
@@ -162,6 +228,18 @@ section {
     display: inline-block;
 }
 
+
+/*************************************
+ * Packages
+ *************************************/
+.package {
+	border-radius: 4px;
+	background: #FFFFFF;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+}
+
 .package-header {
     height: 57px;
     color: #FFF;
@@ -169,6 +247,7 @@ section {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
+
 .package-header h5 {
     text-transform: uppercase;
     font-weight: bold;
@@ -180,38 +259,21 @@ section {
     font: inherit;
     vertical-align: baseline;*/
 }
+
 .package-description {
     font-weight: bold;
     font-size: 15px;
 }
-.green-bg {
-    background: #34d293;
-}
-.red-bg {
-    background: #e96656;
-}
-.price {
-    line-height: 120px;
-    height: 100px;
-    color: #FFF;
-    font-weight: 400;
-}
-.price h4 {
-    display: inline;
-    font-size: 40px;
-    line-height: normal;
-    margin-bottom: 0;
-}
-.dark-bg {
-    background: #404040;
-}
+
 .package ul, ol {
     padding-left: 0 !important;
 }
+
 .package ul, ol {
     margin-top: 0;
     margin-bottom: 10px;
 }
+
 .package ul li {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -220,20 +282,86 @@ section {
     border-bottom: 1px dotted #dadada;
     list-style: none;
 }
-.red-btn,
-.green-btn,
-.blue-btn,
-.yellow-btn {
+
+.package-body {
+    background: #fff;
+}
+
+.red-bg {
+    background: #c45268;
+}
+
+.yellow-bg {
+    background: #E7AC44;
+}
+
+.blue-bg {
+    background: #3ab0e2;
+}
+
+.orange-bg {
+    background: #e96656;
+}
+
+.price {
+    line-height: 120px;
+    height: 100px;
     color: #FFF;
+    font-weight: 400;
+}
+
+.price h4 {
+    display: inline;
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.dark-bg {
+    background: #404040;
+}
+
+.red-btn,
+.yellow-btn,
+.blue-btn,
+.orange-btn {
+    color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.green-btn {
-    background: #20AA73;
-}
+
 .red-btn {
+    background: #c45268;
+}
+
+.red-btn:hover {
+    background: #b44a60;
+}
+
+.yellow-btn {
+    background: #E7AC44;
+}
+
+.yellow-btn:hover {
+    background: #d39d3f;
+}
+
+.blue-btn {
+    background: #3ab0e2;
+}
+
+.blue-btn:hover {
+    background: #35a1ce;
+}
+
+.orange-btn {
     background: #e96656;
 }
+
+.orange-btn:hover {
+    background: #d15a50;
+}
+
 .custom-button {
 	display: inline-block !important;
 	text-align: center;
@@ -244,6 +372,19 @@ section {
 	border: none;
 }
 
+
+/*************************************
+ * Sections
+ *************************************/
+section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+/*************************************
+ * Intro section
+ *************************************/
 .intro-section {
     padding-top: 150px;
     height: 650px;
@@ -258,10 +399,12 @@ section {
 .service-item {
     margin-bottom: 15px;
 }
+
 .service-item a {
     text-decoration: none;
     color: #fff;
 }
+
 i.service-icon {
     border: 3px solid #ffffff;
     border-radius: 50%;
@@ -273,10 +416,6 @@ i.service-icon {
     vertical-align: middle;
     text-align: center;
 }
-
-
-
-
 
 .packages-section {
     height: 50px;
@@ -291,8 +430,7 @@ i.service-icon {
 
 }
 
-
-.btn-packages{
+.btn-packages {
     background: transparent;
     display: inline-block !important;
     text-align: center;
@@ -305,6 +443,7 @@ i.service-icon {
     transition: background .3s ease-in-out;
     margin-left:-4px;
 }
+
 .btn-packages:hover {
 	color: #FFF;
 	background-color: rgba(255, 255, 255, .2);
@@ -312,27 +451,32 @@ i.service-icon {
 
 }
 
-.features-section {
-    background: #eee;
-}
-
+/*************************************
+ * Personal section
+ *************************************/
 .personal-section {
     background: #edf0eb;
-    /*background: #f9f7eb;*/
 }
 
+/*************************************
+ * Enterprise section
+ *************************************/
 .enterprise-section {
     background: #34495e;
+    height: 1050px;
 }
 
-.pricing-section {
-    background: #eee;
-}
-
+/*************************************
+ * Contact section
+ *************************************/
 .contact-section {
     background: #25221e;
     color: #fff;
 }
+
+/*************************************
+ * Footer section
+ *************************************/
 .footer-section {
     background-color: #25221e;
     color: #aaa;
@@ -342,7 +486,9 @@ i.service-icon {
     padding-bottom: 68px;
 }
 
-/** showcase-section **/
+/*************************************
+ * Showcase section
+ *************************************/
 #showcase-section .showcase-item {
     right: 0;
     margin: 0 0 15px;
@@ -400,46 +546,71 @@ i.service-icon {
     }
 }
 
-/** fonts */
-.font-semibold {
-    font-weight: 800;
-}
-.font-thin {
-    font-weight: 100;
-}
 
 /*************************************
- * Basic lightbox styles. Notice the
- * default 'display' is 'none'.
+ * Contact section
  *************************************/
+.fa-facebook {
+    font-size: 40px;
+    color: #fff;
+}
 
+.fa-facebook:hover {
+    color: #4c66a4;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    font-size: 40px;
+    color: #fff;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+    text-decoration: none;
+}
+
+.fa-google {
+    font-size: 40px;
+    color: #fff;
+}
+
+.fa-google:hover {
+    color: #dd4b39;
+    text-decoration: none;
+}
+
+
+/*************************************
+ * Lightbox styles
+ *************************************/
 .lightbox {
-  /** Hide the lightbox */
-  display: none;
+    /** Hide the lightbox */
+    display: none;
 
-  /** Apply basic lightbox styling */
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  left: 0;
-  background: black;
-  background: rgba(0,0,0,0.8);
+    /** Apply basic lightbox styling */
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: black;
+    background: rgba(0,0,0,0.8);
 }
 
 .lightbox img {
-  /** Pad the lightbox image */
-  max-width: 90%;
-  max-height: 80%;
-  margin-top: 80px; /** or use 3% - 5% **/
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 80px; /** or use 3% - 5% **/
 }
 
 .lightbox:target {
-  /** Show lightbox when it is target */
-  display: block;
+    /** Show lightbox when it is target */
+    display: block;
 
-  /** Remove default browser outline style */
-  outline: none;
+    /** Remove default browser outline style */
+    outline: none;
 }

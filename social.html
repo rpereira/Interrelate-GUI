@@ -9,8 +9,9 @@
 
     <title>Interrelate Analytics</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="img/interrelate_logo_header.png" />  Interrelate Analytics</a>
+                <a class="navbar-brand" href="index.html"><img src="img/interrelate_logo_header.png"/>  Interrelate Analytics</a>
             </div>
 
             <!-- Collect stuff for mobile toggling -->
@@ -50,6 +51,9 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#showcase-section">Showcase</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact-section">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -127,13 +131,17 @@
             <div class="section-header">
                 <h1>PERSONAL PACK</h1>
             </div>
+            <div class="page-scroll">
+                <a href="#page-top" class="scrollto-btn scrollto-btn-dark scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
+                <a href="#enterprise-section" class="scrollto-btn scrollto-btn-dark scrollto-btn-down"><i class="fa fa-arrow-circle-down"></i></a>
+            </div>
             <div class="row">
                 <!-- personal basic -->
                 <div class="col-lg-12 col-sm-12 text-center">
                     <div class="text-center col-lg-4 col-sm-4"></div>
                     <div class="text-center col-lg-4 col-sm-4">
                         <div class="package wow fadeInLeft animated animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;">
-                            <div class="package-header green-bg">
+                            <div class="package-header red-bg">
                                 <h5>Basic</h5>
                             </div>
                             <div class="price dark-bg">
@@ -141,7 +149,7 @@
                                     <h4>FREE</h4>
                                 </div>
                             </div>
-                            <ul>
+                            <ul class="package-body">
                                 <li class="package-description">Access to the <em>Personal Overview Page</em></li>
                                 <li>Number of likes</li>
                                 <li>Posts per day</li>
@@ -152,7 +160,7 @@
                                 <li>Page response time</li>
                                 <li>Page response rate</li>
                             </ul>
-                            <a href="#" class="btn btn-primary custom-button green-btn">
+                            <a href="#" class="btn btn-primary custom-button red-btn">
                                 BUY
                             </a>
                         </div>
@@ -168,14 +176,18 @@
     <section id="enterprise-section" class="enterprise-section">
         <div class="container">
             <div class="section-header">
-                <h1>ENTERPRISE PACK</h1>
+                <h1 style="color: #e4e6e5;">ENTERPRISE PACK</h1>
+            </div>
+            <div class="page-scroll">
+                <a href="#personal-section" class="scrollto-btn scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
+                <a href="#showcase-section" class="scrollto-btn scrollto-btn-down"><i class="fa fa-arrow-circle-down"></i></a>
             </div>
             <div class="row">
                 <div class="text-center col-lg-12 col-sm-12">
                     <!-- enterprise basic -->
                     <div class="text-center col-lg-4 col-sm-4">
                         <div class="package wow fadeInLeft animated animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;">
-                            <div class="package-header red-bg">
+                            <div class="package-header yellow-bg">
                                 <h5>Basic</h5>
                             </div>
                             <div class="price dark-bg">
@@ -185,7 +197,7 @@
                                 </span>
                                 </div>
                             </div>
-                            <ul>
+                            <ul class="package-body">
                                 <li class="package-description">Access to the <em>Personal Overview Page</em></li>
                                 <li>Number of likes</li>
                                 <li>PTAT ("people talking abou this")</li>
@@ -196,7 +208,7 @@
                                 <li>Tracking other selected pages</li>
 
                             </ul>
-                            <a href="#" class="btn btn-primary custom-button red-btn">
+                            <a href="#" class="btn btn-primary custom-button yellow-btn">
                                 BUY
                             </a>
                         </div>
@@ -206,7 +218,7 @@
                     <!-- enterprise company -->
                     <div class="text-center col-lg-4 col-sm-4">
                         <div class="package wow fadeInLeft animated animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;">
-                            <div class="package-header red-bg">
+                            <div class="package-header blue-bg">
                                 <h5>Company</h5>
                             </div>
                             <div class="price dark-bg">
@@ -216,7 +228,7 @@
                                 </span>
                                 </div>
                             </div>
-                            <ul>
+                            <ul class="package-body">
                                 <li class="package-description">The Basic package plus:</li>
                                 <li>A publishing system capable of scheduling the posts</li>
                                 <li>Advices of the best time to publish to get the maximum attention</li>
@@ -227,7 +239,7 @@
                                 <li>Automatic discovery of positive/neutral/negative posts or comments</li>
                                 <li>Advices to maximize social impact</li>
                             </ul>
-                            <a href="#" class="btn btn-primary custom-button red-btn">
+                            <a href="#" class="btn btn-primary custom-button blue-btn">
                                 BUY
                             </a>
                         </div>
@@ -237,7 +249,7 @@
                     <!-- enterprise agency -->
                     <div class="text-center col-lg-4 col-sm-4">
                         <div class="package wow fadeInLeft animated animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;">
-                            <div class="package-header red-bg">
+                            <div class="package-header orange-bg">
                                 <h5>Agency</h5>
                             </div>
                             <div class="price dark-bg">
@@ -247,14 +259,14 @@
                                 </span>
                                 </div>
                             </div>
-                            <ul>
+                            <ul class="package-body">
                                 <li class="package-description">The Company package plus:</li>
                                 <li>Up to 20 pages to analyse simultaneously</li>
                                 <li>Up to 5 different administrators for the pages</li>
                                 <li>Comparison between different brands regarding their online social presence</li>
 
                             </ul>
-                            <a href="#" class="btn btn-primary custom-button red-btn">
+                            <a href="#" class="btn btn-primary custom-button orange-btn">
                                 BUY
                             </a>
                         </div>
@@ -267,12 +279,14 @@
     <!-- enterprise section -->
 
     <!-- showcase section -->
-    <section id="showcase-section">
+    <section id="showcase-section" class="showcase-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="section-header">SHOWCASE</h1>
-                </div>
+            <div class="section-header">
+                <h1>SHOWCASE</h1>
+            </div>
+            <div class="page-scroll">
+                <a href="#enterprise-section" class="scrollto-btn scrollto-btn-dark scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
+                <a href="#contact-section" class="scrollto-btn scrollto-btn-dark scrollto-btn-down"><i class="fa fa-arrow-circle-down"></i></a>
             </div>
             <div class="row">
                 <div class="col-sm-4 showcase-item">
@@ -296,6 +310,7 @@
                         <img src="img/screenshots/content2.png" class="img-responsive" alt="" />
                     </a>
                 </div>
+
                 <div class="col-sm-4 showcase-item">
                     <a href="#img3" class="showcase-link">
                         <div class="caption">
@@ -306,6 +321,7 @@
                         <img src="img/screenshots/content3.png" class="img-responsive" alt="" />
                     </a>
                 </div>
+
                 <div class="col-sm-4 showcase-item">
                     <a href="#img4" class="showcase-link">
                         <div class="caption">
@@ -316,6 +332,7 @@
                         <img src="img/screenshots/content4.png" class="img-responsive" alt="" />
                     </a>
                 </div>
+
                 <div class="col-sm-4 showcase-item">
                     <a href="#img5" class="showcase-link">
                         <div class="caption">
@@ -326,6 +343,7 @@
                         <img src="img/screenshots/fans.png" class="img-responsive" alt="" />
                     </a>
                 </div>
+
                 <div class="col-sm-4 showcase-item">
                     <a href="#img6" class="showcase-link">
                         <div class="caption">
@@ -336,6 +354,7 @@
                         <img src="img/screenshots/fans2.png" class="img-responsive" alt="" />
                     </a>
                 </div>
+
                 <div class="col-sm-4 showcase-item">
                     <a href="#img7" class="showcase-link">
                         <div class="caption">
@@ -346,6 +365,7 @@
                         <img src="img/screenshots/fans3.png" class="img-responsive" alt="" />
                     </a>
                 </div>
+
                 <div class="col-sm-4 showcase-item">
                     <a href="#img8" class="showcase-link">
                         <div class="caption">
@@ -356,6 +376,7 @@
                         <img src="img/screenshots/home.png" class="img-responsive" alt="" />
                     </a>
                 </div>
+
                 <div class="col-sm-4 showcase-item">
                     <a href="#img9" class="showcase-link">
                         <div class="caption">
@@ -398,14 +419,76 @@
         <a href="#_" class="lightbox" id="img9">
             <img src="img/screenshots/publisher.png">
         </a>
+        <!-- /.lightbox containers -->
     </section>
-    <!-- showcase section -->
+    <!-- /.showcase section -->
+
+
+
+    <section class="contact-section" id="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="page-scroll">
+                <a href="#showcase-section" class="scrollto-btn scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
+            </div>
+            <!--<a name="contact"></a>-->
+
+            <div class="row">
+                <div class="col-sm-5 col-xs-12">
+                    <form class="" action="#contact" method="POST">
+                        <input type="hidden" name="form_name" value="contact">
+
+                        <div class="form-group">
+                            <label class="control-label" for="form_name">Name</label>
+                            <input type="text" class="form-control" id="form_name" name="field_name">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="form_email">Email</label>
+                            <input type="text" class="form-control" id="form_email" name="field_email">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="form_message">Comment</label>
+                            <textarea class="form-control" id="form_message" rows="6" name="field_message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls action">
+                                <button type="submit" class="btn">Send Enquiry</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-2 hidden-xs">
+                    <div class="vertical-stripe"><i class="fa fa-exchange"></i></div>
+                </div>
+
+                <div class="col-sm-5 col-xs-12 address">
+                    <div class="social social-icons">
+                        <h3><i class="fa fa-retweet"></i> Tell a friend about us</h3>
+                        <br>
+                        <p>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-google"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
 
     <!-- footer -->
     <footer class="footer-section text-center">
         <div class="container">
-            <div class="pull-right page-scroll">
-                <a href="#page-top">Back to top</a>
+            <br>
+            <span>2014 INTERRELATE. All rights reserved.</span>
+            <div class="page-scroll">
+                <a href="#page-top" class="scrollto-btn scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
             </div>
         </div>
     </footer>
@@ -415,9 +498,6 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-
-
-    <script src="fancy-box/jquery.fancybox.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/social.js"></script>
