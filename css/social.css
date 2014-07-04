@@ -202,6 +202,10 @@ html {
     filter: alpha(opacity=100);
 }
 
+.scrollto-btn-dark:hover {
+    color: #000;
+}
+
 @media (max-width: 480px) {
     .scrollto-btn {
         bottom: 30px;
