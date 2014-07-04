@@ -8,6 +8,14 @@ html {
     height: 100%;
 }
 
+/** set container's postion to relative
+ *  in order to place scroll arrows on
+ *  the disired position
+**/
+.container {
+    position: relative;
+}
+
 /*************************************
  * Fonts
  *************************************/
@@ -122,7 +130,7 @@ html {
 /*************************************
  * Section scroller buton
  *************************************/
-.scrollto-btn {
+/*.scrollto-btn {
     width: 53px;
     height: 53px;
     line-height: 53px;
@@ -141,8 +149,40 @@ html {
     filter: alpha(opacity=80);
     position: absolute;
     left: 50%;
-    /*bottom: 90px;*/
+    /*bottom: 90px;
     margin-left: -26.5px;
+}*/
+
+.scrollto-btn {
+    color: #eee;
+    opacity: .1;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    font-size: 24px;
+    z-index: 9999999;
+    color: #fff;
+}
+
+.scrollto-btn-dark {
+    color: #404040;
+}
+
+.scrollto-btn-light {
+}
+
+.scrollto-btn-top {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.scrollto-btn-down {
+    position: absolute;
+    top: 50px;
+    right: 20px;
 }
 
 .scrollto-btn:hover,
@@ -192,6 +232,14 @@ html {
 /*************************************
  * Packages
  *************************************/
+.package {
+	border-radius: 4px;
+	background: #FFFFFF;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+}
+
 .package-header {
     height: 57px;
     color: #FFF;
@@ -215,6 +263,28 @@ html {
 .package-description {
     font-weight: bold;
     font-size: 15px;
+}
+
+.package ul, ol {
+    padding-left: 0 !important;
+}
+
+.package ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.package ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px dotted #dadada;
+    list-style: none;
+}
+
+.package-body {
+    background: #fff;
 }
 
 .red-bg {
@@ -249,28 +319,6 @@ html {
 
 .dark-bg {
     background: #404040;
-}
-
-.package ul, ol {
-    padding-left: 0 !important;
-}
-
-.package ul, ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.package ul li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 80%;
-    margin: auto;
-    border-bottom: 1px dotted #dadada;
-    list-style: none;
-}
-
-.package-body {
-    background: #fff;
 }
 
 .red-btn,
