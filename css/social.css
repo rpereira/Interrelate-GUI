@@ -527,7 +527,13 @@ i.service-icon {
     padding-top: 68px;
     padding-bottom: 68px;
 }
-
+/*************************************
+ * Buy section
+ *************************************/
+.buy-section{
+    background-color: #f9f7eb;
+    color: #000;
+}
 /*************************************
  * Showcase section
  *************************************/
