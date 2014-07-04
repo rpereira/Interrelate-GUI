@@ -9,92 +9,61 @@
 
     <title>Interrelate Analytics</title>
 
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/social.css" rel="stylesheet" type="text/css">
+    <link href="css/buy.css" rel="stylesheet">
 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="getProduct()">
-    <!-- nav bar -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<body id="page-top" onload="getProduct()">
+
+    <!-- fixed nav bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="img/interrelate_logo_header.png"/>  Interrelate Analytics</a>
+                </button>-->
+                <a class="navbar-brand" href="index.html"><img src="img/interrelate_logo_header.png"/>  INTERRELATE Analytics</a>
             </div>
-
-            <!-- Collect stuff for mobile toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#personal-section" id="sc-menu-1"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#enterprise-section" id="sc-menu-2"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#showcase-section" id="sc-menu-3"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact-section" id="sc-menu-4"></a>
-                    </li>
-                    <li>
-                        <a id="pt-lang">PT</a>
-                    </li>
-                    <li>
-                        <a id="en-lang">EN</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </div>
+    <!-- /.nav bar -->
 
-    <!-- intro section -->
-    <!-- friends section -->
+
+    <!-- buy section -->
     <section id="buy-section" class="buy-section">
         <div class="container">
             <div class="section-header">
-                <h1>Buy Package</h1>
+                <h1>EM CONSTRUÇÃO...<br><br>Buy Package</h1>
             </div>
             <div class="row">
-                <!-- personal basic -->
-                <div class="col-lg-12 col-sm-12 text-center">
+                <div class="col-lg-12 col-sm-12">
                     <div class="text-center col-lg-3 col-sm-3"></div>
                     <div class="text-center col-lg-2 col-sm-2">
                         <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                        Version
-                        <span class="caret"></span>
-                      </button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation" class="dropdown-header">Personal</li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li role="presentation" class="dropdown-header">Enterprise</li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Agency</a></li>
-                        </ul>
-                    </div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                Version
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation" class="dropdown-header">Personal</li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Enterprise</li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Agency</a></li>
+                            </ul>
+                        </div>
                         <img src="img/paypal_logo.jpg" class="img-responsive"/>
                     </div>
                     <div class="text-center col-lg-4 col-sm-4">
@@ -106,20 +75,17 @@
                         <button type="submit" class="btn btn-deflaut">Enviar</button>
                     </div>
                 </div>
-                <!-- /.personal basic -->
             </div>
         </div>
     </section>
+    <!-- /.buy section -->
 
 
     <!-- footer -->
-    <footer class="footer-section text-center">
+    <footer class="footer footer-section text-center">
         <div class="container">
             <br>
             <span>2014 INTERRELATE. All rights reserved.</span>
-            <div class="page-scroll">
-                <a href="#page-top" class="scrollto-btn scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
-            </div>
         </div>
     </footer>
     <!-- /.footer -->
@@ -130,7 +96,7 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="js/social.js"></script>
+    <script src="js/buy-product.js"></script>
     <script src="js/lang_support.js"></script>
 </body>
 </html>
