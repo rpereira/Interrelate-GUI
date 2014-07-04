@@ -371,24 +371,35 @@
         <portuguese><![CDATA[CONTACTE-NOS]]>
         </portuguese>
     </translation>
-    <translation id="sc-contact-name">
+
+    <translation id="sc-form-contact-name">
         <english><![CDATA[Name]]>
         </english>
         <portuguese><![CDATA[Nome]]>
         </portuguese>
     </translation>
-    <translation id="sc-contact-email">
+
+    <translation id="sc-form-contact-email">
         <english><![CDATA[Email]]>
         </english>
         <portuguese><![CDATA[Email]]>
         </portuguese>
     </translation>
-    <translation id="sc-contact-comment">
-        <english><![CDATA[Comment]]>
+
+    <translation id="sc-form-contact-subject">
+        <english><![CDATA[Subject]]>
         </english>
-        <portuguese><![CDATA[Coment&aacute;rio]]>
+        <portuguese><![CDATA[Assunto]]>
         </portuguese>
     </translation>
+
+    <translation id="sc-form-contact-message">
+        <english><![CDATA[Message]]>
+        </english>
+        <portuguese><![CDATA[Mensagem]]>
+        </portuguese>
+    </translation>
+
     <translation id="sc-contact-tell">
         <english><![CDATA[Tell a friend about us!]]>
         </english>
@@ -397,11 +408,24 @@
     </translation>
 
     <translation id="sc-contact-button">
+        <english><![CDATA[Send Message]]>
+        </english>
+        <portuguese><![CDATA[Enviar Mensagem]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-contact-tell-email">
+        <english><![CDATA[Your friend email...]]>
+        </english>
+        <portuguese><![CDATA[O email do teu amigo...]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-contact-tell-button">
         <english><![CDATA[Send]]>
         </english>
         <portuguese><![CDATA[Enviar]]>
         </portuguese>
     </translation>
-
 
 </translations>
