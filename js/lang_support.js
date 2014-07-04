@@ -14,9 +14,18 @@ $('#pt-lang').click(function()
                     find('translation').
                     each(function()
                     {
-                        var id = $(this).attr('id');
-                        var text = $(this).find(language).text();
-                        $('#' + id).html(text);
+                       var id = $(this).attr('id');
+                        var split = id.split("-");
+                        //alert(split[1]);
+                        if(split[1] === 'form')
+                        {
+                            setPlaceholders(this,language,id);
+                        }
+                        else
+                        {
+                            var text = $(this).find(language).text();
+                            $('#' + id).html(text);
+                        }
                     });
             },
             error: function(err)
@@ -43,8 +52,17 @@ $('#pt-lang').click(function()
                     each(function()
                     {
                         var id = $(this).attr('id');
-                        var text = $(this).find(language).text();
-                        $('#' + id).html(text);
+                        var split = id.split("-");
+                        //alert(split[1]);
+                        if(split[1] === 'form')
+                        {
+                            setPlaceholders(this,language,id);
+                        }
+                        else
+                        {
+                            var text = $(this).find(language).text();
+                            $('#' + id).html(text);
+                        }
                     });
             },
             error: function(err)
@@ -76,9 +94,18 @@ $('#pt-lang').click(function()
                     find('translation').
                     each(function()
                     {
-                        var id = $(this).attr('id');
-                        var text = $(this).find(language).text();
-                        $('#' + id).html(text);
+                       var id = $(this).attr('id');
+                        var split = id.split("-");
+                        //alert(split[1]);
+                        if(split[1] === 'form')
+                        {
+                            setPlaceholders(this,language,id);
+                        }
+                        else
+                        {
+                            var text = $(this).find(language).text();
+                            $('#' + id).html(text);
+                        }
                     });
             },
             error: function(err)
@@ -88,7 +115,8 @@ $('#pt-lang').click(function()
         });
     });
 
-function getUrlPage(){
+function getUrlPage()
+{
     var _URL = document.URL;
     var parsed_url = _URL.split('/');
 
@@ -96,9 +124,19 @@ function getUrlPage(){
     {
         return 'index';
     }
-    else
+    else if(parsed_url[parsed_url.length-1] === 'social.html')
     {
         return 'social';
     }
+    else
+    {
+        return 'index';
+    }
 
+}
+
+function setPlaceholders(xml, language, id)
+{
+    var text = $(xml).find(language).text();
+    $('#' + id).attr("placeholder", text);
 }
