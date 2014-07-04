@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <!-- ======= MENU TRANSLATIONS =====  -->
+    <translation id="sc-menu-1">
+        <english><![CDATA[PERSONAL]]>
+        </english>
+        <portuguese><![CDATA[PESSOAL]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-menu-2">
+        <english><![CDATA[ENTERPRISE]]>
+        </english>
+        <portuguese><![CDATA[EMPRESA]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-menu-3">
+        <english><![CDATA[SHOWCASE]]>
+        </english>
+        <portuguese><![CDATA[GALERIA]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-menu-4">
+        <english><![CDATA[CONTACT]]>
+        </english>
+        <portuguese><![CDATA[CONTACTOS]]>
+        </portuguese>
+    </translation>
+
+    <!-- ========= Intro Section ======= -->
+    <translation id="sc-intro-subtitle">
+        <english><![CDATA[Control your personal account or company's page on Facebook.<br /> See our packages.<br/ >]]>
+        </english>
+        <portuguese><![CDATA[Controla a tua conta pessoal ou da tua empresa no Facebook. <br /> Veja os pacotes que temos para si. <br />]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-intro-fa1">
+        <english><![CDATA[Personal]]>
+        </english>
+        <portuguese><![CDATA[Pessoal]]>
+        </portuguese>
+    </translation><translation id="sc-intro-fa2">
+        <english><![CDATA[Basic]]>
+        </english>
+        <portuguese><![CDATA[B&aacute;sico]]>
+        </portuguese>
+    </translation><translation id="sc-intro-fa3">
+        <english><![CDATA[Company]]>
+        </english>
+        <portuguese><![CDATA[Empresa]]>
+        </portuguese>
+    </translation><translation id="sc-intro-fa4">
+        <english><![CDATA[Agency]]>
+        </english>
+        <portuguese><![CDATA[Ag&ecirc;ncia]]>
+        </portuguese>
+    </translation>
+
+    <!-- ========== Personal Pack Section ============== -->
+    <translation id="sc-personal-title">
+        <english><![CDATA[PERSONAL PACK]]>
+        </english>
+        <portuguese><![CDATA[PACOTE PESSOAL]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-personal-pack-title">
+        <english><![CDATA[Basic]]>
+        </english>
+        <portuguese><![CDATA[B&aacute;sico]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-price">
+        <english><![CDATA[FREE]]>
+        </english>
+        <portuguese><![CDATA[GRATUITO]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-personal-pack-description">
+        <english><![CDATA[Access to the <em>Personal Overview Page </em>]]>
+        </english>
+        <portuguese><![CDATA[Acesso &agrave; P&aacute;gina de <em> Overview</em> Pessoal]]>
+        </portuguese>
+    </translation>
+
+    <!--================ FEATURES ===================== -->
+    <translation id="sc-personal-pack-feat1">
+        <english><![CDATA[Number of likes]]>
+        </english>
+        <portuguese><![CDATA[N&uacute;mero de gostos]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-feat2">
+        <english><![CDATA[Post per day ]]>
+        </english>
+        <portuguese><![CDATA[Publica&ccedil;&otilde;es por  dia]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-feat3">
+        <english><![CDATA[Comments per day ]]>
+        </english>
+        <portuguese><![CDATA[Coment&aacute;rios por  dia]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-feat4">
+        <english><![CDATA[Most Active Friends]]>
+        </english>
+        <portuguese><![CDATA[Amigos Mais Activos]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-feat5">
+        <english><![CDATA[Most Popular Frindes]]>
+        </english>
+        <portuguese><![CDATA[Amigos Mais Populares]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-feat6">
+        <english><![CDATA[Most Influential Frindes]]>
+        </english>
+        <portuguese><![CDATA[Amigos Mais Influentes]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-feat7">
+        <english><![CDATA[Page Response Time]]>
+        </english>
+        <portuguese><![CDATA[Tempo de Resposta da P&aacute;gina]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-personal-pack-feat8">
+        <english><![CDATA[Page Response Rate]]>
+        </english>
+        <portuguese><![CDATA[Taxa de Resposta ad P&aacute;gina]]>
+        </portuguese>
+    </translation>
+
+    <!-- =============== BUTTON ========== -->
+    <translation id="sc-personal-pack-button">
+        <english><![CDATA[GET NOW]]>
+        </english>
+        <portuguese><![CDATA[OBTER AGORA]]>
+        </portuguese>
+    </translation>
+
+    <!-- ========== Enterprise Pack Section ============== -->
+    <translation id="sc-enterprise-title">
+        <english><![CDATA[ENTERPRISE PACK]]>
+        </english>
+        <portuguese><![CDATA[PACOTE EMPRESA]]>
+        </portuguese>
+    </translation>
+
+    <!-- ======== BASIC PACKAGE ============ -->
+    <translation id="sc-enterprise-pack1-title">
+        <english><![CDATA[Basic]]>
+        </english>
+        <portuguese><![CDATA[B&aacute;sico]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack1-price">
+        <english><![CDATA[1 week free, <br /> then 5€ / 2 weeks <br /> or <br /> 9€ / 1 month ]]>
+        </english>
+        <portuguese><![CDATA[1 semana gr&aacute;tis, depois 5€ / 2 semanas ou 9€ / 1 m&ecirc;s]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-enterprise-pack1-description">
+        <english><![CDATA[Access to the <em>Overview Page</em>]]>
+        </english>
+        <portuguese><![CDATA[Acesso &agrave; P&aacute;gina de <em> Overview</em>]]>
+        </portuguese>
+    </translation>
+
+    <!--================ FEATURES ===================== -->
+    <translation id="sc-enterprise-pack1-feat1">
+        <english><![CDATA[Number of likes]]>
+        </english>
+        <portuguese><![CDATA[N&uacute;mero de gostos]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack1-feat2">
+        <english><![CDATA[PTAT ("people talking about this") ]]>
+        </english>
+        <portuguese><![CDATA[PTAT ("people talking about this")]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack1-feat3">
+        <english><![CDATA[Post per day ]]>
+        </english>
+        <portuguese><![CDATA[Publica&ccedil;&otilde;es por  dia]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack1-feat4">
+        <english><![CDATA[Page Response Time]]>
+        </english>
+        <portuguese><![CDATA[Tempo de Resposta da P&aacute;gina]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack1-feat5">
+        <english><![CDATA[Page Response Rate]]>
+        </english>
+        <portuguese><![CDATA[Taxa de Resposta ad P&aacute;gina]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack1-feat6">
+        <english><![CDATA[Engagement Rate]]>
+        </english>
+        <portuguese><![CDATA[Taxa de Envolvimento]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack1-feat7">
+        <english><![CDATA[Tracking 2 selected pages]]>
+        </english>
+        <portuguese><![CDATA[Acompanhar 2 p&aacute;ginas selecionadas]]>
+        </portuguese>
+    </translation>
+
+    <!-- ======== COMPANY PACKAGE ============ -->
+    <translation id="sc-enterprise-pack2-title">
+        <english><![CDATA[Company]]>
+        </english>
+        <portuguese><![CDATA[Empresa]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-price">
+        <english><![CDATA[<h4>75<span class="dollar-sign">€</span> </h4> <span class="price-meta">/ 1 month</span>]]>
+        </english>
+        <portuguese><![CDATA[<h4>75<span class="dollar-sign">€</span></h4><span class="price-meta"> / 1 m&ecirc;s</span>]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-enterprise-pack2-description">
+        <english><![CDATA[The Basic package plus:]]>
+        </english>
+        <portuguese><![CDATA[O pacote B&aacute;sico mais:]]>
+        </portuguese>
+    </translation>
+
+    <!--================ FEATURES ===================== -->
+    <translation id="sc-enterprise-pack2-feat1">
+        <english><![CDATA[A publishing system capable of scheduling the posts]]>
+        </english>
+        <portuguese><![CDATA[Um sistema de publica&ccedil;&atilde;o capaz de programar as mensagens]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat2">
+        <english><![CDATA[Advices of the best time to publish to get the maximum attention]]>
+        </english>
+        <portuguese><![CDATA[Aconselhamento sobre a melhor hora para fazer publica&ccedil;&otilde;es para ter maior aten&ccedil;&atilde;o]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat3">
+        <english><![CDATA[Extensive analysis of the page fans (active and popular)]]>
+        </english>
+        <portuguese><![CDATA[Extensa an&aacute;lise dos f&atilde;s da p&aacute;gina (ativo e popular)]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat4">
+        <english><![CDATA[The best topics to engage]]>
+        </english>
+        <portuguese><![CDATA[Os t&oacute;picos mais envolventes]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat5">
+        <english><![CDATA[Most commented posts]]>
+        </english>
+        <portuguese><![CDATA[Publica&ccedil;&otilde;es mais comentadas]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat6">
+        <english><![CDATA[Detection of engament peaks]]>
+        </english>
+        <portuguese><![CDATA[Detec&ccedil;&atilde;o de picos]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat7">
+        <english><![CDATA[Automatic discovery of positive/neutral/negative posts or comments]]>
+        </english>
+        <portuguese><![CDATA[Descoberta autom&aacute;tica de publica&ccedil;&otilde;es e coment&aacute;rios positivos/neutros/negativos]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat8">
+        <english><![CDATA[Advices to maximize social impact]]>
+        </english>
+        <portuguese><![CDATA[Conselhos para maximizar o impacto social]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack2-feat9">
+        <english><![CDATA[Tracking 4 selected pages]]>
+        </english>
+        <portuguese><![CDATA[Acompanhar 4 p&aacute;ginas selecionadas]]>
+        </portuguese>
+    </translation>
+
+    <!-- ======== AGENCY PACKAGE ============ -->
+    <translation id="sc-enterprise-pack3-title">
+        <english><![CDATA[Agency]]>
+        </english>
+        <portuguese><![CDATA[Ag&ecirc;ncia]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack3-price">
+        <english><![CDATA[Comming soon!]]>
+        </english>
+        <portuguese><![CDATA[Brevemente!]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-enterprise-pack3-description">
+        <english><![CDATA[The Company package plus:]]>
+        </english>
+        <portuguese><![CDATA[O pacote Empresa mais:]]>
+        </portuguese>
+    </translation>
+
+    <!--================ FEATURES ===================== -->
+    <translation id="sc-enterprise-pack3-feat1">
+        <english><![CDATA[Up to 25 pages to analyse simultaneously]]>
+        </english>
+        <portuguese><![CDATA[An&aacute;lise de mais de 25 p&aacute;ginas simultaneamente]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack3-feat2">
+        <english><![CDATA[Up to 5 different administrators for the pages]]>
+        </english>
+        <portuguese><![CDATA[Mais de 5 administradores diferentes]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-enterprise-pack3-feat3">
+        <english><![CDATA[Comparison between different brands regarding their online social presence]]>
+        </english>
+        <portuguese><![CDATA[Compara&ccedil;&atilde;o entre diferentes marcas em rela&ccedil;&atilde;o &agrave; sua presença social online]]>
+        </portuguese>
+    </translation>
+
+
+    <!-- ==================== BUTTON ================-->
+    <translation id="sc-enterprise-pack1-button">
+        <english><![CDATA[BUY]]>
+        </english>
+        <portuguese><![CDATA[COMPRAR]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-enterprise-pack2-button">
+        <english><![CDATA[BUY]]>
+        </english>
+        <portuguese><![CDATA[COMPRAR]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-enterprise-pack3-button">
+        <english><![CDATA[BUY]]>
+        </english>
+        <portuguese><![CDATA[COMPRAR]]>
+        </portuguese>
+    </translation>
+
+
+    <!-- ===================== SHOWCASE SECTION ============= -->
+    <translation id="sc-showcase-title">
+        <english><![CDATA[SHOWCASE]]>
+        </english>
+        <portuguese><![CDATA[GALERIA]]>
+        </portuguese>
+    </translation>
+
+    <!-- ===================== CONTACT SECTION ============= -->
+    <translation id="sc-contact-title">
+        <english><![CDATA[CONTACT US]]>
+        </english>
+        <portuguese><![CDATA[CONTACTE-NOS]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-contact-name">
+        <english><![CDATA[Name]]>
+        </english>
+        <portuguese><![CDATA[Nome]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-contact-email">
+        <english><![CDATA[Email]]>
+        </english>
+        <portuguese><![CDATA[Email]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-contact-comment">
+        <english><![CDATA[Comment]]>
+        </english>
+        <portuguese><![CDATA[Coment&aacute;rio]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-contact-tell">
+        <english><![CDATA[<i class="fa fa-retweet"></i>Tell a fried about us!]]>
+        </english>
+        <portuguese><![CDATA[<i class="fa fa-retweet"></i> Conta a um amigo sobre n&oacute;s!]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-contact-button">
+        <english><![CDATA[Send]]>
+        </english>
+        <portuguese><![CDATA[Enviar]]>
+        </portuguese>
+    </translation>
+
+
+</translations>
