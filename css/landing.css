@@ -278,8 +278,11 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 
 
-
-
+button:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
 
 
 
