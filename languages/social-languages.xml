@@ -156,10 +156,17 @@
         <portuguese><![CDATA[B&aacute;sico]]>
         </portuguese>
     </translation>
-    <translation id="sc-enterprise-pack1-price">
+    <!--<translation id="sc-enterprise-pack1-price">
         <english><![CDATA[1 week free, <br /> then 5€ / 2 weeks <br /> or <br /> 9€ / 1 month ]]>
         </english>
         <portuguese><![CDATA[1 semana gr&aacute;tis, depois 5€ / 2 semanas ou 9€ / 1 m&ecirc;s]]>
+        </portuguese>
+    </translation>-->
+
+    <translation id="sc-enterprise-pack1-price">
+        <english><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
+        </english>
+        <portuguese><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
         </portuguese>
     </translation>
 
@@ -221,10 +228,17 @@
         <portuguese><![CDATA[Empresa]]>
         </portuguese>
     </translation>
-    <translation id="sc-enterprise-pack2-price">
+    <!--<translation id="sc-enterprise-pack2-price">
         <english><![CDATA[<h4>75<span class="dollar-sign">€</span> </h4> <span class="price-meta">/ 1 month</span>]]>
         </english>
         <portuguese><![CDATA[<h4>75<span class="dollar-sign">€</span></h4><span class="price-meta"> / 1 m&ecirc;s</span>]]>
+        </portuguese>
+    </translation>-->
+
+    <translation id="sc-enterprise-pack2-price">
+        <english><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
+        </english>
+        <portuguese><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
         </portuguese>
     </translation>
 
