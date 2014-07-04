@@ -50,10 +50,7 @@
                 <img src="img/interrelate_logo.png"/>
 				<h1 class="title text-shadows">INTERRELATE Analytics</h1>
 
-				<h3 class="tagline" id="lg-subtitle">
-					Please choose one of our applications!<br><br>
-                    With the Social app, you can analyze everything about <br> your company's page Facebook  or your personal account
-				</h3>
+				<h3 class="tagline" id="lg-subtitle"></h3>
 
 				<a href="social.html"
                    class="btn btn-default btn-lg btn-service">Social <i class="fa fa-comments-o"></i></a>
@@ -69,142 +66,15 @@
 </section>
 <!-- /.home section -->
 
-<!-- about section -->
-<!--<section class="section" id="about">
-	<div class="container">
-
-		<h2 class="text-center title text-shadows">About me</h2>
-		<div class="row">
-			<div class="col-sm-4 col-sm-offset-2 text-color">
-				<h5><strong>Where's my lorem ipsum?<br></strong></h5>
-				<p>Well, here it is: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ullam, ducimus, eaque, ex autem est dolore illo similique quasi unde sint rerum magnam quod amet iste dolorem ad laudantium molestias enim quibusdam inventore totam fugit eum iusto ratione alias deleniti suscipit modi quis nostrum veniam fugiat debitis officiis impedit ipsum natus ipsa. Doloremque, id, at, corporis, libero laborum architecto mollitia molestiae maxime aut deserunt sed perspiciatis quibusdam praesentium consectetur in sint impedit voluptates! Deleniti, sequi voluptate recusandae facere nostrum?</p>
-			</div>
-			<div class="col-sm-4 text-color">
-				<h5><strong>More, more lipsum!<br></strong></h5>
-				<p>Tempore, eos, voluptatem minus commodi error aut eaque neque consequuntur optio nesciunt quod quibusdam. Ipsum, voluptatibus, totam, modi perspiciatis repudiandae odio ad possimus molestias culpa optio eaque itaque dicta quod cupiditate reiciendis illo illum aspernatur ducimus praesentium quae porro alias repellat quasi cum fugiat accusamus molestiae exercitationem amet fugit sint eligendi omnis adipisci corrupti. Aspernatur.</p>
-			</div>
-		</div>
-	</div>
-</section>-->
-<!-- /.about section -->
-
-<!-- contact section -->
-<!-- <section class="section" id="contact">
-	<div class="container">
-
-		<h2 class="text-center title text-shadows">Get in touch</h2>
-
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2 text-center text-color">
-				<p class="lead">If you have any question, contact us!</p>
-                <a href="mailto:info@interrelate.pt">
-                    <div>
-                    <h1 style="font-size:28px;"><i class="fa fa-laptop icon"></i></h1>
-                    <p><b>info@interrelate.pt</b><br><br></p>
-                    </div>
-                </a>
-
-				<ul class="list-inline list-social">
-					<li><a href="https://twitter.com/" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
-					<li><a href="https://github.com/" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
-					<li><a href="http://linkedin/in/" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-</section>-->
-
-<!-- /.contact section -->
-
 <!-- Core JavaScript Files -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script src="js/modernizer.min.js"></script>
 
-<script type="text/javascript" language="javascript">
-    $("#pt-lang").click(function()
-    {
-        localStorage.setItem('lang', 'portuguese')
-        var language = 'portuguese';
-        $.ajax(
-        {
-            url: 'languages/index-languages.xml',
-            success: function(xml)
-            {
-                $(xml).
-                    find('translation').
-                    each(function()
-                    {
-                        var id = $(this).attr('id');
-                        var text = $(this).find(language).text();
-                        $('#' + id).html(text);
-                    });
-            },
-            error: function(err)
-            {
-              console.log(err)
-            }
-        });
-    });
 
-    $("#en-lang").click(function()
-    {
-        localStorage.setItem('lang', 'english')
-        var language = 'english';
-        $.ajax(
-        {
-            url: 'languages/index-languages.xml',
-            success: function(xml)
-            {
-                $(xml).
-                    find('translation').
-                    each(function()
-                    {
-                        var id = $(this).attr('id');
-                        var text = $(this).find(language).text();
-                        $('#' + id).html(text);
-                    });
-            },
-            error: function(err)
-            {
-              console.log(err)
-            }
-        });
-    });
-
-    $(function()
-    {
-        var language = localStorage.getItem('lang');
-
-        if(language === null)
-        {
-            language = 'english';
-            localStorage.setItem('lang', 'english');
-        }
-
-        $.ajax(
-        {
-            url: 'languages/index-languages.xml',
-            success: function(xml)
-            {
-                $(xml).
-                    find('translation').
-                    each(function()
-                    {
-                        var id = $(this).attr('id');
-                        var text = $(this).find(language).text();
-                        $('#' + id).html(text);
-                    });
-            },
-            error: function(err)
-            {
-              console.log(err)
-            }
-        });
-    });
-</script>
 <!-- Custom JavaScript -->
+<script src="js/lang_support.js"></script>
 <script src="js/landing.js"></script>
+
 </body>
 </html>
