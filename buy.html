@@ -20,8 +20,7 @@
     <link href="css/social.css" rel="stylesheet" type="text/css">
 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="getProduct()">
     <!-- nav bar -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -79,6 +78,21 @@
                 <div class="col-lg-12 col-sm-12 text-center">
                     <div class="text-center col-lg-3 col-sm-3"></div>
                     <div class="text-center col-lg-2 col-sm-2">
+                        <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        Version
+                        <span class="caret"></span>
+                      </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation" class="dropdown-header">Personal</li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">Enterprise</li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Agency</a></li>
+                        </ul>
+                    </div>
                         <img src="img/paypal_logo.jpg" class="img-responsive"/>
                     </div>
                     <div class="text-center col-lg-4 col-sm-4">
