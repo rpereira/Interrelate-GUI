@@ -18,6 +18,11 @@ $(document).ready(function()
     var link = "social.html"; //+ product + "-section";
 
     $("#back-home").click().attr("href", link);
+
+    var id = 'pkg-' + product;
+    alert(id)
+
+    setProduct(id);
 });
 
 /**
@@ -151,3 +156,13 @@ $('#pkg-personal').click(changeColor);
 $('#pkg-basic').click(changeColor);
 $('#pkg-company').click(changeColor);
 $('#pkg-agency').click(changeColor);
+
+function setProduct(id)
+{
+
+    $("#" + id).css('border-color', '#000000');
+    $("#a-" + id).css('font-weight' , 'bold');
+
+    ACTIVE_PACKAGE = $('#' + id);
+    setPrice(ACTIVE_PACKAGE);
+}
