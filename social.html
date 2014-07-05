@@ -4,16 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Social Manager platform is an application for analyse information in your personal account or company's page on Facebook">
+    <meta name="keywords" content="">  <!-- falta definir. por exemplo: HTML,CSS,XML,JavaScript -->
     <meta name="author" content="">
 
     <title>INTERRELATE Analytics</title>
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
-    <!-- Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <!-- 3rd party Core CSS -->
+    <link href="css/3rd_party/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/3rd_party/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/3rd_party/lightbox.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -25,16 +27,8 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- FACEBOOK SHARE SCRIPT -->
-     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <!-- /.FACEBOOK SHARE SCRIPT -->
+    <!-- used to appear on facebook share post -->
+    <div class="hidden"><img src="img/interrelate_logo.png"></div>
 
     <!-- nav bar -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -282,6 +276,7 @@
 
     <!-- showcase section -->
     <section id="showcase-section" class="showcase-section">
+        <!-- container -->
         <div class="container">
             <div class="section-header">
                 <h1 id="sc-showcase-title"></h1>
@@ -290,10 +285,11 @@
                 <a href="#enterprise-section" class="scrollto-btn scrollto-btn-dark scrollto-btn-top"><i class="fa fa-arrow-circle-up"></i></a>
                 <a href="#contact-section" class="scrollto-btn scrollto-btn-dark scrollto-btn-down"><i class="fa fa-arrow-circle-down"></i></a>
             </div>
-
+            <!-- lightboxes row -->
             <div class="row">
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img1" class="showcase-link">
+
+                <div class="col-sm-4 showcase-section-item">
+                    <a href="img/screenshots/content.png" class="showcase-section-link" data-lightbox="screenshots" data-title="My caption">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -303,8 +299,8 @@
                     </a>
                 </div>
 
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img2" class="showcase-link">
+                <div class="col-sm-4 showcase-section-item">
+                    <a href="img/screenshots/content2.png" class="showcase-section-link" data-lightbox="screenshots" data-title="My caption">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -314,8 +310,8 @@
                     </a>
                 </div>
 
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img3" class="showcase-link">
+                <div class="col-sm-4 showcase-section-item">
+                    <a href="img/screenshots/content3.png" class="showcase-section-link" data-lightbox="screenshots" data-title="My caption">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -325,8 +321,8 @@
                     </a>
                 </div>
 
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img4" class="showcase-link">
+                <div class="col-sm-4 showcase-section-item">
+                    <a href="img/screenshots/content4.png" class="showcase-section-link" data-lightbox="screenshots" data-title="My caption">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -336,8 +332,8 @@
                     </a>
                 </div>
 
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img5" class="showcase-link">
+                <div class="col-sm-4 showcase-section-item">
+                    <a href="img/screenshots/fans.png" class="showcase-section-link" data-lightbox="screenshots" data-title="My caption">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -347,8 +343,8 @@
                     </a>
                 </div>
 
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img6" class="showcase-link">
+                <div class="col-sm-4 showcase-section-item">
+                    <a href="img/screenshots/fans2.png" class="showcase-section-link" data-lightbox="screenshots" data-title="My caption">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -357,72 +353,10 @@
                         <img src="img/screenshots/fans2.png" class="img-responsive" alt="" />
                     </a>
                 </div>
-
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img7" class="showcase-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/screenshots/fans3.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img8" class="showcase-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/screenshots/home.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-
-                <div class="col-sm-4 showcase-item">
-                    <a href="#img9" class="showcase-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/screenshots/publisher.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
             </div>
+            <!-- /.lightboxes row -->
         </div>
-
-
-        <!-- lightbox containers -->
-        <a href="#_" class="lightbox" id="img1">
-            <img src="img/screenshots/content.png">
-        </a>
-        <a href="#_" class="lightbox" id="img2">
-            <img src="img/screenshots/content2.png">
-        </a>
-        <a href="#_" class="lightbox" id="img3">
-            <img src="img/screenshots/content3.png">
-        </a>
-        <a href="#_" class="lightbox" id="img4">
-            <img src="img/screenshots/content4.png">
-        </a>
-        <a href="#_" class="lightbox" id="img5">
-            <img src="img/screenshots/fans.png">
-        </a>
-        <a href="#_" class="lightbox" id="img6">
-            <img src="img/screenshots/fans2.png">
-        </a>
-        <a href="#_" class="lightbox" id="img7">
-            <img src="img/screenshots/fans3.png">
-        </a>
-        <a href="#_" class="lightbox" id="img8">
-            <img src="img/screenshots/home.png">
-        </a>
-        <a href="#_" class="lightbox" id="img9">
-            <img src="img/screenshots/publisher.png">
-        </a>
-        <!-- /.lightbox containers -->
+        <!-- /.container -->
     </section>
     <!-- /.showcase section -->
 
@@ -491,20 +425,28 @@
                         <br>
                         <br>
                         <p>
-                            <a href="#"><i class="fa fa-twitter fa-4x"></i></a>
-                            <a href="#"><i class="fa fa-facebook fa-4x" ></i></a>
-                            <a href="#"><i class="fa fa-google fa-4x"></i></a>
+                            <a href="https://twitter.com/share?url=http://ruiafonsopereira.github.io/Interrelate-GUI/social.html&via=INTERRELATE&text=Check out this awesome Social Manager Platform"
+                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=650');return false;"
+                               target="_blank">
+                                <i class="fa fa-twitter fa-4x"></i>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://ruiafonsopereira.github.io/Interrelate-GUI/social.html"
+                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=650');return false;"
+                               target="_blank">
+                                <i class="fa fa-facebook fa-4x" ></i>
+                            </a>
+                            <a href="https://plus.google.com/share?url=http://ruiafonsopereira.github.io/Interrelate-GUI/social.html"
+                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=650');return false;"
+                               target="_blank">
+                                <i class="fa fa-google fa-4x"></i>
+                            </a>
                         </p>
-
-                    <!--<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="icon"></div>-->
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- /.contact section -->
-
 
 
     <!-- footer -->
@@ -519,10 +461,12 @@
     </footer>
     <!-- /.footer -->
 
+
     <!-- Core JavaScript Files -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/3rd_party/jquery-1.11.0.min.js"></script>
+    <script src="js/3rd_party/bootstrap.min.js"></script>
+    <script src="js/3rd_party/jquery.easing.min.js"></script>
+    <script src="js/3rd_party/lightbox.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/social.js"></script>
