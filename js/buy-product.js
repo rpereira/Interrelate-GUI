@@ -1,3 +1,5 @@
+var ACTIVE_PACKAGE="";
+
 function getProduct()
 {
     var _URL  = document.URL;
@@ -60,3 +62,92 @@ $(document).ready(function()
         $(this).remove();
     });
 });
+
+
+function changeColor(e)
+{
+    var color = $(this).css('border-color');
+
+    if(ACTIVE_PACKAGE !== "")
+    {
+        var id = $(ACTIVE_PACKAGE).attr('id');
+        $(ACTIVE_PACKAGE).css('border-color', '#428bca');
+        $("#a-" + id).css('font-weight' , 'normal');
+
+        if(id === 'pkg-basic')
+        {
+            $('#basic-license').removeClass('show');
+            $('#basic-license').addClass('hidden');
+        }
+
+        $(this).css('border-color', '#000000');
+        var id= $(this).attr('id');
+        $("#a-" + id).css('font-weight' , 'bold');
+
+        ACTIVE_PACKAGE = this;
+    }
+    else
+    {
+        var id= $(this).attr('id');
+        console.log("#a-" + id);
+        if(color === 'rgb(66, 139, 202)')
+        {
+            $(this).css('border-color', '#000000');
+            $("#a-" + id).css('font-weight' , 'bold');
+
+        }
+        else
+        {
+            $(this).css('border-color', '#428bca');
+            $("#a-" + id).css('font-weight' , 'none');
+        }
+        ACTIVE_PACKAGE = this;
+    }
+
+    if(id === 'pkg-basic')
+    {
+        $('#basic-license').removeClass('hidden');
+        $('#basic-license').addClass('show');
+    }
+
+    setPrice(this);
+
+}
+
+function setPrice(element)
+{
+    var id = $(element).attr('id');
+
+    if(id === 'pkg-personal' || id === 'pkg-basic')
+    {
+        $("#value-pay").html('0,00 €');
+    }
+    else if(id === 'pkg-company')
+    {
+        $("#value-pay").html('75,00 €');
+    }
+
+}
+$( "#basic-pay-plans").change(function (e)
+{
+    var value = $( "#basic-pay-plans option:selected" ).text();
+
+    if(value === '1 Week')
+    {
+        $("#value-pay").html('0,00 €');
+    }
+    else if(value === '2 Weeks')
+    {
+        $("#value-pay").html('5,00 €');
+    }
+    else
+    {
+        $("#value-pay").html('9,00 €');
+    }
+});
+
+
+$('#pkg-personal').click(changeColor);
+$('#pkg-basic').click(changeColor);
+$('#pkg-company').click(changeColor);
+$('#pkg-agency').click(changeColor);

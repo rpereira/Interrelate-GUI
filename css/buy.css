@@ -92,3 +92,54 @@ section {
 .breadcrumb {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+.package-description li{
+    list-style: none;
+    margin-left: 0px;
+    text-align: left;
+}
+
+.h-margin{
+    margin-top: 0px:
+}
+
+.intro-packages {
+    height: 180px;
+    padding-top: 0;
+
+}
+
+.service-item {
+    margin-bottom: 15px;
+}
+
+.service-item a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.service-item a:hover {
+    text-decoration: none;
+    color:#000080;
+}
+
+i.service-icon {
+    border: 3px solid #428bca;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+#value-pay{
+    font-size: 18px;
+}
