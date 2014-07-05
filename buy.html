@@ -121,29 +121,69 @@
                                 <h1>Package</h1>
                                 <!-- content body -->
                                 <div class="setup-content-body">
-                                    <div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                            Version
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                            <li role="presentation" class="dropdown-header">Personal</li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
-                                            <li role="presentation" class="divider"></li>
-                                            <li role="presentation" class="dropdown-header">Enterprise</li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Agency</a></li>
-                                        </ul>
+                                    <div class="row clearfix">
+                                        <div class="intro-packages">
+                                            <div class="col-md-2 col-md-offset-2 text-center page-scroll">
+                                                <div class="service-item home-hover">
+                                                    <a href="#" ><i class="service-icon fa fa-user" id="pkg-personal"></i></a>
+                                                    <h4 id="a-pkg-personal" >Personal</h4>
+                                                </div>
+                                                <p>Free</p>
+                                            </div>
+                                            <div class="col-md-2 text-center">
+                                                <div class="service-item home-hover page-scroll">
+                                                    <a href="#" ><i id="pkg-basic" class="service-icon fa fa-users"></i></a>
+                                                    <h4 id="a-pkg-basic" >Basic</h4>
+
+                                                </div>
+                                                <p> 1 week Free</p>
+                                                <p> 5 € / 2 Weeks</p>
+                                                <p> 9 € / 1 month</p>
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 text-center">
+                                                <div class="service-item home-hover page-scroll">
+                                                    <a href="#"><i class="service-icon fa fa-building-o" id="pkg-company"></i></a>
+                                                    <h4  id="a-pkg-company" >Company</h4>
+                                                </div>
+                                                <p> 75€ / 1 month </p>
+                                            </div>
+                                            <div class="col-md-2 text-center">
+                                                <div class="service-item home-hover page-scroll">
+                                                    <a href="#" class="disabled" ><i class="service-icon fa fa-university"  id="pkg-agency"></i></a>
+                                                    <h4 id="a-pkg-agency" >Agency</h4>
+                                                </div>
+                                                <p>Coming Soon</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- /.content body -->
-                                <button id="activate-step-2" class="btn btn-primary btn-lg pull-right">Next Step</button>
+                                <div class="row">
+                                    <div class="col-lg-7 col-sm-7"></div>
+                                    <div class="col-lg-2 col-sm-2" >
+                                        <div id="basic-license" class="hidden">
+                                            <h4>Choose one of our plans</h4>
+                                            <select id="basic-pay-plans" class="form-control">
+                                              <option>1 Week</option>
+                                              <option>2 Weeks</option>
+                                              <option>1 Month</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <div class="pull-right">
+                                            <h4>Value to Pay:   <span id="value-pay"></span></h4>
+                                            <button id="activate-step-2" class="btn btn-primary btn-lg pull-right">Next Step</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- /.package content -->
-
                     <!-- payment method content -->
                     <div class="row setup-content" id="step-2">
                         <div class="col-xs-12">
@@ -151,16 +191,20 @@
                                 <h1 class="text-center">Payment Method</h1>
                                 <!-- content body -->
                                 <div class="setup-content-body">
-                                    <div class="text-center col-lg-6 col-sm-6">
-                                        blaaaa
+                                    <div class="col-lg-1 col-sm-1"></div>
+                                    <div class="col-lg-5 col-sm-5 text-center ">
+                                        <img src="img/paypal_logo.jpg" class="img-responsive" alt="Responsive image"/>
                                     </div>
 
-                                    <div class="text-center col-lg-6 col-sm-6">
-                                        eeeeee
+                                    <div class="text-center col-lg-5 col-sm-5">
+                                        <button type="button" class="btn btn-default btn-lg btn-block">Bank Transfer</button>
                                     </div>
+                                    <div class="col-lg-1 col-sm-1"></div>
                                 </div>
-                                <!-- /.content body -->
-                                <button id="activate-step-3" class="btn btn-primary btn-lg pull-right">Next Step</button>
+                                <div class="row">
+                                    <!-- /.content body -->
+                                    <button id="activate-step-3" class="btn btn-primary btn-lg pull-right">Next Step</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,10 +218,10 @@
                                 <div class="setup-content-body">
                                     <div class="text-center col-lg-12 col-sm-12">
                                         <div class="col-lg-4 col-sm-4"></div>
-                                        <div class="col-lg-4 col-sm-4">
+                                        <!--<div class="col-lg-4 col-sm-4">
                                             <a class="btn btn-block btn-social btn-facebook">
                                                 <i class="fa fa-twitter"></i> Sign in with Facebook
-                                            </a>
+                                            </a>-->
                                         </div>
                                         <div class="col-lg-4 col-sm-4"></div>
                                     </div>
