@@ -28,6 +28,10 @@ body > .container {
     font-weight: 700;
 }
 
+.navbar .navbar-brand:hover {
+    color:  rgba(255, 255, 255, .8);
+}
+
 /*************************************
  * footer
  *************************************/
