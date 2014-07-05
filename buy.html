@@ -123,14 +123,14 @@
                                 <div class="setup-content-body">
                                     <div class="row clearfix">
                                         <div class="intro-packages">
-                                            <div class="col-md-2 col-md-offset-2 text-center page-scroll">
+                                            <div class="col-md-2 col-md-offset-2 text-center">
                                                 <div class="service-item home-hover">
                                                     <a href="#" ><i class="service-icon fa fa-user" id="pkg-personal"></i></a>
                                                     <h4 id="a-pkg-personal" >Personal</h4>
                                                 </div>
                                                 <p>Free</p>
                                             </div>
-                                            <div class="col-md-2 text-center">
+                                            <div class="col-md-2 text-center package-icon">
                                                 <div class="service-item home-hover page-scroll">
                                                     <a href="#" ><i id="pkg-basic" class="service-icon fa fa-users"></i></a>
                                                     <h4 id="a-pkg-basic" >Basic</h4>
@@ -143,14 +143,14 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 text-center">
+                                            <div class="col-md-2 text-center package-icon">
                                                 <div class="service-item home-hover page-scroll">
                                                     <a href="#"><i class="service-icon fa fa-building-o" id="pkg-company"></i></a>
-                                                    <h4  id="a-pkg-company" >Company</h4>
+                                                    <h4 id="a-pkg-company" >Company</h4>
                                                 </div>
                                                 <p> 75€ / 1 month </p>
                                             </div>
-                                            <div class="col-md-2 text-center">
+                                            <div class="col-md-2 text-center package-icon">
                                                 <div class="service-item home-hover page-scroll">
                                                     <a href="#" class="disabled" ><i class="service-icon fa fa-university"  id="pkg-agency"></i></a>
                                                     <h4 id="a-pkg-agency" >Agency</h4>
@@ -191,15 +191,15 @@
                                 <h1 class="text-center">Payment Method</h1>
                                 <!-- content body -->
                                 <div class="setup-content-body">
-                                    <div class="col-lg-1 col-sm-1"></div>
-                                    <div class="col-lg-5 col-sm-5 text-center ">
+                                    <div class="col-lg-2 col-sm-2"></div>
+                                    <div class="col-lg-4 col-sm-4 text-center ">
                                         <img src="img/paypal_logo.jpg" class="img-responsive" alt="Responsive image"/>
                                     </div>
 
-                                    <div class="text-center col-lg-5 col-sm-5">
-                                        <button type="button" class="btn btn-default btn-lg btn-block">Bank Transfer</button>
+                                    <div class="text-center col-lg-4 col-sm-4">
+                                        <button type="button" class="btn btn-default btn-lg btn-block" id="method-bank">Bank Transfer</button>
                                     </div>
-                                    <div class="col-lg-1 col-sm-1"></div>
+                                    <div class="col-lg-2 col-sm-2"></div>
                                 </div>
                                 <div class="row">
                                     <!-- /.content body -->
@@ -218,10 +218,19 @@
                                 <div class="setup-content-body">
                                     <div class="text-center col-lg-12 col-sm-12">
                                         <div class="col-lg-4 col-sm-4"></div>
-                                        <!--<div class="col-lg-4 col-sm-4">
-                                            <a class="btn btn-block btn-social btn-facebook">
+                                             <!-- <a class="btn btn-block btn-social btn-facebook">
                                                 <i class="fa fa-twitter"></i> Sign in with Facebook
                                             </a>-->
+
+                                        <div class="col-lg-4 col-sm-4" id="payment-bank">
+                                            <h3>Bank Transfer</h3><br>
+                                            <h4>You have to make a money transfer for the IBAN above.</h4>
+                                            <h4>IBAN : <span id="payment-nib">XXXX - XXXX - XXXX -XXXX</span></h4>
+                                            <br>
+                                            <h4>After the transfer is made, send us the </h4>
+
+                                            <input type="file"/><br>
+                                            <button type="submit" class="btn btn-default">Send</button>
                                         </div>
                                         <div class="col-lg-4 col-sm-4"></div>
                                     </div>
