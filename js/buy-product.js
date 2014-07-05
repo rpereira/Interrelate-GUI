@@ -20,7 +20,18 @@ $(document).ready(function()
     $("#back-home").click().attr("href", link);
 
     /** Sets the product selected */
-    var id = 'pkg-' + product;
+
+    var last_char = product.substr(product.length - 1);
+    if(last_char === '#')
+    {
+        var proc = product.split('#');
+        var id = 'pkg-' + proc[0];
+    }
+    else
+    {
+        var id = 'pkg-' + product;
+    }
+
     setProduct(id);
 });
 
