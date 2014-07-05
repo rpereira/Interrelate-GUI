@@ -83,3 +83,12 @@ section {
     background-color: #222;
     color: #ddd;
 }
+
+.setup-content {
+    /*margin-top:20px;*/
+}
+
+.setup-content-body {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
