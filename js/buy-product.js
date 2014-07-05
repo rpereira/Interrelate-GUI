@@ -92,7 +92,6 @@ function changeColor(e)
     else
     {
         var id= $(this).attr('id');
-        console.log("#a-" + id);
         if(color === 'rgb(66, 139, 202)')
         {
             $(this).css('border-color', '#000000');
