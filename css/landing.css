@@ -24,15 +24,26 @@ body {
 }
 
 
-/********************************************************/
-/*                    Navigation bar                    */
-/********************************************************/
-.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
-@media (min-width: 768px) {
-	.mainmenu { position: fixed; }
+/*************************************
+ * Navbar
+ *************************************/
+.mainmenu
+{
+    z-index: 999999;
+    width: 100%;
+    padding: 30px 0 0 0;
 }
 
-.navbar-toggle {
+@media (min-width: 768px)
+{
+	.mainmenu
+    {
+        position: fixed;
+    }
+}
+
+.navbar-toggle
+{
 	position:relative;
 	float:left;
 	display:block;
@@ -51,20 +62,27 @@ body {
 	        transition: all .45s;
 	        float: left;
 }
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: #fff;
+
+.navbar-toggle .icon-bar
+{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
 }
-.navbar-toggle .icon-bar + .icon-bar {
+.navbar-toggle .icon-bar + .icon-bar
+{
 	margin-top: 4px;
 }
-.open .navbar-toggle {
+
+.open .navbar-toggle
+{
 	top:-70px;
 	opacity: 0;
 }
-.mainmenu .dropdown-menu {
+
+.mainmenu .dropdown-menu
+{
 	top: -14em;
 	left: 0px;
 	font-size: 13px;
@@ -80,14 +98,20 @@ body {
 	   -moz-transition: all .45s;
 	        transition: all .45s;
 }
-.mainmenu .dropdown-menu .active {
-	font-weight:bold;
+
+.mainmenu .dropdown-menu .active
+{
+	font-weight: bold;
 }
-.mainmenu .open .dropdown-menu {
-	top:2px;
-	opacity:1;
+
+.mainmenu .open .dropdown-menu
+{
+	top: 2px;
+	opacity: 1;
 }
-.mainmenu .dropdown-menu a {
+
+.mainmenu .dropdown-menu a
+{
 	padding:10px 10px;
 	margin:0;
 	color:white;
@@ -96,13 +120,16 @@ body {
 	   -moz-border-radius: 2px;
 	        border-radius: 2px;
 }
-.mainmenu .dropdown-menu a:hover {
+
+.mainmenu .dropdown-menu a:hover
+{
 	background:rgba(255,255,255,.1);
 	color:white;
 	padding:10px 8px 10px 12px;
 }
 
-.mainmenu .lang {
+.mainmenu .lang
+{
     margin-top: 8px;
 }
 
@@ -123,7 +150,7 @@ body {
 	top:0;
 }
 @media (min-width: 768px) {
-	.section { padding-top:160px;}
+	.section { padding-top: 200px;}
 }
 
 /* Show one of sections */
@@ -204,12 +231,12 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
 	background: rgba(255,255,255,.8);
 }
-.btn-primary {
+/*.btn-primary {
 	background: rgba(255,255,255,.2);
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
+}*/
+/*.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
 	background: rgba(255,255,255,.5);
-}
+}*/
 .btn-service {
     font-size: 25px;
     min-width: 182px;
@@ -286,19 +313,6 @@ button:focus
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***********************************************************/
 /*                   Theme: text shadows                   */
 /***********************************************************/
@@ -316,7 +330,6 @@ button:focus
 .text-shadows .mainmenu .dropdown-menu a:hover {
 	text-shadow:none;
 }
-
 
 
 /***********************************************************/
@@ -390,5 +403,92 @@ button:focus
 }
 
 
+/*************************************
+ * Responsive queries
+ *************************************/
+@media (max-width: 768px)
+{
+    /*.btn-responsive
+    {
+        padding: 3px 5px;
+        font-size: 85%;
+        line-height: 1.1;
+        border-radius: 3px;
+    }*/
 
 
+
+    .section {
+        padding-top: 0;
+        margin-top: 90px;
+    }
+
+    .btn-service
+    {
+        font-size: 15px;
+        margin-bottom: 3px;
+        height: 100%;
+    }
+
+    /*.tagline {
+        margin-bottom: 30px;
+    }*/
+
+    .title
+    {
+        margin-bottom: 30px;
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px)
+{
+    /*.btn-responsive
+    {
+        padding: 5px 10px;
+        font-size: 95%;
+        line-height: 1.3;
+    }*/
+    .btn-service
+    {
+        font-size: 20px;
+        min-width: 100px;
+    }
+}
+
+.navbar-custom
+{
+    background-color: transparent;
+}
+
+@media (min-width: 768px)
+{
+    .navbar-toggle
+    {
+        display: none;
+    }
+}
+
+.navbar-toggle
+{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-collapse
+{
+    border: 0;
+}
+
+.navbar-brand
+{
+    padding-top: 0;
+}
