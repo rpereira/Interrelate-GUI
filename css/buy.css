@@ -111,6 +111,7 @@ section {
 
 .service-item {
     margin-bottom: 15px;
+
 }
 
 .service-item a {
@@ -122,17 +123,27 @@ section {
     text-decoration: none;
     color:#000080;
 }
+.package-icon{
+    margin-left: 00px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.page-scroll{
+    margin-left: 10px;
+}
 
 i.service-icon {
     border: 3px solid #428bca;
     border-radius: 50%;
     display: inline-block;
-    font-size: 56px;
-    width: 140px;
-    height: 140px;
-    line-height: 136px;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    line-height: 98px;
     vertical-align: middle;
     text-align: center;
+
 }
 
 a.disabled {
@@ -142,4 +153,9 @@ a.disabled {
 
 #value-pay{
     font-size: 18px;
+}
+
+#payment-nib
+{
+    font-size: 15px;
 }

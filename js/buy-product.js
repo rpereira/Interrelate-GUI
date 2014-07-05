@@ -177,3 +177,20 @@ function setBasicPayValue()
         $("#value-pay").html('9,00 €');
     }
 }
+
+
+$('#method-bank').click(function(e)
+{
+    $('#payment-bank').removeClass('hidden');
+    $('#payment-bank').addClass('show');
+    $('#payment-paypal').removeClass('show');
+    $('#payment-paypal').addClass('hidden');
+});
+
+$('#method-paypal').click(function(e)
+{
+    $('#payment-paypal').removeClass('hidden');
+    $('#payment-paypal').addClass('show');
+    $('#payment-bank').removeClass('show');
+    $('#payment-bank').addClass('hidden');
+});
