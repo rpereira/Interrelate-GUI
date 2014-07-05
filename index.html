@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">  <!-- falta definir. por exemplo: HTML,CSS,XML,JavaScript -->
     <meta name="author" content="">
@@ -23,64 +23,95 @@
 </head>
 <body class="theme-invert">
 
-<nav class="mainmenu">
-	<div class="container">
-		<!--<div class="dropdown">
-			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
-			<!--<ul class="dropdown-menu landing-menu" role="menu" aria-labelledby="dLabel">
-				<li><a href="#head" class="active">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div> -->
+    <!--<nav class="mainmenu">
+        <div class="container">
+            <!--<div class="dropdown">
+                <button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+                <!--<ul class="dropdown-menu landing-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="#head" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div> --
 
-        <div class="pull-right lang">
-            <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
-            <button class="btn btn-default btn-xs" id="en-lang">EN</button>
+            <div class="navbar-header">
+                <div class="navbar-brand">
+
+                    <img src="img/interrelate_logo_header.png" class="img-responsive" alt="IRR"/>
+                </div>
+            </div>
+
+            <div class="navbar-nav navbar-right lang">
+                <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
+                <button class="btn btn-default btn-xs" id="en-lang">EN</button>
+            </div>
+
         </div>
+    </nav>-->
 
-	</div>
-</nav>
-
-
-<!-- home section -->
-<section class="section" id="head">
-    <!-- container -->
-	<div class="container">
-        <!-- row -->
-		<div class="row">
-            <!-- col -->
-			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
-                <img src="img/interrelate_logo.png"/>
-				<h1 class="title text-shadows">INTERRELATE Analytics</h1>
-
-				<h3 class="tagline" id="lg-subtitle"></h3>
-
-				<a href="social.html"
-                   class="btn btn-default btn-lg btn-service">Social <i class="fa fa-comments-o"></i></a>
-				<a href=""
-                   class="btn btn-default btn-lg btn-service">whatever 1</a>
-				<a href=""
-                   class="btn btn-default btn-lg btn-service">whatever 2</a>
-			</div>
-            <!-- /.col -->
-		</div>
-        <!-- /.row -->
-	</div>
-    <!-- /.container -->
-</section>
-<!-- /.home section -->
-
-<!-- Core JavaScript Files -->
-<script src="js/3rd_party/jquery-1.11.0.min.js"></script>
-<script src="js/3rd_party/bootstrap.min.js"></script>
-<script src="js/3rd_party/modernizer.min.js"></script>
+    <!-- navbar -->
+    <nav class="navbar navbar-custom navbar-fixed-top mainmenu" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">
+                    <img src="img/interrelate_logo_header.png" class="img-responsive" alt="IRR"/>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
+                    <button class="btn btn-default btn-xs" id="en-lang">EN</button>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- /.navbar -->
 
 
-<!-- Custom JavaScript -->
-<script src="js/lang_support.js"></script>
-<script src="js/landing.js"></script>
+    <!-- home section -->
+    <section class="section" id="head">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+
+                    <h1 class="title title-responsive text-shadows">INTERRELATE Analytics</h1>
+
+                    <h3 class="tagline hidden-xs" id="lg-subtitle"></h3>
+
+                    <a href="social.html"
+                       class="btn btn-default btn-lg btn-service">Social <i class="fa fa-comments-o"></i></a>
+                    <a href=""
+                       class="btn btn-default btn-lg btn-service">whatever 1</a>
+                    <a href=""
+                       class="btn btn-default btn-lg btn-service">whatever 2</a>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.home section -->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/3rd_party/jquery-1.11.0.min.js"></script>
+    <script src="js/3rd_party/bootstrap.min.js"></script>
+    <script src="js/3rd_party/modernizer.min.js"></script>
+
+
+    <!-- Custom JavaScript -->
+    <script src="js/lang_support.js"></script>
+    <script src="js/landing.js"></script>
 
 </body>
 </html>

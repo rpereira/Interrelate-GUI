@@ -8,7 +8,7 @@ var section_hide_time = 1300;
 var section_show_time = 1300;
 
 // jQuery stuff
-jQuery(document).ready(function($)
+/*jQuery(document).ready(function($)
 {
     "user strict";
 
@@ -32,4 +32,4 @@ jQuery(document).ready(function($)
 
 		return false;
 	});
-});
+});*/
