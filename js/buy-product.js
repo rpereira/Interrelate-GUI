@@ -133,20 +133,7 @@ function setPrice(element)
 }
 $( "#basic-pay-plans").change(function (e)
 {
-    var value = $( "#basic-pay-plans option:selected" ).text();
-
-    if(value === '1 Week')
-    {
-        $("#value-pay").html('0,00 €');
-    }
-    else if(value === '2 Weeks')
-    {
-        $("#value-pay").html('5,00 €');
-    }
-    else
-    {
-        $("#value-pay").html('9,00 €');
-    }
+    setBasicPayValue();
 });
 
 
@@ -162,5 +149,10 @@ function setProduct(id)
     $("#a-" + id).css('font-weight' , 'bold');
 
     ACTIVE_PACKAGE = $('#' + id);
+    if(id === 'pkg-basic')
+    {
+        $('#basic-license').removeClass('hidden');
+        $('#basic-license').addClass('show');
+    }
     setPrice(ACTIVE_PACKAGE);
 }
