@@ -2,10 +2,35 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+/*************************************
+ * Navbar
+ *************************************/
+.navbar {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-brand{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/*************************************
+ * footer
+ *************************************/
 .footer {
   position: absolute;
   bottom: 0;
@@ -15,18 +40,6 @@ body {
   background-color: #f5f5f5;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-.navbar a {
-    color: #fff;
-}
-
-body > .container {
-  padding: 60px 15px 0;
-}
 .container .text-muted {
   margin: 20px 0;
 }
@@ -40,6 +53,9 @@ code {
   font-size: 80%;
 }
 
+/*************************************
+ * section
+ *************************************/
 section {
     height: 100%;
     padding-top: 150px;
