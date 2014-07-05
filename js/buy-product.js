@@ -11,7 +11,7 @@ function getProduct()
 
 $(document).ready(function()
 {
-    var product = getProduct();
+    //var product = getProduct();
 
     var link = "social.html"; //+ product + "-section";
 
