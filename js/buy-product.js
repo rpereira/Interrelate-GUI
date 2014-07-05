@@ -20,8 +20,6 @@ $(document).ready(function()
     $("#back-home").click().attr("href", link);
 
     var id = 'pkg-' + product;
-    alert(id)
-
     setProduct(id);
 });
 
