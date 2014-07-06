@@ -163,7 +163,6 @@ html {
     cursor: pointer;
 }
 
-/*#home-row-2 .col-2 .home-hover {*/
 .intro-packages .home-hover {
     height: 200px;
     overflow: hidden;
@@ -424,7 +423,8 @@ html {
 /*************************************
  * Sections
  *************************************/
-section {
+section
+{
     height: 100%;
     padding-top: 150px;
     text-align: center;
@@ -502,16 +502,18 @@ i.service-icon {
 /*************************************
  * Personal section
  *************************************/
-.personal-section {
+.personal-section
+{
     background: #edf0eb;
 }
 
 /*************************************
  * Enterprise section
  *************************************/
-.enterprise-section {
+.enterprise-section
+{
     background: #34495e;
-    height: 1100px;
+    height: auto;
 }
 
 /*************************************
@@ -635,11 +637,32 @@ i.service-icon {
 /*************************************
  * Footer section
  *************************************/
-.footer-section {
+.footer-section
+{
     background-color: #222;
     color: #aaa;
     font-size: 14px;
     line-height: 17px;
     padding-top: 68px;
     padding-bottom: 68px;
+}
+
+@media(max-width:767px)
+{
+    .intro-section
+    {
+        padding-top: 50px;
+    }
+
+    #home-row-1 h1
+    {
+        /*margin-top: 15px;*/
+        font-size: 19px;
+    }
+
+    #home-row-1 h4
+    {
+        /*margin-top: 15px;*/
+        font-size: 17px;
+    }
 }
