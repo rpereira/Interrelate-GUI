@@ -179,6 +179,8 @@ function setBasicPayValue()
 
 $('#method-bank').click(function(e)
 {
+    $('#method-bank').css('border', 'solid 2px #449d44');
+    $('#method-paypal').css('border', 'solid 1px #ddd');
     $('#payment-bank').removeClass('hidden');
     $('#payment-bank').addClass('show');
     $('#payment-paypal').removeClass('show');
@@ -187,6 +189,8 @@ $('#method-bank').click(function(e)
 
 $('#method-paypal').click(function(e)
 {
+    $('#method-paypal').css('border', 'solid 2px #449d44');
+    $('#method-bank').css('border', 'solid 1px #ddd');
     $('#payment-paypal').removeClass('hidden');
     $('#payment-paypal').addClass('show');
     $('#payment-bank').removeClass('show');

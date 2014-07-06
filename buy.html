@@ -169,8 +169,8 @@
                                     <div class="col-lg-12 col-sm-12">
                                         <div class="col-lg-4 col-sm-4" >
                                             <div class="hidden" id="basic-license">
-                                                <p> License</p>
-                                                <select id="basic-pay-plans" class="form-control">
+                                                <h4> License</h4>
+                                                <select id="basic-pay-plans" class="form-control" focus required>
                                                   <option>1 Week</option>
                                                   <option>2 Weeks</option>
                                                   <option>1 Month</option>
@@ -209,11 +209,15 @@
                                     <div class="col-lg-12 col-sm-12">
                                         <div class="col-lg-2 col-sm-2"></div>
                                         <div class="col-lg-4 col-sm-4 text-center ">
-                                            <a href="#"><img src="img/paypal_logo.jpg" class="img-responsive payment-image" alt="Responsive image"/></a>
+                                            <a href="#"><img src="img/paypal_logo.jpg" class="img-responsive payment-image" alt="Responsive image"  id="method-paypal"/></a>
                                         </div>
 
                                         <div class="text-center col-lg-4 col-sm-4">
-                                            <button type="button" class="btn btn-default btn-lg btn-block" id="method-bank">Bank Transfer</button>
+                                            <div class="panel panel-default" id="method-bank">
+                                              <div class="panel-body">
+                                                  <h4><i class="fa fa-credit-card"></i> Bank Transfer</h4>
+                                              </div>
+                                            </div>
                                         </div>
                                         <div class="col-lg-2 col-sm-2"></div>
                                     </div>
