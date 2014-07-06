@@ -166,3 +166,18 @@ a.disabled {
 .payment-image{
     border: 1px solid #ccc;
 }
+
+#basic-pay-plans{
+    border:1px solid #428bca;
+}
+
+button:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+#method-paypal,
+#method-bank{
+    cursor: pointer;
+}
