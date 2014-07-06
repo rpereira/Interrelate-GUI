@@ -533,10 +533,41 @@ i.service-icon {
 {
     height: auto;
     min-height: 100%;
-    background: #edf0eb;  /* so tens que mudar isto */
+    background:#f6f6f6 ;  /* so tens que mudar isto */
+
 }
 
+.about-features i
+{
+    font-size : 30px;
 
+}
+
+.about-features p
+{
+    font-size:15px;
+    font-weight: bold;
+    text-align:left;
+
+}
+
+.about-developed
+{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.about-developed a
+{
+    text-decoration: none;
+    color: #000;
+}
+.about-developed a:hover
+{
+    color: #3a3838;
+}
+/**
 /*************************************
  * Personal section
  *************************************/
