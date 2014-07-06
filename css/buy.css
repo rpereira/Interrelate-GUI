@@ -100,7 +100,7 @@ section {
 }
 
 .h-margin{
-    margin-top: 0px:
+    margin-top: 0px;
 }
 
 .intro-packages {
@@ -119,14 +119,17 @@ section {
     cursor: pointer;
 
 }
-.service-item a:hover {
+.service-item a:hover
+{
     text-decoration: none;
-    color:#000080;
+    color:#2f5eb2;
+    border-color: #2f5eb2;
 }
 .package-icon{
-    margin-left: 00px;
+    /**margin-left: 0px;*/
     padding-right: 0px;
     padding-left: 0px;
+    width:12%;
 }
 
 .page-scroll{
@@ -138,12 +141,11 @@ i.service-icon {
     border-radius: 50%;
     display: inline-block;
     font-size: 25px;
-    width: 100px;
-    height: 100px;
-    line-height: 98px;
+    width: 75px;
+    height: 75px;
+    line-height: 70px;
     vertical-align: middle;
     text-align: center;
-
 }
 
 a.disabled {
@@ -151,11 +153,16 @@ a.disabled {
    cursor: default;
 }
 
-#value-pay{
-    font-size: 18px;
+#value-pay,
+#expiration-date{
+    font-size: 15px;
 }
 
 #payment-nib
 {
     font-size: 15px;
+}
+
+.payment-image{
+    border: 1px solid #ccc;
 }
