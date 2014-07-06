@@ -103,6 +103,28 @@ html {
 /*************************************
  * Translation buttons
  *************************************/
+    /*color:  #fff;
+    cursor: pointer;
+
+    padding-top:    2px;
+    padding-bottom: 2px;
+
+
+    -webkit-transition: background .3s ease-in-out;
+       -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+}
+
+.languages a
+{
+    text-decoration: none;
+}
+
+.languages a:hover
+{
+    background-color: rgba(255, 255, 255, .2);
+}
+
 #pt-lang
 {
     padding: 0px 2px 0px 2px;
@@ -112,12 +134,7 @@ html {
     margin-bottom: 13px;
     margin-left:10px;
 	background: transparent;
-    color: white;
     border: none;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    cursor: pointer;
 }
 
 #en-lang
@@ -126,20 +143,8 @@ html {
     margin-top: 13px;
     margin-bottom: 13px;
 	background: transparent;
-    color: white;
     border: none;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    cursor: pointer;
-}
-
-#pt-lang:hover,
-#en-lang:hover
-{
-    outline: 0;
-    background-color: rgba(255, 255, 255, .2);
-}
+}*/
 
 
 /*************************************
@@ -678,6 +683,22 @@ i.service-icon {
     line-height: 17px;
     padding-top: 68px;
     padding-bottom: 68px;
+}
+
+#pt-lang,
+#en-lang
+{
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+#pt-lang:hover,
+#en-lang:hover
+{
+    height: 35px;
+    overflow: hidden;
+    margin-top: -5px;
+    transition: all ease-in .1s;
 }
 
 @media(max-width:767px)
