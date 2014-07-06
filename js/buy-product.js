@@ -86,12 +86,14 @@ function changeColor(e)
     var id= $(this).attr('id');
     if(color === 'rgb(66, 139, 202)')
     {
-        $(this).css('border', 'solid 5px #000000');
+        $("#" + id).css('border', 'solid 3px #449d44');
         $("#a-" + id).css('font-weight' , 'bold');
+        $("#a-" + id).css('font-size' , '20px');
 
         $(ACTIVE_PACKAGE).css('border', 'solid 3px #428bca');
         var ap_id = $(ACTIVE_PACKAGE).attr('id');
         $("#a-" + ap_id).css('font-weight' , 'none');
+        $("#a-" + id).css('font-size' , '18px');
 
         if(ap_id === 'pkg-basic')
         {
@@ -99,11 +101,6 @@ function changeColor(e)
             $('#basic-license').addClass('hidden');
         }
 
-    }
-    else
-    {
-        $(this).css('border', 'solid 3px #428bca');
-        $("#a-" + id).css('font-weight' , 'none');
     }
     ACTIVE_PACKAGE = this;
 
@@ -133,7 +130,7 @@ function setPrice(element)
     }
 
 }
-$( "#basic-pay-plans").change(function (e)
+$( '#basic-license').change(function (e)
 {
     setBasicPayValue();
 });
@@ -147,9 +144,10 @@ $('#pkg-agency').click(changeColor);
 /** Sets the initial product **/
 function setProduct(id)
 {
+    $("#" + id).css('border', 'solid 3px #449d44');
 
-    $("#" + id).css('border', 'solid 5px #000000');
     $("#a-" + id).css('font-weight' , 'bold');
+    $("#a-" + id).css('font-size' , '20px');
 
     ACTIVE_PACKAGE = $('#' + id);
     if(id === 'pkg-basic')
@@ -163,7 +161,7 @@ function setProduct(id)
 /** Sets the pay value in Basic Package */
 function setBasicPayValue()
 {
-    var text = $('#basic-pay-plans option:selected').text();
+    var text = $('#basic-license option:selected').val()
     if(text === '1 Week')
     {
         $("#value-pay").html('0,00 €');
@@ -177,3 +175,20 @@ function setBasicPayValue()
         $("#value-pay").html('9,00 €');
     }
 }
+
+
+$('#method-bank').click(function(e)
+{
+    $('#payment-bank').removeClass('hidden');
+    $('#payment-bank').addClass('show');
+    $('#payment-paypal').removeClass('show');
+    $('#payment-paypal').addClass('hidden');
+});
+
+$('#method-paypal').click(function(e)
+{
+    $('#payment-paypal').removeClass('hidden');
+    $('#payment-paypal').addClass('show');
+    $('#payment-bank').removeClass('show');
+    $('#payment-bank').addClass('hidden');
+});
