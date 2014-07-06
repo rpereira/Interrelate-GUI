@@ -152,6 +152,14 @@ html {
     line-height: 1.7;
 }
 
+@media(max-width:767px)
+{
+    #home-row-1 h1
+    {
+        font-size: 17px;
+    }
+}
+
 #home-row-2 {
     font-size: 25px;
     line-height: 1.1;
@@ -424,7 +432,8 @@ html {
 /*************************************
  * Sections
  *************************************/
-section {
+section
+{
     height: 100%;
     padding-top: 150px;
     text-align: center;
@@ -502,16 +511,18 @@ i.service-icon {
 /*************************************
  * Personal section
  *************************************/
-.personal-section {
+.personal-section
+{
     background: #edf0eb;
 }
 
 /*************************************
  * Enterprise section
  *************************************/
-.enterprise-section {
+.enterprise-section
+{
     background: #34495e;
-    height: 1100px;
+    height: auto;
 }
 
 /*************************************
