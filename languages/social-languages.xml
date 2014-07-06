@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
     <!-- ======= MENU TRANSLATIONS =====  -->
+    <translation id="sc-menu-0">
+        <english><![CDATA[About]]>
+        </english>
+        <portuguese><![CDATA[Sobre]]>
+        </portuguese>
+    </translation>
     <translation id="sc-menu-1">
         <english><![CDATA[PERSONAL]]>
         </english>
@@ -55,6 +61,59 @@
         </portuguese>
     </translation>
 
+    <!-- ========= About Section =========== -->
+
+
+    <translation id="sc-about-title">
+        <english><![CDATA[ABOUT]]>
+        </english>
+        <portuguese><![CDATA[SOBRE]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-about-description">
+        <english><![CDATA[ <em>Social Management Platform</em> is an integrated system combining advanced posting in the Facebook social network<br> with the organic, and social interaction, analysis of the page.</h4>]]>
+        </english>
+        <portuguese><![CDATA[<em>Plataforma de Gestão Social</em> &eacute; um sistema integrado combinando publica&ccedil;&atildeo avançada na rede social Facebook,<br /> com a an&aacute;lise do desempenho org&acirc;nico, e das intera&ccedil;&otilde;es sociais, que ocorrem na p&aacute;gina.</h4>]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-about-feat1">
+        <english><![CDATA[<p>Find automatically positive/negative/neutral posts</p>]]>
+        </english>
+        <portuguese><![CDATA[<p>Descobre automaticamente publica&ccedil;&otilde;es positivos/negativos/neutros</p>]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-about-feat2">
+        <english><![CDATA[ <p>Number of likes</p>]]>
+        </english>
+        <portuguese><![CDATA[ <p>N&uacute;mero de gostos</p>]]>
+        </portuguese>
+    </translation>
+
+    <translation id="sc-about-feat3">
+        <english><![CDATA[<p>Detect peaks of engagement</p>  ]]>
+        </english>
+        <portuguese><![CDATA[<p>Detec&ccedil;&atilde;o de picos</p>  ]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-about-feat4">
+        <english><![CDATA[<p>Most Popular Friend</p>]]>
+        </english>
+        <portuguese><![CDATA[<p>Amigos mais populares </p>]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-about-feat5">
+        <english><![CDATA[<p> PTAT - "People talking about this"</p>]]>
+        </english>
+        <portuguese><![CDATA[<p> PTAT - "People talking about this"</p>]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-about-feat6">
+        <english><![CDATA[<p>Comments per day</p>]]>
+        </english>
+        <portuguese><![CDATA[<p>Coment&aacute;rios por dia</p>]]>
+        </portuguese>
+    </translation>
     <!-- ========== Personal Pack Section ============== -->
     <translation id="sc-personal-title">
         <english><![CDATA[PERSONAL PACK]]>
