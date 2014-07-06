@@ -527,6 +527,17 @@ i.service-icon {
 
 
 /*************************************
+ * About section
+ *************************************/
+.about-section
+{
+    height: auto;
+    min-height: 100%;
+    background: #edf0eb;  /* so tens que mudar isto */
+}
+
+
+/*************************************
  * Personal section
  *************************************/
 .personal-section
