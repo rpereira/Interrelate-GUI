@@ -1,5 +1,6 @@
-html {
-	background:#505D6E url(../img/landing-page-blur.jpg) no-repeat center center fixed;
+html
+{
+	background:#505D6E url(../img/blured_nat3.jpg) no-repeat center center fixed;
 	min-height:100%;
    /** background-color:
         #096c93;*/
@@ -9,7 +10,8 @@ html {
 	        background-size: cover;
 }
 
-body {
+body
+{
 	background:transparent;
 	min-height:100%;
 	-webkit-font-smoothing: antialiased;
@@ -21,6 +23,41 @@ body {
 	color:#fff;
 	/**color:rgba(255,255,255,.8);*/
 	font-weight: normal;
+}
+
+hr
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+
+/*************************************
+ * CSS effects
+ *************************************/
+.grow
+{
+    display: inline-block;
+
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+            transition-property: transform;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+              -webkit-transform: translateZ(0);
+                  -ms-transform: translateZ(0);
+                      transform: translateZ(0);
+
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow:hover
+{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 
@@ -157,6 +194,35 @@ body {
 #head {
 	display: block;
 }
+
+.intro-divider
+{
+	max-width:     400px;
+	border-top:    1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top:    50px;
+    margin-bottom: 80px;
+}
+
+.section a
+{
+    min-width:  200px;
+    min-height: 100px;
+}
+
+#service1,
+#service2,
+#service3
+{
+    min-width: 245px;
+    margin-right: 10px;
+}
+
+#service i
+{
+    padding-top: 7px;
+}
+
 
 
 /********************************************************/
