@@ -1,4 +1,5 @@
-html {
+html
+{
 	background:#505D6E url(../img/landing-page-blur.jpg) no-repeat center center fixed;
 	min-height:100%;
    /** background-color:
@@ -9,7 +10,8 @@ html {
 	        background-size: cover;
 }
 
-body {
+body
+{
 	background:transparent;
 	min-height:100%;
 	-webkit-font-smoothing: antialiased;
@@ -21,6 +23,14 @@ body {
 	color:#fff;
 	/**color:rgba(255,255,255,.8);*/
 	font-weight: normal;
+}
+
+hr
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 
 
@@ -156,6 +166,15 @@ body {
 /* Show one of sections */
 #head {
 	display: block;
+}
+
+.intro-divider
+{
+	max-width:     400px;
+	border-top:    1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top:    50px;
+    margin-bottom: 40px;
 }
 
 
