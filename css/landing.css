@@ -186,8 +186,13 @@ hr
 	display:none;
 	top:0;
 }
-@media (min-width: 768px) {
-	.section { padding-top: 200px;}
+
+@media (min-width: 768px)
+{
+	.section
+    {
+        padding-top: 200px;
+    }
 }
 
 /* Show one of sections */
