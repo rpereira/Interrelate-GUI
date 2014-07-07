@@ -13,42 +13,16 @@
 
 	<!-- 3rd party Core CSS -->
 	<link href="css/3rd_party/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/3rd_party/animate.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Fonts -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
 	<link rel="stylesheet" href="css/landing.css">
 
 </head>
 <body class="theme-invert">
-
-    <!--<nav class="mainmenu">
-        <div class="container">
-            <!--<div class="dropdown">
-                <button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
-                <!--<ul class="dropdown-menu landing-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a href="#head" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div> --
-
-            <div class="navbar-header">
-                <div class="navbar-brand">
-
-                    <img src="img/interrelate_logo_header.png" class="img-responsive" alt="IRR"/>
-                </div>
-            </div>
-
-            <div class="navbar-nav navbar-right lang">
-                <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
-                <button class="btn btn-default btn-xs" id="en-lang">EN</button>
-            </div>
-
-        </div>
-    </nav>-->
 
     <!-- navbar -->
     <nav class="navbar navbar-custom navbar-fixed-top mainmenu" role="navigation">
@@ -59,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">
+                <a class="grow" href="http://interrelate.pt/" class="navbar-brand">
                     <img src="img/interrelate_logo_header.png" class="img-responsive" alt="IRR"/>
                 </a>
             </div>
@@ -86,14 +60,25 @@
 
                     <h1 class="title title-responsive text-shadows">INTERRELATE Analytics</h1>
 
-                    <h3 class="tagline hidden-xs" id="lg-subtitle"></h3>
+                    <!--<h3 class="tagline hidden-xs" id="lg-subtitle"></h3>-->
 
-                    <a href="social.html"
-                       class="btn btn-default btn-lg btn-service">Social <i class="fa fa-comments-o"></i></a>
-                    <a href=""
-                       class="btn btn-default btn-lg btn-service">whatever 1</a>
-                    <a href=""
-                       class="btn btn-default btn-lg btn-service">whatever 2</a>
+                    <hr class="intro-divider">
+
+                    <a href="social.html" id="service1"
+                       class="btn btn-default btn-lg btn-service">Social <br>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+
+                    <a href="#" id="service2"
+                       class="btn btn-default btn-lg btn-service">Analytics <br>
+                        <i class="fa fa-share-alt"></i>
+                    </a>
+
+                    <a href="#" id="service3"
+                       class="btn btn-default btn-lg btn-service">Event Detection <br>
+                        <i class="fa fa-calendar"></i></a>
                 </div>
                 <!-- /.col -->
             </div>
