@@ -1,6 +1,8 @@
 /*global $ */
 
-$('#service').addClass('animated bounce');
+$('#service1').addClass('animated bounce');
+$('#service2').addClass('animated bounce');
+$('#service3').addClass('animated bounce');
 
 //// current menu item
 //var current_item = 0;
