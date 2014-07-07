@@ -531,24 +531,38 @@ i.service-icon {
  *************************************/
 .about-section
 {
-    height: auto;
-    min-height: 100%;
-    background:#f6f6f6 ;  /* so tens que mudar isto */
+    height:     auto;
+    padding-bottom: 75px;
+    /*min-height: 100%;*/
+    background: #f6f6f6;
+    text-align: left;
+}
+
+.about-section .lead
+{
+    font-size: 17px !important;
+}
+
+#features
+{
+    margin-bottom: 50px;
+}
+
+#features i
+{
+    color:          #05ACF3;
+    font-size:      40px;
+    vertical-align: middle;
 
 }
 
-.about-features i
+#features .feature strong
 {
-    font-size : 30px;
-
-}
-
-.about-features p
-{
-    font-size:15px;
-    font-weight: bold;
-    text-align:left;
-
+    display:     block;
+    font-weight: 700;
+    font-size:   17px;
+    color:       #333;
+    margin-top:  15px;
 }
 
 .about-developed
@@ -567,6 +581,17 @@ i.service-icon {
 {
     color: #3a3838;
 }
+
+.slogan-section
+{
+    max-height: 450px;
+    color:      #fff;
+
+    background:          url('../img/parallax-img.jpg') no-repeat top center fixed;
+    background-size:     cover;
+    background-position: center center;
+}
+
 /**
 /*************************************
  * Personal section
