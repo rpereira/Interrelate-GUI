@@ -12,6 +12,7 @@ body > .container {
   padding: 60px 15px 0;
 }
 
+
 /*************************************
  * Navbar
  *************************************/
@@ -32,29 +33,6 @@ body > .container {
     color:  rgba(255, 255, 255, .8);
 }
 
-/*************************************
- * footer
- *************************************/
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #f5f5f5;
-}
-
-.container .text-muted {
-  margin: 20px 0;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
-}
 
 /*************************************
  * section
@@ -76,11 +54,6 @@ section {
     line-height: 40px;
     position: relative;
     display: inline-block;
-}
-
-.footer{
-    background-color: #222;
-    color: #ddd;
 }
 
 .setup-content-body {
@@ -179,6 +152,7 @@ button:focus
     cursor: pointer;
 }
 
+
 /*************************************
  * Modal
  *************************************/
@@ -187,13 +161,39 @@ button:focus
     text-align: left;
 }
 
-
 .service-buy-item-p {
     color: #2f5eb2;
 
 }
+
 .service-buy-item-p p:hover
 {
-    color:#19428b;
+    color:       #19428b;
     border-color: #2f5eb2;
+}
+
+
+/*************************************
+ * footer
+ *************************************/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: #ddd;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
 }
