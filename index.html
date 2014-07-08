@@ -17,68 +17,103 @@
 
 	<!-- Fonts -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Viga' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet'
+          type='text/css'>
 
     <!-- Custom CSS -->
 	<link rel="stylesheet" href="css/landing.css">
 
 </head>
-<body class="theme-invert">
+<body id="body_analytics">
 
     <!-- navbar -->
     <nav class="navbar navbar-custom navbar-fixed-top mainmenu" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="grow" href="http://interrelate.pt/" class="navbar-brand">
-                    <img src="img/interrelate_logo_header.png" class="img-responsive" alt="IRR"/>
-                </a>
-            </div>
+            <!-- navbar collapse -->
             <div class="navbar-collapse collapse" style="height: 1px;">
+                <!-- navbar right -->
                 <ul class="nav navbar-nav navbar-right">
                     <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
                     <button class="btn btn-default btn-xs" id="en-lang">EN</button>
                 </ul>
+                <!-- ./navbar right -->
             </div>
-            <!--/.nav-collapse -->
+            <!--/.nav collapse -->
         </div>
     </nav>
     <!-- /.navbar -->
 
 
     <!-- home section -->
-    <section class="section" id="head">
+    <section class="intro-header-analytics" id="head">
         <!-- container -->
         <div class="container">
             <!-- row -->
             <div class="row">
                 <!-- col -->
-                <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+                <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 intro-message">
 
-                    <h1 class="title title-responsive text-shadows">INTERRELATE Analytics</h1>
-
-                    <!--<h3 class="tagline hidden-xs" id="lg-subtitle"></h3>-->
+                    <h1>INTERRELATE Analytics</h1>
+                    <h4 style="font-family: 'Open Sans-Light', sans-serif">Mining, interrelating, sensing and analysing online information</h4>
 
                     <hr class="intro-divider">
 
-                    <a href="social.html" id="service1"
-                       class="btn btn-default btn-lg btn-service">Social <br>
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-google-plus"></i>
-                    </a>
+                    <!-- Analytics -->
+                    <div class="col-lg-4">
+                        <div class="col-12 col-sm-12 col-sm-offset-3" style="margin-left:8%">
+                            <a href="http://interrelate.pt/" id="service1"
+                               class="btn btn-default btn-lg btn-service">Analytics <br>
+                                <i class="fa fa-share-alt"></i>
+                            </a>
+                        </div>
 
-                    <a href="#" id="service2"
-                       class="btn btn-default btn-lg btn-service">Analytics <br>
-                        <i class="fa fa-share-alt"></i>
-                    </a>
+                        <div class="col-sm-10" id="analytics-text">
+                            <p class="description">
+                                We have the analytics to understand the buzz and the trends giving us the ability to be one step ahead in Web sensing.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ./Analytics -->
 
-                    <a href="#" id="service3"
-                       class="btn btn-default btn-lg btn-service">Event Detection <br>
-                        <i class="fa fa-calendar"></i></a>
+                    <!-- Event detection -->
+                    <div class="col-lg-4">
+                        <div class="col-12 col-sm-12 col-sm-offset-3" style="margin-left:8%">
+                            <a href="#" id="service2"
+                               class="btn btn-default btn-lg btn-service">Event Detection <br>
+                                <i class="fa fa-calendar"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-10" id="analytics-text">
+                            <p class="description">
+                                We have the analytics to understand the buzz and the trends giving us the ability to be one step ahead in Web sensing.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ./Event detection -->
+
+                    <!-- Social -->
+                    <div class="col-lg-4">
+                        <div class="col-12 col-sm-12 col-sm-offset-3" style="margin-left:8%">
+                            <a href="social.html" id="service3"
+                               class="btn btn-default btn-lg btn-service">Social <br>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-10" id="analytics-text">
+                            <p class="description">
+                                We have the analytics to understand the buzz and the trends giving us the ability to be one step ahead in Web sensing.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ./Social -->
                 </div>
                 <!-- /.col -->
             </div>
@@ -91,7 +126,6 @@
     <!-- Core JavaScript Files -->
     <script src="js/3rd_party/jquery-1.11.0.min.js"></script>
     <script src="js/3rd_party/bootstrap.min.js"></script>
-    <script src="js/3rd_party/modernizer.min.js"></script>
 
 
     <!-- Custom JavaScript -->
