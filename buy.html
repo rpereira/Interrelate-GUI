@@ -39,7 +39,7 @@
                 <a class="navbar-brand" href="social.html"><img src="img/interrelate_logo_header.png"/>  Social Management Platform</a>
             </div>
 
-            <ul class="nav navbar-nav navbar-right user-nav">
+            <ul id="navbar-user" class="nav navbar-nav navbar-right user-nav hide">
                 <li class="dropdown profile_menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img alt="Avatar" src="img/profile-img.jpg"> <span>Lorem Ipsum</span> <b class="caret"></b></a>
@@ -90,114 +90,116 @@
             </div>
             <!-- /.login -->
 
-            <!-- packages -->
-            <div class="row">
-                <h1 class="page-header">Package</h1>
-                <div class="intro-packages">
+            <div id="payment-content" class="hide">
+                <!-- packages -->
+                <div class="row">
+                    <h1 class="page-header">Package</h1>
+                    <div class="intro-packages">
 
-                    <div class="col-lg-4"></div>
+                        <div class="col-lg-4"></div>
 
-                    <!-- basic package-->
-                    <div class="col-lg-4">
-                        <div class="col-md-4 text-center">
-                            <div class="service-item">
-                                <p><i id="pkg-basic" class="service-icon fa fa-users"></i></p>
-                                <h4 id="a-pkg-basic" >Basic</h4>
+                        <!-- basic package-->
+                        <div class="col-lg-4">
+                            <div class="col-md-4 text-center">
+                                <div class="service-item">
+                                    <p><i id="pkg-basic" class="service-icon fa fa-users"></i></p>
+                                    <h4 id="a-pkg-basic" >Basic</h4>
 
+                                </div>
+                                <!--<p> 1 week Free</p>
+                                <p> 5 € / 2 Weeks</p>
+                                <p> 9 € / 1 month</p>-->
                             </div>
-                            <!--<p> 1 week Free</p>
-                            <p> 5 € / 2 Weeks</p>
-                            <p> 9 € / 1 month</p>-->
-                        </div>
 
-                        <!-- company package-->
-                        <div class="col-md-4 text-center">
-                            <div class="service-item">
-                                <p><i class="service-icon fa fa-building-o" id="pkg-company"></i></p>
-                                <h4 id="a-pkg-company" >Company</h4>
+                            <!-- company package-->
+                            <div class="col-md-4 text-center">
+                                <div class="service-item">
+                                    <p><i class="service-icon fa fa-building-o" id="pkg-company"></i></p>
+                                    <h4 id="a-pkg-company" >Company</h4>
+                                </div>
+                              <!--  <p> 75€ / 1 month </p>-->
                             </div>
-                          <!--  <p> 75€ / 1 month </p>-->
-                        </div>
-                        <!-- /.company package-->
+                            <!-- /.company package-->
 
-                        <!-- Agency package-->
-                        <div class="col-md-4 text-center">
-                            <div class="service-item inactive" id="pkg-agency-disabled">
-                                <p id="pkg-agency-p"> <i class="service-icon fa fa-university" id="pkg-agency"></i></p>
-                                <h4 id="a-pkg-agency" >Agency</h4>
-                                <h4><span class="badge"  id="label-new">SOON!</span></h4>
+                            <!-- Agency package-->
+                            <div class="col-md-4 text-center">
+                                <div class="service-item inactive" id="pkg-agency-disabled">
+                                    <p id="pkg-agency-p"> <i class="service-icon fa fa-university" id="pkg-agency"></i></p>
+                                    <h4 id="a-pkg-agency" >Agency</h4>
+                                    <h4><span class="badge"  id="label-new">SOON!</span></h4>
+                                </div>
                             </div>
+                            <!-- /.Company package-->
+
                         </div>
-                        <!-- /.Company package-->
+                        <!-- /.basic package-->
+
+                        <div class="col-lg-4"></div>
 
                     </div>
-                    <!-- /.basic package-->
+                    <!-- /.packages -->
 
-                    <div class="col-lg-4"></div>
+                    <div class="row">
 
+                        <div class="col-lg-4"></div>
+
+                        <div class="col-lg-4 hidden text-center" id="basic-license">
+                            <h4>Choose your license</h4>
+                            <select id="basic-pay-plans" class="form-control" required>
+                                <option>1 Week</option>
+                                <option>2 Weeks</option>
+                                <option>1 Month</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-4"></div>
+                    </div>
                 </div>
                 <!-- /.packages -->
 
+
+                <!-- payment method -->
                 <div class="row">
+                    <h1 class="page-header">Payment Method</h1>
 
-                    <div class="col-lg-4"></div>
+                    <div class="col-lg-6"  style="text-align: left;">
+                        <!-- bank transfer -->
 
-                    <div class="col-lg-4 hidden text-center" id="basic-license">
-                        <h4> License</h4>
-                        <select id="basic-pay-plans" class="form-control" required>
-                            <option>1 Week</option>
-                            <option>2 Weeks</option>
-                            <option>1 Month</option>
-                        </select>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="method-bank" value="option1" checked>
+                                    Bank Transfer
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
+                                    MBNet
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
+                                    Paypal
+                            </label>
+                        </div>
+
+                        <!-- /.mbnet -->
                     </div>
-
-                    <div class="col-lg-4"></div>
-                </div>
-
-            </div>
-            <!-- /.packages -->
-
-
-            <!-- payment method -->
-            <div class="row">
-                <h1 class="page-header">Payment Method</h1>
-
-                <div class="col-lg-6"  style="text-align: left;">
-                    <!-- bank transfer -->
-
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="method-bank" value="option1" checked>
-                                Bank Transfer
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
-                                MBNet
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
-                                Paypal
-                        </label>
-                    </div>
-
-                    <!-- /.mbnet -->
-                </div>
-                <div class="col-lg-6">
-                    <div class=""id="payment-bank" >
-                        <h4>This is the NIB for which you should make the money transfer.</h4>
-                        <h4>NIB:</h4>
-                        <h4><span id="payment-nib">0010 - 0000 - 5031807001 - 96</span></h4>
+                    <div class="col-lg-6">
+                        <div class=""id="payment-bank" >
+                            <h4>This is the NIB for which you should make the money transfer.</h4>
+                            <h4>NIB:</h4>
+                            <h4><span id="payment-nib">0010 - 0000 - 5031807001 - 96</span></h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- /.payment method -->
+                <!-- /.payment method -->
 
-            <div class="row pull-right">
-                <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#payment-modal">OK</button>
+                <div class="row pull-right">
+                    <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#payment-modal">OK</button>
+                </div>
+
             </div>
         </div>
         <!-- /.container -->
