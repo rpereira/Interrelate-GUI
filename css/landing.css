@@ -163,6 +163,7 @@ p {
 #service3
 {
     min-width: 245px;
+    position: relative;
 }
 
 #service i
@@ -208,4 +209,19 @@ p {
 .description {
     font-size: 14px;
     font-family: 'Open Sans-Light', sans-serif;
+}
+
+
+#label-new{
+    position: absolute;
+    top: 18px;
+    right: -3px;
+    font-size:18px;
+    background-color: #f0ad4e;
+    overflow: hidden;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+    padding-right: 10px;
+    padding-left: 10px;
 }
