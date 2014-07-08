@@ -4,12 +4,36 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: "MyriadPro-Regular", sans-serif;
 }
 
 body > .container {
   padding: 60px 15px 0;
+}
+
+/*************************************
+ * Fonts
+ *************************************/
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: local('Myriad Pro Regular'), local('Myriad Pro Regular'), url('../fonts/MyriadPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: local('Myriad Pro Bold'), local('Myriad Pro Bold'), url('../fonts/MyriadPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Semibold';
+    src: local('Myriad Pro Semibold'), local('Myriad Pro Semibold'), url('../fonts/MyriadPro-Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Open Sans-Light';
+    src: local('Open Sans-Light'), local('Open Sans-Light'), url('../fonts/OpenSans-Light.ttf') format('truetype');
 }
 
 
