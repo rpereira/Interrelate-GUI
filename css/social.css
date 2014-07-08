@@ -327,6 +327,10 @@ html
 	padding-bottom: 15px;
 }
 
+.package-enterprise {
+    height: 740px !important;
+}
+
 .package-header {
     height: 57px;
     color: #FFF;
@@ -349,7 +353,7 @@ html
 
 .package-description {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .package ul, ol {
@@ -720,8 +724,6 @@ i.service-icon {
 
 .social-icons a {
     display: inline-block;
-    /*width: 24px;
-    height: 24px;*/
     margin: 10px;
     vertical-align: middle;
     -o-transition: all .3s;
