@@ -37,3 +37,8 @@ $(function()
         event.preventDefault();
     });
 });
+
+/**
+ * Starts wow animation
+ */
+new WOW().init();
