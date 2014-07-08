@@ -98,8 +98,16 @@ section {
     color:#19428b;
     border-color: #2f5eb2;
 }
+
+.inactive {
+    cursor: not-allowed;
+}
+.inactive p:hover
+{
+    color: #2f5eb2;
+}
+
 .package-icon {
-    /**margin-left: 0px;*/
     padding-right: 0px;
     padding-left: 0px;
     width:12%;
@@ -155,6 +163,20 @@ button:focus
     cursor: pointer;
 }
 
+#label-new{
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    font-size:13px;
+    background-color: #f0ad4e;
+    overflow: hidden;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 
 /*************************************
  * Modal
@@ -162,10 +184,7 @@ button:focus
 .modal-body
 {
     text-align: left;
-}
 
-.service-buy-item-p {
-    color: #2f5eb2;
 }
 
 .service-buy-item-p {
