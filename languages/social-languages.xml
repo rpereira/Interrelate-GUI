@@ -78,42 +78,30 @@
     </translation>
 
     <translation id="sc-about-feat1">
-        <english><![CDATA[<p>Find automatically positive/negative/neutral posts</p>]]>
+        <english><![CDATA[Find automatically positive/negative/neutral posts.]]>
         </english>
-        <portuguese><![CDATA[<p>Descobre automaticamente publica&ccedil;&otilde;es positivos/negativos/neutros</p>]]>
+        <portuguese><![CDATA[Descobre automaticamente publica&ccedil;&otilde;es positivos/negativos/neutros.]]>
         </portuguese>
     </translation>
     <translation id="sc-about-feat2">
-        <english><![CDATA[ <p>Number of likes</p>]]>
+        <english><![CDATA[A publishing system capable of scheduling the posts.]]>
         </english>
-        <portuguese><![CDATA[ <p>N&uacute;mero de gostos</p>]]>
+        <portuguese><![CDATA[Um sistema de publica&ccedil;&atilde;o capaz de programar as mensagens.]]>
         </portuguese>
     </translation>
 
     <translation id="sc-about-feat3">
-        <english><![CDATA[<p>Detect peaks of engagement</p>  ]]>
+        <english><![CDATA[Detection of engament peaks, find out you is your most popular frind and the number os likes. ]]>
         </english>
         <portuguese><![CDATA[<p>Detec&ccedil;&atilde;o de picos</p>  ]]>
         </portuguese>
     </translation>
-    <translation id="sc-about-feat4">
-        <english><![CDATA[<p>Most Popular Friend</p>]]>
+
+     <english><![CDATA[Detection of engament peaks]]>
         </english>
-        <portuguese><![CDATA[<p>Amigos mais populares </p>]]>
+        <portuguese><![CDATA[Detec&ccedil;&atilde;o de picos]]>
         </portuguese>
-    </translation>
-    <translation id="sc-about-feat5">
-        <english><![CDATA[<p> PTAT - "People talking about this"</p>]]>
-        </english>
-        <portuguese><![CDATA[<p> PTAT - "People talking about this"</p>]]>
-        </portuguese>
-    </translation>
-    <translation id="sc-about-feat6">
-        <english><![CDATA[<p>Comments per day</p>]]>
-        </english>
-        <portuguese><![CDATA[<p>Coment&aacute;rios por dia</p>]]>
-        </portuguese>
-    </translation>
+
     <!-- ========== Personal Pack Section ============== -->
     <translation id="sc-personal-title">
         <english><![CDATA[PERSONAL PACK]]>
@@ -215,19 +203,21 @@
         <portuguese><![CDATA[B&aacute;sico]]>
         </portuguese>
     </translation>
-    <!--<translation id="sc-enterprise-pack1-price">
-        <english><![CDATA[1 week free, <br /> then 5€ / 2 weeks <br /> or <br /> 9€ / 1 month ]]>
+    <translation id="sc-enterprise-pack1-price">
+        <english><![CDATA[<h4>Free</h4><span class="price-meta">/1 we</span><br/>
+                            <h4>5<span class="dollar-sign">€</span></h4><span class="price-meta">/ 2 we</span>
+                            <h4>9<span class="dollar-sign">€</span></h4><span class="price-meta">/ 1 mo</span>]]>
         </english>
         <portuguese><![CDATA[1 semana gr&aacute;tis, depois 5€ / 2 semanas ou 9€ / 1 m&ecirc;s]]>
         </portuguese>
-    </translation>-->
+    </translation>
 
-    <translation id="sc-enterprise-pack1-price">
+   <!-- <translation id="sc-enterprise-pack1-price">
         <english><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
         </english>
         <portuguese><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
         </portuguese>
-    </translation>
+    </translation>-->
 
     <translation id="sc-enterprise-pack1-description">
         <english><![CDATA[Access to the <em>Overview Page</em>]]>
@@ -287,19 +277,19 @@
         <portuguese><![CDATA[Empresa]]>
         </portuguese>
     </translation>
-    <!--<translation id="sc-enterprise-pack2-price">
+    <translation id="sc-enterprise-pack2-price">
         <english><![CDATA[<h4>75<span class="dollar-sign">€</span> </h4> <span class="price-meta">/ 1 month</span>]]>
         </english>
         <portuguese><![CDATA[<h4>75<span class="dollar-sign">€</span></h4><span class="price-meta"> / 1 m&ecirc;s</span>]]>
         </portuguese>
-    </translation>-->
+    </translation>
 
-    <translation id="sc-enterprise-pack2-price">
+    <!--<translation id="sc-enterprise-pack2-price">
         <english><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
         </english>
         <portuguese><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
         </portuguese>
-    </translation>
+    </translation>-->
 
     <translation id="sc-enterprise-pack2-description">
         <english><![CDATA[The Basic package plus:]]>

@@ -404,6 +404,13 @@ html
     margin-bottom: 0;
 }
 
+.basic-price {
+line-height: 25px;
+height: 100px;
+color: #FFF;
+font-weight: 400;
+}
+
 .dark-bg {
     background: #404040;
 }
@@ -476,7 +483,7 @@ section
 .intro-section {
     padding-top: 150px;
     height: 650px;
-    background: url(../img/LiveConcerts.jpg) no-repeat;
+    background: url(../img/header-photo.jpg) no-repeat;
     color: #fff;
 }
 
@@ -810,4 +817,22 @@ i.service-icon {
     {
         padding-bottom: 10px;
     }
+}
+
+/***********************************************************/
+/*                   Theme: text shadows                   */
+/***********************************************************/
+.text-shadows {
+	text-shadow:0 3px 5px rgba(0,0,0,.5);
+}
+.text-shadows .title,
+.text-shadows .subtitle,
+.text-shadows .tagline {
+	text-shadow:0 2px 3px rgba(0,0,0,.4);
+}
+.text-shadows .mainmenu .dropdown-menu a {
+	text-shadow:0 2px 1px rgba(0,0,0,.2);
+}
+.text-shadows .mainmenu .dropdown-menu a:hover {
+	text-shadow:none;
 }
