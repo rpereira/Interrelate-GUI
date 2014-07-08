@@ -1,13 +1,39 @@
-body
-{
-    width: 100%;
+
+body, html {
     height: 100%;
+    width:  100%;
+    font-family: "MyriadPro-Regular", sans-serif;
 }
 
-html
-{
-    width: 100%;
-    height: 100%;
+/*************************************
+ * Fonts
+ *************************************/
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: local('Myriad Pro Regular'), local('Myriad Pro Regular'), url('../fonts/MyriadPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: local('Myriad Pro Bold'), local('Myriad Pro Bold'), url('../fonts/MyriadPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Semibold';
+    src: local('Myriad Pro Semibold'), local('Myriad Pro Semibold'), url('../fonts/MyriadPro-Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Open Sans-Light';
+    src: local('Open Sans-Light'), local('Open Sans-Light'), url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+/*************************************
+ * Paragraph & Typographic
+ *************************************/
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
 }
 
 /** set container's postion to relative
@@ -118,6 +144,15 @@ html
         border-bottom:    1px solid rgba(255, 255, 255, .3);
         background-color: rgba(0, 0, 0, 0.80); /* transparency */
     }
+}
+
+.btn-login {
+    margin-left: 35px;
+}
+
+.btn-login i {
+    color:     #000;
+    font-size: 15px;
 }
 
 
@@ -568,9 +603,11 @@ i.service-icon {
     font-size: 17px !important;
 }
 
-#features
+#features p
 {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
+    font-weight: 800;
+
 }
 
 #features i
