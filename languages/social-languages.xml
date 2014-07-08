@@ -73,14 +73,14 @@
     <translation id="sc-about-description">
         <english><![CDATA[ <em>Social Management Platform</em> is an integrated system combining advanced posting in the Facebook social network<br> with the organic, and social interaction, analysis of the page.</h4>]]>
         </english>
-        <portuguese><![CDATA[<em>Plataforma de Gestão Social</em> &eacute; um sistema integrado combinando publica&ccedil;&atildeo avançada na rede social Facebook,<br /> com a an&aacute;lise do desempenho org&acirc;nico, e das intera&ccedil;&otilde;es sociais, que ocorrem na p&aacute;gina.</h4>]]>
+        <portuguese><![CDATA[<em>Plataforma de Gestão Social</em> &eacute; um sistema integrado combinando publica&ccedil;&atilde;o avançada na rede social Facebook,<br /> com a an&aacute;lise do desempenho org&acirc;nico, e das intera&ccedil;&otilde;es sociais, que ocorrem na p&aacute;gina.</h4>]]>
         </portuguese>
     </translation>
 
     <translation id="sc-about-feat1">
         <english><![CDATA[Find automatically positive/negative/neutral posts.]]>
         </english>
-        <portuguese><![CDATA[Descobre automaticamente publica&ccedil;&otilde;es positivos/negativos/neutros.]]>
+        <portuguese><![CDATA[Descobre automaticamente publica&ccedil;&otilde;es positivas/negativas/neutras.]]>
         </portuguese>
     </translation>
     <translation id="sc-about-feat2">
@@ -91,9 +91,9 @@
     </translation>
 
     <translation id="sc-about-feat3">
-        <english><![CDATA[Detection of engament peaks, find out you is your most popular frind and the number os likes. ]]>
+        <english><![CDATA[Detection of engament peaks, finds out you is your most popular friend and the number of likes. ]]>
         </english>
-        <portuguese><![CDATA[<p>Detec&ccedil;&atilde;o de picos</p>  ]]>
+        <portuguese><![CDATA[Detec&ccedil;&atilde;o de picos, descobre que &eacute; o teu amigo mais popular e n&uacute;mero de likes.]]>
         </portuguese>
     </translation>
 
