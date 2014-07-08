@@ -120,26 +120,27 @@ function setPrice(element)
 {
     var id = $(element).attr('id');
 
-    if(id === 'pkg-personal' || id === 'pkg-basic')
+    if(id === 'pkg-personal')
     {
+        $('#expiration-date').html('-/-/-');
         $("#value-pay").html('0,00 €');
     }
     else if(id === 'pkg-company')
     {
+        var today           = new Date();
+        var nextMonth       = new Date(new Date(today).setMonth(today.getMonth()+1));
+        var expiration      = nextMonth.getDate() + '/' + nextMonth.getMonth() + '/' + nextMonth.getFullYear();
+
+        $('#expiration-date').html(expiration);
         $("#value-pay").html('75,00 €');
+    }
+    else
+    {
+        $("#value-pay").html('0,00 €');
+        setBasicPayValue();
     }
 
 }
-$( '#basic-license').change(function (e)
-{
-    setBasicPayValue();
-});
-
-
-$('#pkg-personal').click(changeColor);
-$('#pkg-basic').click(changeColor);
-$('#pkg-company').click(changeColor);
-$('#pkg-agency').click(changeColor);
 
 /** Sets the initial product **/
 function setProduct(id)
@@ -158,20 +159,35 @@ function setProduct(id)
     setPrice(ACTIVE_PACKAGE);
 }
 
-/** Sets the pay value in Basic Package */
+/** Sets the pay value and expiration date in Basic Package */
 function setBasicPayValue()
 {
     var text = $('#basic-license option:selected').val()
     if(text === '1 Week')
     {
+        var firstDay        = new Date();
+        var nextWeek        = new Date(firstDay.getTime() + 7 * 24 * 60 * 60 * 1000);
+        var expiration      = nextWeek.getDate() + '/' + nextWeek.getMonth() + '/' + nextWeek.getFullYear();
+
+        $('#expiration-date').html(expiration);
         $("#value-pay").html('0,00 €');
     }
     else if(text === '2 Weeks')
     {
+        var firstDay        = new Date();
+        var nextWeek        = new Date(firstDay.getTime() + 14 * 24 * 60 * 60 * 1000);
+        var expiration      = nextWeek.getDate() + '/' + nextWeek.getMonth() + '/' + nextWeek.getFullYear();
+
+        $('#expiration-date').html(expiration);
         $("#value-pay").html('5,00 €');
     }
     else
     {
+        var today           = new Date();
+        var nextMonth       = new Date(new Date(today).setMonth(today.getMonth()+1));
+        var expiration      = nextMonth.getDate() + '/' + nextMonth.getMonth() + '/' + nextMonth.getFullYear();
+
+        $('#expiration-date').html(expiration);
         $("#value-pay").html('9,00 €');
     }
 }
@@ -195,4 +211,15 @@ $('#method-paypal').click(function(e)
     $('#payment-paypal').addClass('show');
     $('#payment-bank').removeClass('show');
     $('#payment-bank').addClass('hidden');
+});
+
+
+$('#pkg-personal').click(changeColor);
+$('#pkg-basic').click(changeColor);
+$('#pkg-company').click(changeColor);
+$('#pkg-agency').click(changeColor);
+
+$( '#basic-license').change(function (e)
+{
+    setBasicPayValue();
 });
