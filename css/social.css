@@ -155,6 +155,19 @@ p {
     font-size: 15px;
 }
 
+.btn-login i:hover {
+    color: #333;
+}
+.btn-custom {
+    color: #333;
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+}
+
 
 /*************************************
  * Translation buttons
