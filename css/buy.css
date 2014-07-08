@@ -83,7 +83,10 @@ section {
 
 .service-item {
     margin-bottom: 15px;
+}
 
+.service-item:hover {
+    cursor: pointer;
 }
 
 .service-item p {
@@ -95,14 +98,14 @@ section {
     color:#19428b;
     border-color: #2f5eb2;
 }
-.package-icon{
+.package-icon {
     /**margin-left: 0px;*/
     padding-right: 0px;
     padding-left: 0px;
     width:12%;
 }
 
-.page-scroll{
+.page-scroll {
     margin-left: 10px;
 }
 
@@ -124,7 +127,7 @@ a.disabled {
 }
 
 #value-pay,
-#expiration-date{
+#expiration-date {
     font-size: 15px;
 }
 
@@ -137,7 +140,7 @@ a.disabled {
     border: 1px solid #ccc;
 }
 
-#basic-pay-plans{
+#basic-pay-plans {
     border:1px solid #428bca;
 }
 
@@ -148,7 +151,7 @@ button:focus
 }
 
 #method-paypal,
-#method-bank{
+#method-bank {
     cursor: pointer;
 }
 
@@ -163,12 +166,15 @@ button:focus
 
 .service-buy-item-p {
     color: #2f5eb2;
+}
 
+.service-buy-item-p {
+    color: #2f5eb2;
 }
 
 .service-buy-item-p p:hover
 {
-    color:       #19428b;
+    color:        #19428b;
     border-color: #2f5eb2;
 }
 
