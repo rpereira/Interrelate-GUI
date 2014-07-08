@@ -124,7 +124,7 @@ section {
     border-color: #2f5eb2;
 }
 
-.inactive {
+.inactive:hover {
     cursor: not-allowed;
 }
 .inactive p:hover
