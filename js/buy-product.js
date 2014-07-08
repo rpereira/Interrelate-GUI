@@ -1,5 +1,14 @@
 var ACTIVE_PACKAGE="";
 
+
+
+$('#btn-login').click(function(e)
+{
+    console.log("uau")
+});
+
+
+
 function getProduct()
 {
     var _URL  = document.URL;
