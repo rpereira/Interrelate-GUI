@@ -91,7 +91,7 @@
                     <div class="col-lg-4">
                         <div class="col-md-4 text-center">
                             <div class="service-item">
-                                <a href="#" ><i id="pkg-basic" class="service-icon fa fa-users"></i></a>
+                                <p><i id="pkg-basic" class="service-icon fa fa-users"></i></p>
                                 <h4 id="a-pkg-basic" >Basic</h4>
 
                             </div>
@@ -103,7 +103,7 @@
                         <!-- company package-->
                         <div class="col-md-4 text-center">
                             <div class="service-item">
-                                <a href="#"><i class="service-icon fa fa-building-o" id="pkg-company"></i></a>
+                                <p><i class="service-icon fa fa-building-o" id="pkg-company"></i></p>
                                 <h4 id="a-pkg-company" >Company</h4>
                             </div>
                           <!--  <p> 75€ / 1 month </p>-->
@@ -113,7 +113,7 @@
                         <!-- Agency package-->
                         <div class="col-md-4 text-center">
                             <div class="service-item">
-                                <a href="#" class="disabled"> <i class="service-icon fa fa-university" id="pkg-agency"></i></a>
+                                <p class="disabled"> <i class="service-icon fa fa-university" id="pkg-agency"></i></p>
                                 <h4 id="a-pkg-agency" >Agency</h4>
                             </div>
                             <p>Coming Soon</p>
@@ -146,13 +146,13 @@
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="optionsRadios" id="method-mbnet" value="option1">
+                            <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
                                 MBNet
                         </label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="optionsRadios" id="method-paypal" value="option1">
+                            <input type="radio" name="optionsRadios" id="method-paypal" value="option1" disabled>
                                 PayPal
                         </label>
                     </div>
@@ -160,6 +160,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class=""id="payment-bank" >
+                        <h4>This is the NIB for which you should make the money transfer.</h4>
                         <h4>NIB:</h4>
                         <h4><span id="payment-nib">0010 - 0000 - 5031807001 - 96</span></h4>
                     </div>
@@ -182,19 +183,42 @@
                     </div>
                     <div class="row modal-body">
                         <div class="col-lg-6">
-                            Trata aqui...
-                        </div>
-                        <div class="col-lg-6">
                             <div class="form-group">
-                                <h3 class="sub-header">Details:</h3>
+                                <h3>Account Details:</h3>
+                                <p>UserID: <span id="user-id"></span></p>
+                                <p>Email: <span id="user-email"></span></p>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <h3>Package Details:</h3>
+                                <div class="service-buy-item hidden" id="buy-pkg-basic">
+                                    <p class="service-buy-item-p"><i id="pkg-buy-basic" class="service-icon fa fa-users"></i></p>
+                                    <h4 id="a-pkg-buy-basic" >Enterprise Basic</h4>
+                                    <p>License: <span id="buy-license"></span></p>
+                                </div>
+                                <div class="service-buy-item hidden" id="buy-pkg-company">
+                                    <p class="service-buy-item-p"><i class="service-icon fa fa-building-o" id="pkg-buy-company"></i></p>
+                                    <h4 id="a-pkg-buy-company" >Enterprise Company</h4>
+                                    <p>License: <span id="buy-license"> 1 month</span></p>
+                                </div>
+                                <div class="service-buy-item hidden" id="buy-pkg-agency">
+                                    <p class="service-buy-item-p disabled"> <i class="service-icon fa fa-university" id="pkg-buy-agency"></i></p>
+                                    <h4 id="a-pkg-buy-agency" >Enterprise Agency</h4>
+                                    <p>License: <span id="buy-license"> </span></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <p>Expiration Date: <span id="expiration-date">-/-/-</span></p>
                                 <p>Price: <span id="value-pay"></span></p>
                             </div>
                             <div class="form-group">
-                                <h3 class="sub-header">Details:</h3>
+                                <h3 class="sub-header">More Info:</h3>
                                 <label>Please email us the proof</label>
                                 <p>buy@interrelate.pt</p>
                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Instructions:</h3>
                         </div>
                     </div>
                     <div class="modal-footer">

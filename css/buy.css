@@ -113,15 +113,13 @@ section {
 
 }
 
-.service-item a {
-    text-decoration: none;
-    cursor: pointer;
+.service-item p {
+    color: #2f5eb2;
 
 }
-.service-item a:hover
+.service-item p:hover
 {
-    text-decoration: none;
-    color:#2f5eb2;
+    color:#19428b;
     border-color: #2f5eb2;
 }
 .package-icon{
@@ -187,4 +185,15 @@ button:focus
 .modal-body
 {
     text-align: left;
+}
+
+
+.service-buy-item-p {
+    color: #2f5eb2;
+
+}
+.service-buy-item-p p:hover
+{
+    color:#19428b;
+    border-color: #2f5eb2;
 }

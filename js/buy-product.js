@@ -93,6 +93,7 @@ function changeColor(e)
     var color = $(this).css('border-color');
 
     var id= $(this).attr('id');
+
     if(color === 'rgb(66, 139, 202)')
     {
         $("#" + id).css('border', 'solid 3px #449d44');
@@ -109,6 +110,12 @@ function changeColor(e)
             $('#basic-license').removeClass('show');
             $('#basic-license').addClass('hidden');
         }
+
+        $('#buy-' + id).removeClass('hidden');
+        $('#buy-' + id).addClass('show');
+        $('#buy-' + ap_id).removeClass('show');
+        $('#buy-' + ap_id).addClass('hidden');
+
 
     }
     ACTIVE_PACKAGE = this;
@@ -158,6 +165,10 @@ function setProduct(id)
 
     $("#a-" + id).css('font-weight' , 'bold');
     $("#a-" + id).css('font-size' , '20px');
+
+    //Activate package description in modal
+    $("#buy-" + id).removeClass('hidden');
+    $("#buy-" + id).addClass("show");
 
     ACTIVE_PACKAGE = $('#' + id);
     if(id === 'pkg-basic')
@@ -226,7 +237,7 @@ $('#method-paypal').click(function(e)
 $('#pkg-personal').click(changeColor);
 $('#pkg-basic').click(changeColor);
 $('#pkg-company').click(changeColor);
-$('#pkg-agency').click(changeColor);
+//$('#pkg-agency').click(changeColor);
 
 $( '#basic-license').change(function (e)
 {
