@@ -201,14 +201,6 @@
         </portuguese>
     </translation>
 
-    <!-- =============== BUTTON ========== -->
-    <translation id="sc-personal-pack-button">
-        <english><![CDATA[GET NOW]]>
-        </english>
-        <portuguese><![CDATA[OBTER AGORA]]>
-        </portuguese>
-    </translation>
-
     <!-- ========== Enterprise Pack Section ============== -->
     <translation id="sc-enterprise-title">
         <english><![CDATA[ENTERPRISE PACK]]>
