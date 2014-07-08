@@ -1,13 +1,9 @@
-var ACTIVE_PACKAGE="";
-
-
+var ACTIVE_PACKAGE = '';
 
 $('#btn-login').click(function(e)
 {
     console.log("uau")
 });
-
-
 
 function getProduct()
 {
