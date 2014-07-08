@@ -71,16 +71,30 @@
         </portuguese>
     </translation>
     <translation id="sc-about-description">
-        <english><![CDATA[ <em>Social Management Platform</em> is an integrated system combining advanced posting in the Facebook social network<br> with the organic, and social interaction, analysis of the page.</h4>]]>
+        <english><![CDATA[An integrated system combining advanced posting<br> in the Facebook social network with the organic, and social interaction, <br>analysis of the page.</h4>]]>
         </english>
-        <portuguese><![CDATA[<em>Plataforma de Gestão Social</em> &eacute; um sistema integrado combinando publica&ccedil;&atilde;o avançada na rede social Facebook,<br /> com a an&aacute;lise do desempenho org&acirc;nico, e das intera&ccedil;&otilde;es sociais, que ocorrem na p&aacute;gina.</h4>]]>
+        <portuguese><![CDATA[Sistema integrado combinando publica&ccedil;&atilde;o avançada<br> na rede social Facebook, com a an&aacute;lise do desempenho org&acirc;nico, e das intera&ccedil;&otilde;es sociais,<br> que ocorrem na p&aacute;gina.</h4>]]>
         </portuguese>
     </translation>
 
-    <translation id="sc-about-feat1">
-        <english><![CDATA[Find automatically positive/negative/neutral posts.]]>
+    <translation id="sc-about-title-feat1">
+        <english><![CDATA[Feeling]]>
         </english>
-        <portuguese><![CDATA[Descobre automaticamente publica&ccedil;&otilde;es positivas/negativas/neutras.]]>
+        <portuguese><![CDATA[Sentimento]]>
+        </portuguese>
+    </translation>
+    <translation id="sc-about-feat1">
+        <english><![CDATA[Find automatically positive/negative/neutral posts or coments.]]>
+        </english>
+        <portuguese><![CDATA[Descobre automaticamente publica&ccedil;&otilde;es e coment&acute;rios positivas/negativas/neutras.]]>
+        </portuguese>
+    </translation>
+
+
+    <translation id="sc-about-title-feat2">
+        <english><![CDATA[Schedule]]>
+        </english>
+        <portuguese><![CDATA[Agenda]]>
         </portuguese>
     </translation>
     <translation id="sc-about-feat2">
@@ -90,6 +104,13 @@
         </portuguese>
     </translation>
 
+
+    <translation id="sc-about-title-feat3">
+        <english><![CDATA[Fans]]>
+        </english>
+        <portuguese><![CDATA[F&atilde;s]]>
+        </portuguese>
+    </translation>
     <translation id="sc-about-feat3">
         <english><![CDATA[Detection of engament peaks, finds out you is your most popular friend and the number of likes. ]]>
         </english>
@@ -130,7 +151,7 @@
         </portuguese>
     </translation>
 
-    <!--================ FEATURES ===================== -->
+    <!--================ FEATURES PERSONAL ===================== -->
     <translation id="sc-personal-pack-feat1">
         <english><![CDATA[Number of likes]]>
         </english>
@@ -212,13 +233,6 @@
         </portuguese>
     </translation>
 
-   <!-- <translation id="sc-enterprise-pack1-price">
-        <english><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
-        </english>
-        <portuguese><![CDATA[<h4><span class="dollar-sign">$</span>15</h4><span class="price-meta">/ mo</span>]]>
-        </portuguese>
-    </translation>-->
-
     <translation id="sc-enterprise-pack1-description">
         <english><![CDATA[Access to the <em>Overview Page</em>]]>
         </english>
@@ -226,7 +240,7 @@
         </portuguese>
     </translation>
 
-    <!--================ FEATURES ===================== -->
+    <!--================ FEATURES BASIC===================== -->
     <translation id="sc-enterprise-pack1-feat1">
         <english><![CDATA[Number of likes]]>
         </english>
@@ -254,7 +268,7 @@
     <translation id="sc-enterprise-pack1-feat5">
         <english><![CDATA[Page Response Rate]]>
         </english>
-        <portuguese><![CDATA[Taxa de Resposta ad P&aacute;gina]]>
+        <portuguese><![CDATA[Taxa de Resposta da P&aacute;gina]]>
         </portuguese>
     </translation>
     <translation id="sc-enterprise-pack1-feat6">
@@ -266,7 +280,7 @@
     <translation id="sc-enterprise-pack1-feat7">
         <english><![CDATA[Tracking 2 selected pages]]>
         </english>
-        <portuguese><![CDATA[Acompanhar 2 p&aacute;ginas selecionadas]]>
+        <portuguese><![CDATA[Acompanhamento de 2 p&aacute;ginas selecionadas]]>
         </portuguese>
     </translation>
 
@@ -298,7 +312,7 @@
         </portuguese>
     </translation>
 
-    <!--================ FEATURES ===================== -->
+    <!--================ FEATURES COMPANY===================== -->
     <translation id="sc-enterprise-pack2-feat1">
         <english><![CDATA[A publishing system capable of scheduling the posts]]>
         </english>
@@ -350,7 +364,7 @@
     <translation id="sc-enterprise-pack2-feat9">
         <english><![CDATA[Tracking 4 selected pages]]>
         </english>
-        <portuguese><![CDATA[Acompanhar 4 p&aacute;ginas selecionadas]]>
+        <portuguese><![CDATA[Acompanhamento de 4 p&aacute;ginas selecionadas]]>
         </portuguese>
     </translation>
 
@@ -375,7 +389,7 @@
         </portuguese>
     </translation>
 
-    <!--================ FEATURES ===================== -->
+    <!--================ FEATURES AGENCY ===================== -->
     <translation id="sc-enterprise-pack3-feat1">
         <english><![CDATA[Up to 25 pages to analyse simultaneously]]>
         </english>
