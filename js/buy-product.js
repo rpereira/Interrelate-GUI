@@ -171,6 +171,7 @@ function setProduct(id)
     {
         $('#basic-license').removeClass('hidden');
         $('#basic-license').addClass('show');
+        setBasicPayValue();
     }
     setPrice(ACTIVE_PACKAGE);
 }
@@ -178,7 +179,8 @@ function setProduct(id)
 /** Sets the pay value and expiration date in Basic Package */
 function setBasicPayValue()
 {
-    var text = $('#basic-license option:selected').val()
+    var text = $('#basic-license option:selected').val();
+
     if(text === '1 Week')
     {
         var firstDay        = new Date();
@@ -187,6 +189,7 @@ function setBasicPayValue()
 
         $('#expiration-date').html(expiration);
         $("#value-pay").html('0,00 €');
+        $("#buy-basic-license").html("1 Week");
     }
     else if(text === '2 Weeks')
     {
@@ -196,6 +199,7 @@ function setBasicPayValue()
 
         $('#expiration-date').html(expiration);
         $("#value-pay").html('5,00 €');
+        $("#buy-basic-license").html("2 Weeks");
     }
     else
     {
@@ -205,6 +209,7 @@ function setBasicPayValue()
 
         $('#expiration-date').html(expiration);
         $("#value-pay").html('9,00 €');
+        $("#buy-basic-license").html("1 Month");
     }
 }
 
