@@ -207,6 +207,28 @@ p {
     padding-top: 7px;
 }
 
+.margin-service
+{
+    margin-left:    8%;
+
+}
+@media (max-width:321px)
+{
+    .margin-service
+    {
+        margin-left:    0px;
+    }
+    #analytics {
+        margin-left: 13%;
+    }
+
+    #analytics-text {
+        margin-top: 10px;
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+}
 .btn-service
 {
     font-size:      23px;
@@ -241,8 +263,11 @@ p {
     #analytics-text {
         margin-left: 0px;
         padding: 7px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
+
 
 .description {
     font-size: 14px;
