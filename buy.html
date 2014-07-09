@@ -154,9 +154,9 @@
                         <div class="col-lg-4"></div>
 
                         <div class="col-lg-4 form-group">
-                            <p id="pkg-license-title">Lincense: <span id="package-license"></span></p>
-                            <p id="pkg-expiration-title">Expiration Date: <span id="expiration-date">-/-/-</span></p>
-                            <p id="pkg-price-title">Price: <span id="price-package"></span></p>
+                            <p><span id="pkg-license-title">License:</span> <span id="package-license"></span></p>
+                            <p><span id="pkg-expiration-title"></span><span id="expiration-date">-/-/-</span></p>
+                            <p><span id="pkg-price-title"></span><span id="price-package"></span></p>
                         </div>
 
                         <div class="col-lg-4"></div>
@@ -176,7 +176,7 @@
                         <div class="radio">
                             <label>
                                 <input type="radio" name="optionsRadios" id="method-bank" value="option1" checked>
-                                    Bank Transfer
+                                    <span id="lbl-method-bank">Bank Transfer</span>
                             </label>
                         </div>
 
@@ -189,7 +189,7 @@
 
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
+                                <input type="radio" name="optionsRadios" id="method-paypal" value="option1" disabled>
                                     Paypal
                             </label>
                         </div>
@@ -216,7 +216,7 @@
 
                     <!-- modal header -->
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only" id="modal-button-close">Close</span></button>
                         <h3 class="modal-title" id="myModalLabel">Confirm your payment</h3>
                     </div>
                     <!-- ./modal header -->
@@ -232,22 +232,22 @@
                                 <div class="service-buy-item hidden" id="buy-pkg-basic">
                                     <p class="service-buy-item-p"><i id="pkg-buy-basic" class="service-icon fa fa-users"></i></p>
                                     <h4 id="a-pkg-buy-basic">Enterprise Basic</h4>
-                                    <p id="modal-basic-license-title">License: <span id="buy-basic-license"></span></span></p>
+                                    <p><span id="modal-basic-license-title"></span> <span id="buy-basic-license"></span></span></p>
                                 </div>
                                 <div class="service-buy-item hidden" id="buy-pkg-company">
                                     <p class="service-buy-item-p"><i class="service-icon fa fa-building-o" id="pkg-buy-company"></i></p>
                                     <h4 id="a-pkg-buy-company">Enterprise Company</h4>
-                                    <p id="modal-company-license-title">License: <span id="buy-company-license"> 1 month</span></p>
+                                    <p><span id="modal-company-license-title"></span> <span id="buy-company-license"> 1 month</span></p>
                                 </div>
                                 <div class="service-buy-item hidden" id="buy-pkg-agency">
                                     <p class="service-buy-item-p disabled"> <i class="service-icon fa fa-university" id="pkg-buy-agency"></i></p>
                                     <h4 id="a-pkg-buy-agency">Enterprise Agency</h4>
-                                    <p id="modal-agency-license-title">License: <span id="buy-agency-license"> </span></p>
+                                    <p><span id="modal-agency-license-title"></span> <span id="buy-agency-license"> </span></p>
                                 </div>
 
-                                <p id="modal-buy-expiration">Expiration date (dd/mm/aaaa): <span id="expiration-date-buy">-/-/-</span></p>
-                                <p id="modal-buy-price">Price: <span id="details-buy-price"></span></p>
-                                <p id="modal-buy-account">AccountID: <span id="user-id"></span></p>
+                                <p><span id="modal-buy-expiration"></span> <span id="expiration-date-buy">-/-/-</span></p>
+                                <p><span id="modal-buy-price"></span> <span id="details-buy-price"></span></p>
+                                <p><span id="modal-buy-account"></span> <span id="user-id"></span></p>
                             </div>
 
                             <!--<form class="form-group">
@@ -279,13 +279,13 @@
                                 <div class="checkbox" >
                                     <label>
                                         <input type="checkbox" id="cb-confirm-age"
-                                               style="cursor: pointer;"> I am over 18 years old.
+                                               style="cursor: pointer;"> <span id="lbl-confirm-age"></span>
                                     </label>
                                 </div>
                                 <div class="checkbox" >
                                     <label>
                                         <input type="checkbox" id="cb-confirm-terms"
-                                               style="cursor: pointer;"> I have read and agreed with the <a href="#">terms and conditions</a>.
+                                               style="cursor: pointer;"> <span id="lbl-confirm-terms"></span> <a href="#"><span id="lbl-confirm-terms2"></span></a>.
                                     </label>
                                 </div>
                             </div>
@@ -296,9 +296,9 @@
 
                     <!-- modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" id="modal-cancel-button">Cancel</button>
                         <button type="button" id="btn-agree-terms" class="btn btn-success" disabled="true">
-                            <i class="fa fa-check"></i> OK, I agree
+                            <i class="fa fa-check"></i> <span id="modal-agree-button"></span>
                         </button>
                     </div>
                     <!-- ./modal footer -->
@@ -308,14 +308,14 @@
         <!-- /.details modal -->
 
         <!-- payment modal -->
-        <div class="modal fade" id="confirm-payment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal fade" id="confirm-payment-modal" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true" data-backdrop="static">
             <div class="modal-dialog">
                 <div class="modal-content">
 
                     <!-- modal header -->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h3 class="modal-title" id="myModalLabel">Finish your payment</h3>
+                        <h3 class="modal-title" id="myModal2Label">Finish your payment</h3>
                     </div>
                     <!-- ./modal header -->
 
@@ -333,8 +333,8 @@
                             </div>
 
                             <div id="payment-bank">
-                                <h4 id="modal-transfer-amount">Amount to transfer (€): <br>
-                                    <span><strong id="modal-amount">100</strong></span>
+                                <h4><span  id="modal-transfer-amount">Amount to transfer (€):</span> <br>
+                                    <span><strong id="modal-amount"></strong></span>
                                 </h4>
                             </div>
                         </div>
@@ -345,7 +345,7 @@
                             <div class="form-group">
                                 <h3 style="margin-top: 0;" id="modal-national-title">National Transfers:</h3>
                                 <p><strong>NIB:</strong> 0010  0000  5031807001 96</p>
-                                <p><strong>Em nome de:</strong> INTERRELATE, Lda</p>
+                                <p><strong id="transfer-account">Em nome de:</strong> INTERRELATE, Lda</p>
                             </div>
 
                             <div class="form-group">
@@ -360,9 +360,9 @@
 
                     <!-- modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" id="modal2-cancel-button">Cancel</button>
                         <button type="button" id="btn-confirm-payment" class="btn btn-success">
-                            <i class="fa fa-check"></i> Finish
+                            <i class="fa fa-check"></i> <span id="modal-finish-payment"></span>
                         </button>
                     </div>
                     <!-- ./modal footer -->

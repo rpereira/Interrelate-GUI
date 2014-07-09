@@ -151,7 +151,7 @@ function getUrlPage()
         else
         {
 
-            return 'index';
+            return 'buy';
         }
     }
 
