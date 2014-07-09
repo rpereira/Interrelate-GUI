@@ -259,5 +259,6 @@ $('#btn-submit-buy').click(function (e)
 
     $("#expiration-date-buy").html(expiration);
     $("#details-buy-price").html(price);
+    $("#modal-amount").html(price);
 });
 
