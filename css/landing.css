@@ -233,7 +233,7 @@ p {
 @media (max-width: 768px) {
 
     body, html {
-        background: url(../img/bg-landing.jpg) no-repeat fixed;
+        background: url(../img/bg-landing.jpg) fixed;
     }
 
     .margin-service
