@@ -7,6 +7,30 @@ $('#btn-login').click(function(e)
     console.log("uau")
 });
 
+/*$('#payment-modal').modal(
+{
+    backdrop: 'static',
+    keyboard: false
+});*/
+
+/**
+ * If terms were accepted, proceed button will be disabled.
+ */
+$("#cb-confirm-terms").click(function(e)
+{
+    var cb = $("#cb-confirm-terms");
+
+    if(cb.checked)
+    {
+        $("btn-confirm-payment").removeAttr("disabled");
+    }
+    else
+    {
+        $("#btn-confirm-payment").prop("disabled", !this.checked);
+    }
+});
+
+
 function getProduct()
 {
     var _URL  = document.URL;
