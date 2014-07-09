@@ -19,7 +19,7 @@ $('#btn-login').click(function(e)
 $("#cb-confirm-terms").click(function(e)
 {
     var cb = $("#cb-confirm-terms");
-    var check =
+
     if(cb.checked)
     {
         $("btn-confirm-payment").removeAttr("disabled");
@@ -61,7 +61,8 @@ $(document).ready(function()
     $("#back-home").click().attr("href", link);
 
     /** Sets the product selected */
-    if(product != null){
+    if(product != null)
+    {
         var last_char = product.substr(product.length - 1);
         if(last_char === '#')
         {
