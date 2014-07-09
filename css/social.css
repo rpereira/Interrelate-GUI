@@ -45,6 +45,7 @@ p {
     position: relative;
 }
 
+
 /*************************************
  * Fonts
  *************************************/
@@ -147,7 +148,7 @@ p {
 }
 
 .btn-login {
-    margin-left: 35px;
+    margin-left: 15px;
 }
 
 .btn-login i {
