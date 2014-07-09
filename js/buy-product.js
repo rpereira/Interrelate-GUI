@@ -4,7 +4,7 @@ var ACTIVE_PACKAGE = '';
 
 $('#btn-login').click(function(e)
 {
-    console.log("uau")
+    console.log("yay")
 });
 
 /*$('#payment-modal').modal(
