@@ -32,18 +32,25 @@
 <body id="body_analytics">
 
     <!-- navbar -->
-    <nav class="navbar navbar-custom navbar-fixed-top mainmenu" role="navigation">
-        <div class="container">
-            <!-- navbar collapse -->
-            <div class="navbar-collapse collapse" style="height: 1px;">
-                <!-- navbar right -->
-                <ul class="nav navbar-nav navbar-right">
-                    <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
-                    <button class="btn btn-default btn-xs" id="en-lang">EN</button>
-                </ul>
-                <!-- ./navbar right -->
+    <nav class="navbar navbar-custom mainmenu navbar-fixed-top" role="navigation">
+         <div class="navbar-inner">
+            <div class="container">
+                <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-languages">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <!-- navbar collapse -->
+                <div class="navbar-collapse collapse" style="height: 1px;" id="navbar-languages">
+                    <!-- navbar right -->
+                    <ul class="nav navbar-nav pull-right">
+                        <button class="btn btn-default btn-xs" id="pt-lang">PT</button>
+                        <button class="btn btn-default btn-xs" id="en-lang">EN</button>
+                    </ul>
+                    <!-- ./navbar right -->
+                </div>
+                <!--/.nav collapse -->
             </div>
-            <!--/.nav collapse -->
         </div>
     </nav>
     <!-- /.navbar -->
