@@ -19,11 +19,17 @@ body, h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     #body_analytics {
         overflow: visible;
     }
+
+    .intro-message
+    {
+        padding-bottom: 0px;
+    }
 }
+
 
 
 /*************************************
@@ -112,10 +118,13 @@ p {
     text-align: center;
 }
 
-.intro-message {
-    position: relative;
-    padding-top: 7%;
-    padding-bottom: 50%;
+@media (min-height: 769px)
+{
+    .intro-message {
+        position: relative;
+        padding-top: 7%;
+        padding-bottom: 50%;
+    }
 }
 
 .intro-message > h1 {
