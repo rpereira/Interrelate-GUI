@@ -30,6 +30,12 @@ $("#cb-confirm-terms").click(function(e)
     }
 });
 
+$("#btn-confirm-payment").click(function(e)
+{
+    $("#payment-modal").modal('hide');
+    $("#confirm-payment-modal").modal('show');
+});
+
 
 function getProduct()
 {

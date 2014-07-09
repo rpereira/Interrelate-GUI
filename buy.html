@@ -36,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>-->
-                <a class="navbar-brand" href="social.html"><img src="img/interrelate_logo_header.png"/>  Social Management Platform</a>
+                <a class="navbar-brand" href="social.html"><img src="img/interrelate_logo_header.png"/>  Interrelate Social</a>
             </div>
 
             <ul id="navbar-user" class="nav navbar-nav navbar-right user-nav hide">
@@ -141,20 +141,29 @@
                     </div>
                     <!-- /.packages -->
 
+
+
                     <div class="row">
+                        <div class="col-lg-6">
+                            <div class="col-lg-6">
+                                <div class="hidden" id="basic-license">
+                                    <h4>Choose your license</h4>
+                                    <select id="basic-pay-plans" class="form-control" required>
+                                        <option>1 Week</option>
+                                        <option>2 Weeks</option>
+                                        <option>1 Month</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                        <div class="col-lg-4"></div>
-
-                        <div class="col-lg-4 hidden text-center" id="basic-license">
-                            <h4>Choose your license</h4>
-                            <select id="basic-pay-plans" class="form-control" required>
-                                <option>1 Week</option>
-                                <option>2 Weeks</option>
-                                <option>1 Month</option>
-                            </select>
+                            <div class="col-lg-6"></div>
                         </div>
 
-                        <div class="col-lg-4"></div>
+                        <div class="col-lg-6">
+                            <p>mostrar licença?</p>
+                            <p>Expiration Date: <span id="expiration-date">-/-/-</span></p>
+                            <p>Price: <span id="value-pay"></span></p>
+                        </div>
                     </div>
                 </div>
                 <!-- /.packages -->
@@ -189,11 +198,7 @@
                         <!-- /.mbnet -->
                     </div>
                     <div class="col-lg-6">
-                        <div class=""id="payment-bank" >
-                            <h4>This is the NIB for which you should make the money transfer.</h4>
-                            <h4>NIB:</h4>
-                            <h4><span id="payment-nib">0010 - 0000 - 5031807001 - 96</span></h4>
-                        </div>
+
                     </div>
                 </div>
                 <!-- /.payment method -->
@@ -208,7 +213,7 @@
         </div>
         <!-- /.container -->
 
-        <!-- Modal -->
+        <!-- details modal -->
         <div class="modal fade" id="payment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -225,14 +230,9 @@
 
                         <!-- modal left -->
                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <h3>Account Details:</h3>
-                                <p>UserID: <span id="user-id"></span></p>
-                                <p>Email: <span id="user-email"></span></p>
-                            </div>
 
                             <div class="form-group">
-                                <h3>Package Details:</h3>
+                                <h3>Details:</h3>
                                 <div class="service-buy-item hidden" id="buy-pkg-basic">
                                     <p class="service-buy-item-p"><i id="pkg-buy-basic" class="service-icon fa fa-users"></i></p>
                                     <h4 id="a-pkg-buy-basic">Enterprise Basic</h4>
@@ -249,17 +249,22 @@
                                     <p>License: <span id="buy-agency-license"> </span></p>
                                 </div>
 
-                                <span>
-                                    <p>Expiration Date: <span id="expiration-date">-/-/-</span></p>
-                                    <p>Price: <span id="value-pay"></span></p>
-                                </span>
+                                <p>Expiration date (dd/mm/aaaa): <span id="expiration-date">-/-/-</span></p>
+                                <p>Price: <span id="value-pay"></span></p>
+                                <p>AccountID: <span id="user-id"></span></p>
                             </div>
 
-                            <div class="form-group">
-                                <h3 class="sub-header">More Info:</h3>
-                                <label>Please email us the proof</label>
-                                <p>buy@interrelate.pt</p>
-                            </div>
+                            <form class="form-group">
+                                <h3>Dados para faturação</h3>
+                                <label>Nome:</label>
+                                <input type="text" class="form-control input-sm">
+
+                                <label>Morada:</label>
+                                <input type="text" class="form-control input-sm">
+
+                                <label>NIF:</label>
+                                <input type="text" class="form-control input-sm">
+                            </form>
                         </div>
                         <!-- ./modal left -->
 
@@ -267,12 +272,26 @@
                         <div class="col-lg-6">
                             <h3>Instructions:</h3>
                             <div class="form-group">
+                                Neste momento já temos recolhido o seu AccountID do Facebook, que usaremos para o podermos identificar como utilizador do serviço.<br>
+                                No entanto, para podermos ativar o serviço necessitamos de receber o comprovativo da transferência (por email).<br>
+                                O tempo de ativação demora até 24 horas.<br>
+                                Se necessitar de dados de faturação, por favor preencha os campos ao lado.<br>
+                                Se desejar cancelar a compra, eliminaremos os dados que já introduziu na nossa base de dados.
+
+                            </div>
+                            <div class="form-group">
                                 <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" id="cb-confirm-terms"
-                                           style="cursor: pointer;"> I have read and agreed with the <a href="#">terms and conditions</a>.
-                                </label>
-                              </div>
+                                    <label>
+                                        <input type="checkbox" id="cb-confirm-terms"
+                                            style="cursor: pointer;"> I am over 18.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="cb-confirm-terms"
+                                            style="cursor: pointer;"> I have read and agreed with the <a href="#">terms and conditions</a>.
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <!-- ./modal right -->
@@ -283,14 +302,78 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                         <button type="button" id="btn-confirm-payment" class="btn btn-success" disabled>
-                            <i class="fa fa-check"></i> Confirm and proceed
+                            <i class="fa fa-check"></i> OK, I agree
                         </button>
                     </div>
                     <!-- ./modal footer -->
                 </div>
             </div>
         </div>
-        <!-- /.Modal -->
+        <!-- /.details modal -->
+
+        <!-- payment modal -->
+        <div class="modal fade" id="confirm-payment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Finish your payment</h3>
+                    </div>
+                    <!-- ./modal header -->
+
+                    <!-- modal body -->
+                    <div class="row modal-body">
+
+                        <!-- modal left -->
+                        <div class="col-lg-6">
+
+                            <div class="form-group">
+                                <div class="well well-sm bg-info">
+                                    <label>Por favor use o seguinte endereço para envio do comprovativo da transferência:</label>
+                                    <p>buy@interrelate.pt</p>
+                                </div>
+                            </div>
+
+                            <div id="payment-bank">
+                                <h4>Amount to transfer (€): <br>
+                                    <span><strong>100</strong></span>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- ./modal left -->
+
+                        <!-- modal right -->
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <h3 style="margin-top: 0;">National Transfers:</h3>
+                                <p><span>NIB:</span> 0010  0000  5031807001 96</p>
+                                <p><span>Em nome de:</span> INTERRELATE, Lda</p>
+                            </div>
+
+                            <div class="form-group">
+                                <h3>International Transfers:</h3>
+                                <p><span>IBAN:</span> PT50  0010  0000  5031  8070  0019 6</p>
+                                <p>SWIFT/BIC: BBPIPTPL</p>
+                            </div>
+                        </div>
+                        <!-- ./modal right -->
+                    </div>
+                    <!-- ./modal body -->
+
+                    <!-- modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="button" id="btn-confirm-payment" class="btn btn-success" disabled>
+                            <i class="fa fa-check"></i> Finish
+                        </button>
+                    </div>
+                    <!-- ./modal footer -->
+                </div>
+            </div>
+        </div>
+        <!-- payment modal -->
 
     </section>
     <!-- /.buy section -->
