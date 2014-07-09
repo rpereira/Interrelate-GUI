@@ -84,7 +84,7 @@
         </portuguese>
     </translation>
     <translation id="sc-about-feat1">
-        <english><![CDATA[Find automatically positive/negative/neutral posts or coments.]]>
+        <english><![CDATA[We developed a system capable of identifying publications and reviews that have associated a positive, negative or neutral feeling. This tool allows you to quickly see who lifts the spirits of your social network, or who feels unhappy. It is therefore a very important marketing tool.]]>
         </english>
         <portuguese><![CDATA[Desenvolvemos um sistema capaz de identificar as publicações e os comentários que tem associado um sentimento positivo, negativo ou neutro. Esta ferramenta permite perceber mais rapidamente quem eleva o ânimo da sua rede social, ou quem se sente descontente. É por isso uma ferramenta muito importante de marketing.]]>
         </portuguese>
@@ -98,7 +98,7 @@
         </portuguese>
     </translation>
     <translation id="sc-about-feat2">
-        <english><![CDATA[A publishing system capable of scheduling the posts.]]>
+        <english><![CDATA[We offer you a system that allows asynchronous publication schedule publication of messages in your page. You can include links, photos and videos, just like you're used to on Facebook. However, as our system offers the best times to post, has the advantage of being able to plan key moments that foster an increased audience for your publications.]]>
         </english>
         <portuguese><![CDATA[Oferecemos um sistema de publicação assíncrona que permite programar a publicação de mensagens na sua página. Pode incluir links, fotos e vídeos, exatamente como está habituado a fazer no Facebook. Contudo, como o nosso sistema propõe as melhores alturas para publicar, tem a vantagem de poder planear momentos-chave que potenciem um aumento de audiência para as sua publicações.]]>
         </portuguese>
@@ -112,7 +112,7 @@
         </portuguese>
     </translation>
     <translation id="sc-about-feat3">
-        <english><![CDATA[Detection of engament peaks, finds out you is your most popular friend and the number of likes. ]]>
+        <english><![CDATA[We have several tools and indexes that allows you to discover the most popular friends, the friends that do more likes and share more. Moreover, it can identify the contents that were msot popular at what times and there was peak activity on your page.]]>
         </english>
         <portuguese><![CDATA[Temos várias ferramentas e índices que lhe permitem descobrir os amigos mais populares, os que fazem mais likes e os que partilham mais. Além disso, pode identificar os conteúdos que foram mais populares e em que momentos houve picos de atividade na sua página.
 ]]>
@@ -218,9 +218,7 @@
         </portuguese>
     </translation>
     <translation id="sc-enterprise-pack1-price">
-        <english><![CDATA[<h4>Free</h4><span class="price-meta">/1 we</span><br/>
-                            <h4>5<span class="dollar-sign">€</span></h4><span class="price-meta">/ 2 we</span>
-                            <h4>9<span class="dollar-sign">€</span></h4><span class="price-meta">/ 1 mo</span>]]>
+        <english><![CDATA[1 week / free then 5€ / 2 weeks ou 9€ / 1 month]]>
         </english>
         <portuguese><![CDATA[1 semana gr&aacute;tis depois 5€ / 2 semanas ou 9€ / 1 m&ecirc;s]]>
         </portuguese>
