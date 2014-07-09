@@ -41,11 +41,15 @@ function getProduct()
 {
     var _URL  = document.URL;
     var query = _URL.split("?");
-    var param = query[1].split("=");
-
-    var product = param[1];
-
-    return product;
+    if(query[1] != undefined)
+    {
+        var param = query[1].split("=");
+        return param[1];
+    }
+    else
+    {
+        return null;
+    }
 }
 
 $(document).ready(function()
@@ -57,19 +61,20 @@ $(document).ready(function()
     $("#back-home").click().attr("href", link);
 
     /** Sets the product selected */
+    if(product != null){
+        var last_char = product.substr(product.length - 1);
+        if(last_char === '#')
+        {
+            var proc = product.split('#');
+            var id = 'pkg-' + proc[0];
+        }
+        else
+        {
+            var id = 'pkg-' + product;
+        }
 
-    var last_char = product.substr(product.length - 1);
-    if(last_char === '#')
-    {
-        var proc = product.split('#');
-        var id = 'pkg-' + proc[0];
+        setProduct(id);
     }
-    else
-    {
-        var id = 'pkg-' + product;
-    }
-
-    setProduct(id);
 });
 
 $("#btn-login").click(function(e)
