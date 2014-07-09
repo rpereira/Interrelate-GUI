@@ -189,20 +189,6 @@ button:focus
     cursor: pointer;
 }
 
-#label-new{
-    position: absolute;
-    top: 8px;
-    right: 6px;
-    font-size:13px;
-    background-color: #f0ad4e;
-    overflow: hidden;
-    transform:rotate(45deg);
-    -ms-transform:rotate(45deg); /* IE 9 */
-    -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
 
 /*************************************
  * Modal
@@ -259,4 +245,5 @@ code {
     transform:rotate(45deg);
     -ms-transform:rotate(45deg); /* IE 9 */
     -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+    font-weight: bold;
 }
