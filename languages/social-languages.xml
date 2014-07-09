@@ -86,7 +86,7 @@
     <translation id="sc-about-feat1">
         <english><![CDATA[Find automatically positive/negative/neutral posts or coments.]]>
         </english>
-        <portuguese><![CDATA[Descobre automaticamente publica&ccedil;&otilde;es e coment&acute;rios positivas/negativas/neutras.]]>
+        <portuguese><![CDATA[Desenvolvemos um sistema capaz de identificar as publicações e os comentários que tem associado um sentimento positivo, negativo ou neutro. Esta ferramenta permite perceber mais rapidamente quem eleva o ânimo da sua rede social, ou quem se sente descontente. É por isso uma ferramenta muito importante de marketing.]]>
         </portuguese>
     </translation>
 
@@ -100,7 +100,7 @@
     <translation id="sc-about-feat2">
         <english><![CDATA[A publishing system capable of scheduling the posts.]]>
         </english>
-        <portuguese><![CDATA[Um sistema de publica&ccedil;&atilde;o capaz de programar as mensagens.]]>
+        <portuguese><![CDATA[Oferecemos um sistema de publicação assíncrona que permite programar a publicação de mensagens na sua página. Pode incluir links, fotos e vídeos, exatamente como está habituado a fazer no Facebook. Contudo, como o nosso sistema propõe as melhores alturas para publicar, tem a vantagem de poder planear momentos-chave que potenciem um aumento de audiência para as sua publicações.]]>
         </portuguese>
     </translation>
 
@@ -114,7 +114,8 @@
     <translation id="sc-about-feat3">
         <english><![CDATA[Detection of engament peaks, finds out you is your most popular friend and the number of likes. ]]>
         </english>
-        <portuguese><![CDATA[Detec&ccedil;&atilde;o de picos, descobre que &eacute; o teu amigo mais popular e n&uacute;mero de likes.]]>
+        <portuguese><![CDATA[Temos várias ferramentas e índices que lhe permitem descobrir os amigos mais populares, os que fazem mais likes e os que partilham mais. Além disso, pode identificar os conteúdos que foram mais populares e em que momentos houve picos de atividade na sua página.
+]]>
         </portuguese>
     </translation>
 
