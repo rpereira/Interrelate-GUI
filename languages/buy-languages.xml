@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
     <!-- ======= TITLE =====  -->
-    <translation id="buy-title">
+    <translation id="page-title">
         <english><![CDATA[Buy Package]]>
         </english>
         <portuguese><![CDATA[Comprar Pacote]]>
@@ -9,6 +9,12 @@
     </translation>
 
     <!-- ========= PACKAGES ============= -->
+    <translation id="buy-title">
+        <english><![CDATA[Package]]>
+        </english>
+        <portuguese><![CDATA[Pacote]]>
+        </portuguese>
+    </translation>
     <translation id="a-pkg-basic">
         <english><![CDATA[Basic]]>
         </english>
@@ -27,5 +33,214 @@
         <portuguese><![CDATA[Ag&ecirc;ncia]]>
         </portuguese>
     </translation>
+
+    <translation id="license-title">
+        <english><![CDATA[Choose License]]>
+        </english>
+        <portuguese><![CDATA[Escolha uma licen&ccedil;a]]>
+        </portuguese>
+    </translation>
+    <translation id="license-op1">
+        <english><![CDATA[1 Week]]>
+        </english>
+        <portuguese><![CDATA[1 Semana]]>
+        </portuguese>
+    </translation>
+    <translation id="license-op2">
+        <english><![CDATA[2 Weeks]]>
+        </english>
+        <portuguese><![CDATA[2 Semanas]]>
+        </portuguese>
+    </translation>
+    <translation id="license-op3">
+        <english><![CDATA[1 Month]]>
+        </english>
+        <portuguese><![CDATA[1 M&ecirc;s]]>
+        </portuguese>
+    </translation>
+    <translation id="pkg-license-title">
+        <english><![CDATA[License: ]]>
+        </english>
+        <portuguese><![CDATA[Licen&ccedil;a: ]]>
+        </portuguese>
+    </translation>
+    <translation id="pkg-expiration-title">
+        <english><![CDATA[Expiration Date: ]]>
+        </english>
+        <portuguese><![CDATA[Data de Expira&ccedil;&atilde;o: ]]>
+        </portuguese>
+    </translation>
+    <translation id="pkg-price-title">
+        <english><![CDATA[Price:  ]]>
+        </english>
+        <portuguese><![CDATA[Pre&ccedil;o:  ]]>
+        </portuguese>
+    </translation>
+
+    <!-- =============== Payment Method ====== -->
+
+    <translation id="payment-method-title">
+        <english><![CDATA[Payment Method  ]]>
+        </english>
+        <portuguese><![CDATA[M&eacute;todo de Pagamento  ]]>
+        </portuguese>
+    </translation>
+    <translation id="lbl-method-bank">
+        <english><![CDATA[Bank Transfer]]>
+        </english>
+        <portuguese><![CDATA[Transfer&ecirc;ncia Banc&aacute;ria]]>
+        </portuguese>
+    </translation>
+
+    <!-- =========== MODAL ========== -->
+    <translation id="modal-button-close">
+        <english><![CDATA[Close]]>
+        </english>
+        <portuguese><![CDATA[Fechar]]>
+        </portuguese>
+    </translation>
+
+    <translation id="myModalLabel">
+        <english><![CDATA[Confirm Payment]]>
+        </english>
+        <portuguese><![CDATA[Confirmar Pagamento]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-buy-detatils">
+        <english><![CDATA[Details]]>
+        </english>
+        <portuguese><![CDATA[Detalhes]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-basic-license-title">
+        <english><![CDATA[License]]>
+        </english>
+        <portuguese><![CDATA[Licen&ccedil;a]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-company-license-title">
+        <english><![CDATA[License]]>
+        </english>
+        <portuguese><![CDATA[Licen&ccedil;a]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-agency-license-title">
+        <english><![CDATA[License]]>
+        </english>
+        <portuguese><![CDATA[Licen&ccedil;a]]>
+        </portuguese>
+    </translation>
+
+
+    <translation id="modal-buy-expiration">
+        <english><![CDATA[Expiration Date (dd/mm/aaaa): ]]>
+        </english>
+        <portuguese><![CDATA[Data de Expira&ccedil;&atilde;o (dd/mm/aaaa): ]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-buy-price">
+        <english><![CDATA[Price: ]]>
+        </english>
+        <portuguese><![CDATA[Pre&ccedil;o: ]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-buy-account">
+        <english><![CDATA[AccountID: ]]>
+        </english>
+        <portuguese><![CDATA[AccountID: ]]>
+        </portuguese>
+    </translation>
+
+    <translation id="modal-instructions-title">
+        <english><![CDATA[Instructions: ]]>
+        </english>
+        <portuguese><![CDATA[Instru&ccedil;&otilde;es: ]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-instructions-text">
+        <english><![CDATA[At this time we already collected your Facebook's AccountID, we will use it so that we can identify you as an user of the service. <br/> However, in order to activate the service, we need to receive proof of the transfer (by email). <br/> The activastions takes up to 24 hours. <br/> If you need data billing, please fill in the fields beside.<br/> If you wish to purchase, we will delete the date already entered in our database. ]]>
+        </english>
+        <portuguese><![CDATA[Neste momento já temos recolhido o seu AccountID do Facebook, que usaremos para o podermos identificar como utilizador do serviço.<br> No entanto, para podermos ativar o serviço necessitamos de receber o comprovativo da transferência (por email).<br>O tempo de ativação demora até 24 horas.<br> Se necessitar de dados de faturação, por favor preencha os campos ao lado.<br>Se desejar cancelar a compra, eliminaremos os dados que já introduziu na nossa base de dados.]]>
+        </portuguese>
+    </translation>
+    <translation id="lbl-confirm-age">
+        <english><![CDATA[I am over 18 years old. ]]>
+        </english>
+        <portuguese><![CDATA[Tenho mais de 18 anos.]]>
+        </portuguese>
+    </translation>
+    <translation id="lbl-confirm-terms">
+        <english><![CDATA[I have read and agreed with the]]>
+        </english>
+        <portuguese><![CDATA[Li e concordo com os]]>
+        </portuguese>
+    </translation>
+    <translation id="lbl-confirm-terms2">
+        <english><![CDATA[terms and conditions.]]>
+        </english>
+        <portuguese><![CDATA[termos e condi&ccedil;&otilde;es]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-cancel-button">
+        <english><![CDATA[Cancel]]>
+        </english>
+        <portuguese><![CDATA[Cancelar]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-agree-button">
+        <english><![CDATA[Ok, I agree]]>
+        </english>
+        <portuguese><![CDATA[Ok, eu concordo]]>
+        </portuguese>
+    </translation>
+    <translation id="myModal2Label">
+        <english><![CDATA[Finish you Payment]]>
+        </english>
+        <portuguese><![CDATA[Termine o seu Pagamento]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-transfer-label">
+        <english><![CDATA[Please use the following address to send the proof of transfer, together with the data for invoicing: ]]>
+        </english>
+        <portuguese><![CDATA[Por favor use o seguinte endere&ccedil;o para envio do comprovativo da transfer&ecirc;ncia, juntamente com os dados para fatura&ccedil;&atilde;o:]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-transfer-amount">
+        <english><![CDATA[Amount to transfer (€):]]>
+        </english>
+        <portuguese><![CDATA[Valor a transferir (€):]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-national-title">
+        <english><![CDATA[National Transfer]]>
+        </english>
+        <portuguese><![CDATA[Transfer&ecirc;ncia Nacional]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-international-title">
+        <english><![CDATA[Internacional Transfer]]>
+        </english>
+        <portuguese><![CDATA[Transfer&ecirc;ncia Internacional]]>
+        </portuguese>
+    </translation>
+    <translation id="transfer-account">
+        <english><![CDATA[In name of: ]]>
+        </english>
+        <portuguese><![CDATA[Em nome de: ]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-finish-payment">
+        <english><![CDATA[Finish ]]>
+        </english>
+        <portuguese><![CDATA[Terminar ]]>
+        </portuguese>
+    </translation>
+    <translation id="modal2-cancel-button">
+        <english><![CDATA[Cancel ]]>
+        </english>
+        <portuguese><![CDATA[Cancelar ]]>
+        </portuguese>
+    </translation>
+
 
 </translations>
