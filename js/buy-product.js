@@ -7,30 +7,28 @@ $('#btn-login').click(function(e)
     console.log("yay")
 });
 
-/*$('#payment-modal').modal(
-{
-    backdrop: 'static',
-    keyboard: false
-});*/
-
 /**
- * If terms were accepted, proceed button will be disabled.
+ * If terms were accepted, confirm button is disabled.
  */
-$("#cb-confirm-terms").click(function(e)
+$('#confirm-checkboxes input[type=checkbox]').click(function()
 {
-    var cb = $("#cb-confirm-terms");
+    var age   = $("#cb-confirm-age").prop("checked");
+    var terms = $("#cb-confirm-terms").prop("checked");
 
-    if(cb.checked)
+    if(age && terms)
     {
-        $("btn-confirm-payment").removeAttr("disabled");
+        $("#btn-agree-terms").removeAttr("disabled", "disabled");
     }
     else
     {
-        $("#btn-confirm-payment").prop("disabled", !this.checked);
+        $("#btn-agree-terms").attr("disabled", "disabled");
     }
 });
 
-$("#btn-confirm-payment").click(function(e)
+/**
+ * Terms were agreed.
+ */
+$("#btn-agree-terms").click(function(e)
 {
     $("#payment-modal").modal('hide');
     $("#confirm-payment-modal").modal('show');

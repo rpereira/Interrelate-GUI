@@ -174,7 +174,6 @@
                     <h1 class="page-header">Payment Method</h1>
 
                     <div class="col-lg-6"  style="text-align: left;">
-                        <!-- bank transfer -->
 
                         <div class="radio">
                             <label>
@@ -182,24 +181,23 @@
                                     Bank Transfer
                             </label>
                         </div>
+
                         <div class="radio">
                             <label>
                                 <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
                                     MBNet
                             </label>
                         </div>
+
                         <div class="radio">
                             <label>
                                 <input type="radio" name="optionsRadios" id="method-mbnet" value="option1" disabled>
                                     Paypal
                             </label>
                         </div>
-
-                        <!-- /.mbnet -->
                     </div>
-                    <div class="col-lg-6">
 
-                    </div>
+                    <div class="col-lg-6"></div>
                 </div>
                 <!-- /.payment method -->
 
@@ -250,11 +248,11 @@
                                 </div>
 
                                 <p>Expiration date (dd/mm/aaaa): <span id="expiration-date">-/-/-</span></p>
-                                <p>Price: <span id="value-pay"></span></p>
+                                <p>Price (€): <span id="value-pay"></span></p>
                                 <p>AccountID: <span id="user-id"></span></p>
                             </div>
 
-                            <form class="form-group">
+                            <!--<form class="form-group">
                                 <h3>Dados para faturação</h3>
                                 <label>Nome:</label>
                                 <input type="text" class="form-control input-sm">
@@ -264,7 +262,7 @@
 
                                 <label>NIF:</label>
                                 <input type="text" class="form-control input-sm">
-                            </form>
+                            </form>-->
                         </div>
                         <!-- ./modal left -->
 
@@ -279,17 +277,17 @@
                                 Se desejar cancelar a compra, eliminaremos os dados que já introduziu na nossa base de dados.
 
                             </div>
-                            <div class="form-group">
-                                <div class="checkbox">
+                            <div class="form-group" id="confirm-checkboxes">
+                                <div class="checkbox" >
                                     <label>
-                                        <input type="checkbox" id="cb-confirm-terms"
-                                            style="cursor: pointer;"> I am over 18.
+                                        <input type="checkbox" id="cb-confirm-age"
+                                               style="cursor: pointer;"> I am over 18 years old.
                                     </label>
                                 </div>
-                                <div class="checkbox">
+                                <div class="checkbox" >
                                     <label>
                                         <input type="checkbox" id="cb-confirm-terms"
-                                            style="cursor: pointer;"> I have read and agreed with the <a href="#">terms and conditions</a>.
+                                               style="cursor: pointer;"> I have read and agreed with the <a href="#">terms and conditions</a>.
                                     </label>
                                 </div>
                             </div>
@@ -301,7 +299,7 @@
                     <!-- modal footer -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                        <button type="button" id="btn-confirm-payment" class="btn btn-success" disabled>
+                        <button type="button" id="btn-agree-terms" class="btn btn-success" disabled="true">
                             <i class="fa fa-check"></i> OK, I agree
                         </button>
                     </div>
@@ -331,7 +329,7 @@
 
                             <div class="form-group">
                                 <div class="well well-sm bg-info">
-                                    <label>Por favor use o seguinte endereço para envio do comprovativo da transferência:</label>
+                                    <label>Por favor use o seguinte endereço para envio do comprovativo da transferência, juntamente com os dados para faturação:</label>
                                     <p>buy@interrelate.pt</p>
                                 </div>
                             </div>
@@ -348,14 +346,14 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <h3 style="margin-top: 0;">National Transfers:</h3>
-                                <p><span>NIB:</span> 0010  0000  5031807001 96</p>
-                                <p><span>Em nome de:</span> INTERRELATE, Lda</p>
+                                <p><strong>NIB:</strong> 0010  0000  5031807001 96</p>
+                                <p><strong>Em nome de:</strong> INTERRELATE, Lda</p>
                             </div>
 
                             <div class="form-group">
                                 <h3>International Transfers:</h3>
-                                <p><span>IBAN:</span> PT50  0010  0000  5031  8070  0019 6</p>
-                                <p>SWIFT/BIC: BBPIPTPL</p>
+                                <p><strong>IBAN:</strong> PT50  0010  0000  5031  8070  0019 6</p>
+                                <p><strong>SWIFT/BIC:</strong> BBPIPTPL</p>
                             </div>
                         </div>
                         <!-- ./modal right -->
@@ -365,7 +363,7 @@
                     <!-- modal footer -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                        <button type="button" id="btn-confirm-payment" class="btn btn-success" disabled>
+                        <button type="button" id="btn-confirm-payment" class="btn btn-success">
                             <i class="fa fa-check"></i> Finish
                         </button>
                     </div>
