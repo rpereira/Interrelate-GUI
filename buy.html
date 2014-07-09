@@ -160,9 +160,9 @@
                         </div>
 
                         <div class="col-lg-6">
-                            <p>mostrar licença?</p>
+                            <p>Lincense: <span id="package-license">mostrar licença?</span></p>
                             <p>Expiration Date: <span id="expiration-date">-/-/-</span></p>
-                            <p>Price: <span id="value-pay"></span></p>
+                            <p>Price: <span id="price-package"></span></p>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                 <div class="row pull-right">
                     <br>
                     <br>
-                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#payment-modal">OK</button>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#payment-modal" id="btn-submit-buy">OK</button>
                 </div>
 
             </div>
@@ -236,7 +236,7 @@
                                 <div class="service-buy-item hidden" id="buy-pkg-basic">
                                     <p class="service-buy-item-p"><i id="pkg-buy-basic" class="service-icon fa fa-users"></i></p>
                                     <h4 id="a-pkg-buy-basic">Enterprise Basic</h4>
-                                    <p>License: <span id="buy-basic-license"</span></p>
+                                    <p>License: <span id="buy-basic-license"></span></span></p>
                                 </div>
                                 <div class="service-buy-item hidden" id="buy-pkg-company">
                                     <p class="service-buy-item-p"><i class="service-icon fa fa-building-o" id="pkg-buy-company"></i></p>
@@ -249,8 +249,8 @@
                                     <p>License: <span id="buy-agency-license"> </span></p>
                                 </div>
 
-                                <p>Expiration date (dd/mm/aaaa): <span id="expiration-date">-/-/-</span></p>
-                                <p>Price: <span id="value-pay"></span></p>
+                                <p>Expiration date (dd/mm/aaaa): <span id="expiration-date-buy">-/-/-</span></p>
+                                <p>Price: <span id="details-buy-price"></span></p>
                                 <p>AccountID: <span id="user-id"></span></p>
                             </div>
 
