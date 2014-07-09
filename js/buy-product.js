@@ -145,6 +145,7 @@ function setPrice(element)
 
         $('#expiration-date').html(expiration);
         $("#price-package").html('75,00 €');
+        $("#payment-amount-value").html('75,00 €');
         $("#buy-basic-license").html("1 Month");
         $("#package-license").html("1 Month");
 

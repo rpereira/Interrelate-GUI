@@ -255,14 +255,14 @@
                             </div>
 
                             <form class="form-group">
-                                <h3>Dados para faturação</h3>
-                                <label>Nome:</label>
+                                <h3 id="user-data">Dados para faturação</h3>
+                                <label id="label-name">Nome:</label>
                                 <input type="text" class="form-control input-sm">
 
-                                <label>Morada:</label>
+                                <label id="label-residence">Morada:</label>
                                 <input type="text" class="form-control input-sm">
 
-                                <label>NIF:</label>
+                                <label id="label-nif">NIF:</label>
                                 <input type="text" class="form-control input-sm">
                             </form>
                         </div>
@@ -270,8 +270,8 @@
 
                         <!-- modal right -->
                         <div class="col-lg-6">
-                            <h3>Instructions:</h3>
-                            <div class="form-group">
+                            <h3 id="modal-instructions-title">Instructions:</h3>
+                            <div class="form-group" id="modal-instructions-text">
                                 Neste momento já temos recolhido o seu AccountID do Facebook, que usaremos para o podermos identificar como utilizador do serviço.<br>
                                 No entanto, para podermos ativar o serviço necessitamos de receber o comprovativo da transferência (por email).<br>
                                 O tempo de ativação demora até 24 horas.<br>
@@ -318,7 +318,7 @@
 
                     <!-- modal header -->
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only" id="btn-modal-close">Close</span></button>
                         <h3 class="modal-title" id="myModalLabel">Finish your payment</h3>
                     </div>
                     <!-- ./modal header -->
@@ -331,14 +331,14 @@
 
                             <div class="form-group">
                                 <div class="well well-sm bg-info">
-                                    <label>Por favor use o seguinte endereço para envio do comprovativo da transferência:</label>
-                                    <p>buy@interrelate.pt</p>
+                                    <label >Por favor use o seguinte endereço para envio do comprovativo da transferência:</label>
+                                    <p id="modal-company-email">buy@interrelate.pt</p>
                                 </div>
                             </div>
 
                             <div id="payment-bank">
-                                <h4>Amount to transfer (€): <br>
-                                    <span><strong>100</strong></span>
+                                <h4 id="payment-amount">Amount to transfer (€): <br>
+                                    <span><strong id="payment-amount-value">100</strong></span>
                                 </h4>
                             </div>
                         </div>
