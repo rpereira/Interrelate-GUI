@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
-    <translation id="lg-subtitle">
-        <english><![CDATA[Please choose one of our applications!<br /> <br />With the Social app, you can analyze everything about <br />
-            your company's page Facebook or your personal account.]]>
+    <translation id="analytics-description">
+        <english><![CDATA[We process textual online information with our tools in order to extract meaning from it. The results can be provided in a form of a report, as a tool, or a service.]]>
         </english>
-        <portuguese><![CDATA[Por favor escolha uma das nossas aplicações!<br /><br />Com a nossa app Social, pode analisar tudo sobre a página da sua empresa<br />no facebook ou sobre a sua conta pessoal.]]>
+        <portuguese><![CDATA[N&oacute;s processamos informa&ccedil;&atilde;o online textual com as nossas ferramentas de forma a extrair um significado dela.Os resultados podem ser fornecidos em forma de rela&oacute;rio, como uma ferramenta ou servi&ccedil;o.]]>
+        </portuguese>
+    </translation>
+
+    <translation id="event-detection-description">
+        <english><![CDATA[On the web there are so many information sources that it is humanly impossible to gather and process all the data related to a specific topic. We have tools to detect and discover peaks of information and relate it with probable events.]]>
+        </english>
+        <portuguese><![CDATA[Na web existem muitas fontes de informa&ccedil;&atilde;o que &eacute; humanamente imposs&iacute;vel reunir e processar todos os dados relacionado com um t&oacute;pico em espec&iacute;fico. N&oacute;s temos ferramentas para detectar picos de informa&ccedil;&atilde;o e relacion&aacute;-la com eventos prov&acute;veis.]]>
+        </portuguese>
+    </translation>
+
+    <translation id="social-description">
+        <english><![CDATA[Our Social Management Platform is capable of providing insights from your Facebook account. It is a valuable tool to manage and improve your presence in social networks.]]>
+        </english>
+        <portuguese><![CDATA[A nossa "Plataforma de Gest&atilde;o Social" é capaz de fornecer percep&ccedil;&otilde;es relativamente &agrave; sua conta do Facebook. &Eacute; uma valiosa ferramenta para gerir e melhorar a sua presen&ccedil;a nas redes sociais.]]>
         </portuguese>
     </translation>
 </translations>
