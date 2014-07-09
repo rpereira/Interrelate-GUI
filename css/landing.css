@@ -118,7 +118,7 @@ p {
     text-align: center;
 }
 
-@media (min-height: 769px)
+@media (min-height: 768px)
 {
     .intro-message {
         position: relative;
@@ -155,22 +155,20 @@ p {
     margin-bottom: 90px;
 }
 
-@media (max-width: 768px) {
-    .intro-divider {
-        margin-left: 0px;
-    }
-    .intro-message-social>h1{
-        font-size: 3em;
-    }
-
-}
 
 .intro-message > h4 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     word-spacing: 5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+     .intro-divider {
+        margin-left: 0px;
+    }
+    .intro-message-social>h1{
+        font-size: 3em;
+    }
+
     .intro-message {
         padding-bottom: 15%;
     }
@@ -212,38 +210,15 @@ p {
     margin-left:    8%;
 
 }
-@media (max-width:321px)
-{
-    .margin-service
-    {
-        margin-left:    0px;
-    }
-    #analytics {
-        margin-left: 13%;
-    }
 
-    #analytics-text {
-        margin-top: 10px;
-        margin-left: 15%;
-        margin-bottom: 10px;
-    }
-
-}
 .btn-service
 {
     font-size:      23px;
     margin-bottom:  3px;
-    /*height:         100%;*/
     min-height:     100px;
     padding-top:    15px;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
-    .btn-service {
-        font-size: 20px;
-        min-width: 100px;
-    }
-}
 
 #analytics {
     margin-left: 13%;
@@ -254,7 +229,13 @@ p {
     margin-left: 15%;
 }
 
-@media (max-width: 767px) {
+/** Phones **/
+@media (max-width: 768px) {
+    .margin-service
+    {
+        margin-left:    0px;
+
+    }
     #analytics {
         margin-left: 0px;
         padding: 0;
@@ -268,6 +249,30 @@ p {
     }
 }
 
+/** Tablets **/
+@media (min-width: 768px) and (max-width : 991px)
+{
+    .btn-service {
+        font-size: 20px;
+        min-width: 100px;
+    }
+
+    .margin-service
+    {
+        margin-left:    0px;
+    }
+    #analytics {
+        margin-left: 0px;
+        padding: 0;
+    }
+
+    #analytics-text {
+        margin-left: 10%;
+        padding: 7px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
 
 .description {
     font-size: 14px;
