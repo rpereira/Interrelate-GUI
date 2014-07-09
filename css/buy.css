@@ -247,3 +247,20 @@ code {
     -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
     font-weight: bold;
 }
+
+.active-package{
+    border: solid 3px #449d44   !important;
+}
+
+.h4-active-package{
+   font-weight : bold !important;
+   font-size : 20px       !important;
+}
+.inactive-package{
+    border: solid 3px #428bca !important;
+}
+
+.h4-inactive-package{
+   font-weight : normal !important;
+   font-size : 20px        !important;
+}
