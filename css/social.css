@@ -339,7 +339,7 @@ p {
 }
 
 .package-enterprise {
-    height: 740px !important;
+    /*height: 740px !important;*/
 }
 
 .package-header {
@@ -883,10 +883,10 @@ i.service-icon {
 	text-shadow:none;
 }
 
-.text_block_button {
-    position:absolute;    /**/
-    float: right;           /**/
+/*.text_block_button {
+    position:absolute;
+    float: right;
     right:10px;
     margin-right: 125px;
     bottom: 10px;
-}
+}*/
