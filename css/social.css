@@ -564,6 +564,34 @@ i.service-icon {
     text-align: center;
 }
 
+@media (max-width:1024px)
+{
+    i.service-icon {
+        border: 3px solid #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+/**@media (max-width:1024px) and (min-width:768px)
+{
+    i.service-icon {
+        border: 3px solid #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 50px;
+        width: 120px;
+        height: 120px;
+        line-height: 122px;
+        vertical-align: middle;
+        text-align: center;
+    }
+}*/
 .packages-section {
     height: 50px;
     background-color: #000;
