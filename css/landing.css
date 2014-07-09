@@ -235,10 +235,6 @@ p {
 /** Buttons and text for phones **/
 @media (max-width: 768px) {
 
-    body, html {
-        background: url(../img/bg-landing.jpg) fixed;
-    }
-
     .margin-service
     {
         margin-left:    0px;
