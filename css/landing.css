@@ -231,11 +231,16 @@ p {
 
 /** Phones **/
 @media (max-width: 768px) {
+
+    body, html {
+        background: url(../img/bg-landing.jpg) no-repeat fixed;
+    }
+
     .margin-service
     {
         margin-left:    0px;
-
     }
+
     #analytics {
         margin-left: 0px;
         padding: 0;
@@ -261,6 +266,7 @@ p {
     {
         margin-left:    0px;
     }
+
     #analytics {
         margin-left: 0px;
         padding: 0;
