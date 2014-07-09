@@ -138,6 +138,7 @@ function changeColor(e)
 function setPrice(element)
 {
     var id = $(element).attr('id');
+    var language = localStorage.getItem('lang');
     if(id === 'pkg-company')
     {
         var today           = new Date();
@@ -147,8 +148,15 @@ function setPrice(element)
         $('#expiration-date').html(expiration);
         $("#price-package").html('75,00 €');
         $("#payment-amount-value").html('75,00 €');
-        $("#buy-basic-license").html("1 Month");
-        $("#package-license").html("1 Month");
+        if(language === 'english'){
+            $("#buy-basic-license").html("1 Month");
+            $("#package-license").html("1 Month");
+        }
+        else
+        {
+            $("#buy-basic-license").html("1 M&ecirc;s");
+            $("#package-license").html("1 M&ecirc;s");
+        }
 
     }
     else
@@ -182,9 +190,13 @@ function setProduct(id)
 /** Sets the pay value and expiration date in Basic Package */
 function setBasicPayValue()
 {
-    var text = $('#basic-license option:selected').val();
+    var text_select = $('#basic-license option:selected').val();
+    var language = localStorage.getItem('lang');
 
-    if(text === '1 Week')
+    var text_split = text_select.split('\n');
+    var text = text_split[0];
+
+    if(text === '1 Week' || text === "1 Semana")
     {
         var firstDay        = new Date();
         var nextWeek        = new Date(firstDay.getTime() + 7 * 24 * 60 * 60 * 1000);
@@ -192,10 +204,16 @@ function setBasicPayValue()
 
         $('#expiration-date').html(expiration);
         $("#price-package").html('0,00 €');
-        $("#package-license").html("1 Week");
-        $("#buy-basic-license").html("1 Week");
+        if(language === 'english'){
+            $("#package-license").html("1 Week");
+            $("#buy-basic-license").html("1 Week");
+        }
+        else{
+            $("#package-license").html("1 Semana");
+            $("#buy-basic-license").html("1 Semana");
+        }
     }
-    else if(text === '2 Weeks')
+    else if(text === '2 Weeks' || text === "2 Semanas")
     {
         var firstDay        = new Date();
         var nextWeek        = new Date(firstDay.getTime() + 14 * 24 * 60 * 60 * 1000);
@@ -203,8 +221,15 @@ function setBasicPayValue()
 
         $('#expiration-date').html(expiration);
         $("#price-package").html('5,00 €');
-        $("#package-license").html("2 Weeks");
-        $("#buy-basic-license").html("2 Weeks");
+
+        if(language === 'english'){
+            $("#package-license").html("2 Weeks");
+            $("#buy-basic-license").html("2 Weeks");
+        }
+        else{
+            $("#package-license").html("2 Semanas");
+            $("#buy-basic-license").html("2 Semanas");
+        }
     }
     else
     {
@@ -214,8 +239,14 @@ function setBasicPayValue()
 
         $('#expiration-date').html(expiration);
         $("#price-package").html('9,00 €');
-        $("#package-license").html("1 Month");
-        $("#buy-basic-license").html("1 Month");
+        if(language === 'english'){
+            $("#package-license").html("1 Month");
+            $("#buy-basic-license").html("1 Month");
+        }
+        else{
+            $("#package-license").html("1 M&ecirc;s");
+            $("#buy-basic-license").html("1 M&ecirc;s");
+        }
     }
 }
 
