@@ -1,4 +1,10 @@
 /*global $ */
+$(document).ready(function()
+{
+
+    var height = $("#enterprise package").height();
+
+});
 
 /**
  * jQuery to collapse the navbar on scroll
@@ -42,3 +48,4 @@ $(function()
  * Starts wow animation
  */
 new WOW().init();
+

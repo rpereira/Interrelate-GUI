@@ -72,8 +72,9 @@ $('#en-lang').click(function()
     });
 });
 
-$(function()
+$(document).ready(function()
 {
+
     var page     = getUrlPage();
     var xml_file = 'languages/' + page + '-languages.xml';
 
@@ -120,17 +121,38 @@ function getUrlPage()
     var _URL        = document.URL;
     var parsed_url  = _URL.split('/');
 
-    if(parsed_url[parsed_url.length-1] === 'index.html')
-    {
-        return 'index';
-    }
-    else if(parsed_url[parsed_url.length-1] === 'social.html')
-    {
-        return 'social';
+    var parser = parsed_url[parsed_url.length-1].split('#');
+
+    if(parser === undefined){
+        if(parsed_url[parsed_url.length-1] === 'index.html')
+        {
+            return 'index';
+        }
+        else if(parsed_url[parsed_url.length-1] === 'social.html')
+        {
+            return 'social';
+        }
+        else
+        {
+
+            return 'index';
+        }
     }
     else
     {
-        return 'index';
+        if(parser[0] === 'index.html')
+        {
+            return 'index';
+        }
+        else if(parser[0] === 'social.html')
+        {
+            return 'social';
+        }
+        else
+        {
+
+            return 'index';
+        }
     }
 
 }
