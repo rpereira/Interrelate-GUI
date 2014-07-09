@@ -59,7 +59,8 @@ $(document).ready(function()
     $("#back-home").click().attr("href", link);
 
     /** Sets the product selected */
-    if(product != null){
+    if(product != null)
+    {
         var last_char = product.substr(product.length - 1);
         if(last_char === '#')
         {
@@ -134,24 +135,21 @@ function changeColor(e)
 function setPrice(element)
 {
     var id = $(element).attr('id');
-
-    if(id === 'pkg-personal')
-    {
-        $('#expiration-date').html('-/-/-');
-        $("#value-pay").html('0,00 €');
-    }
-    else if(id === 'pkg-company')
+    if(id === 'pkg-company')
     {
         var today           = new Date();
         var nextMonth       = new Date(new Date(today).setMonth(today.getMonth()+1));
         var expiration      = nextMonth.getDate() + '/' + nextMonth.getMonth() + '/' + nextMonth.getFullYear();
 
         $('#expiration-date').html(expiration);
-        $("#value-pay").html('75,00 €');
+        $("#price-package").html('75,00 €');
+        $("#buy-basic-license").html("1 Month");
+        $("#package-license").html("1 Month");
+
     }
     else
     {
-        $("#value-pay").html('0,00 €');
+        $("#price-package").html('0,00 €');
         setBasicPayValue();
     }
 
@@ -191,7 +189,8 @@ function setBasicPayValue()
         var expiration      = nextWeek.getDate() + '/' + nextWeek.getMonth() + '/' + nextWeek.getFullYear();
 
         $('#expiration-date').html(expiration);
-        $("#value-pay").html('0,00 €');
+        $("#price-package").html('0,00 €');
+        $("#package-license").html("1 Week");
         $("#buy-basic-license").html("1 Week");
     }
     else if(text === '2 Weeks')
@@ -201,7 +200,8 @@ function setBasicPayValue()
         var expiration      = nextWeek.getDate() + '/' + nextWeek.getMonth() + '/' + nextWeek.getFullYear();
 
         $('#expiration-date').html(expiration);
-        $("#value-pay").html('5,00 €');
+        $("#price-package").html('5,00 €');
+        $("#package-license").html("2 Weeks");
         $("#buy-basic-license").html("2 Weeks");
     }
     else
@@ -211,7 +211,8 @@ function setBasicPayValue()
         var expiration      = nextMonth.getDate() + '/' + nextMonth.getMonth() + '/' + nextMonth.getFullYear();
 
         $('#expiration-date').html(expiration);
-        $("#value-pay").html('9,00 €');
+        $("#price-package").html('9,00 €');
+        $("#package-license").html("1 Month");
         $("#buy-basic-license").html("1 Month");
     }
 }
@@ -247,3 +248,15 @@ $( '#basic-license').change(function (e)
 {
     setBasicPayValue();
 });
+
+
+$('#btn-submit-buy').click(function (e)
+{
+    var price       = $("#price-package").html();
+    var license     =  $("#package-license").html();
+    var expiration  = $("#expiration-date").html();
+
+    $("#expiration-date-buy").html(expiration);
+    $("#details-buy-price").html(price);
+});
+
