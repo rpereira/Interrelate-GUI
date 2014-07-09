@@ -102,6 +102,7 @@ p {
     padding: 30px 0 0 0;
 }
 
+/** menu for tablets and desktops  **/
 @media (min-width: 768px)
 {
 	.mainmenu
@@ -120,6 +121,7 @@ p {
 
 @media (min-height: 768px)
 {
+
     .intro-message {
         position: relative;
         padding-top: 7%;
@@ -161,6 +163,7 @@ p {
     word-spacing: 5px;
 }
 
+/** Intro message for phones **/
 @media (max-width: 768px) {
      .intro-divider {
         margin-left: 0px;
@@ -229,7 +232,7 @@ p {
     margin-left: 15%;
 }
 
-/** Phones **/
+/** Buttons and text for phones **/
 @media (max-width: 768px) {
 
     .margin-service
@@ -250,7 +253,7 @@ p {
     }
 }
 
-/** Tablets **/
+/** Buttons and text for tablets **/
 @media (min-width: 768px) and (max-width : 991px)
 {
     .btn-service {
@@ -294,4 +297,25 @@ p {
     -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.navbar-custom .navbar-toggle{
+    color: #fff;
+    opacity: 0.8;
+    text-align: right;
+}
+.navbar-collapse{
+    border: none;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
 }
