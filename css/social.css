@@ -45,6 +45,7 @@ p {
     position: relative;
 }
 
+
 /*************************************
  * Fonts
  *************************************/
@@ -147,7 +148,7 @@ p {
 }
 
 .btn-login {
-    margin-left: 35px;
+    margin-left: 15px;
 }
 
 .btn-login i {
@@ -578,6 +579,7 @@ i.service-icon {
         text-align: center;
     }
 }
+
 /**@media (max-width:1024px) and (min-width:768px)
 {
     i.service-icon {
@@ -592,6 +594,7 @@ i.service-icon {
         text-align: center;
     }
 }*/
+
 .packages-section {
     height: 50px;
     background-color: #000;
