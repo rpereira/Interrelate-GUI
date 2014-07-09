@@ -59,7 +59,7 @@
         <!-- container -->
         <div class="container">
             <div class="section-header">
-                <h1>Buy Package</h1>
+                <h1 id="page-title">Buy Package</h1>
             </div>
 
             <!-- breadcrumbs -->
@@ -148,11 +148,11 @@
 
                         <div class="col-lg-4">
                             <div class="form-group hidden" id="basic-license">
-                                <h4>Choose your license</h4>
+                                <h4 id="license-title">Choose your license</h4>
                                 <select id="basic-pay-plans" class="form-control" required>
-                                    <option>1 Week</option>
-                                    <option>2 Weeks</option>
-                                    <option>1 Month</option>
+                                    <option id="license-op1">1 Week</option>
+                                    <option id="license-op2">2 Weeks</option>
+                                    <option id="license-op3">1 Month</option>
                                 </select>
                             </div>
                         </div>
@@ -166,9 +166,9 @@
                         <div class="col-lg-4"></div>
 
                         <div class="col-lg-4 form-group">
-                            <p>Lincense: <span id="package-license">mostrar licença?</span></p>
-                            <p>Expiration Date: <span id="expiration-date">-/-/-</span></p>
-                            <p>Price: <span id="price-package"></span></p>
+                            <p id="pkg-license-title">Lincense: <span id="package-license"></span></p>
+                            <p id="pkg-expiration-title">Expiration Date: <span id="expiration-date">-/-/-</span></p>
+                            <p id="pkg-price-title">Price: <span id="price-package"></span></p>
                         </div>
 
                         <div class="col-lg-4"></div>
@@ -181,7 +181,7 @@
 
                 <!-- payment method -->
                 <div class="row">
-                    <h1 class="page-header">Payment Method</h1>
+                    <h1 class="page-header" id="payment-method-title">Payment Method</h1>
 
                     <div class="col-lg-6"  style="text-align: left;">
 
@@ -240,26 +240,26 @@
                         <div class="col-lg-6">
 
                             <div class="form-group">
-                                <h3>Details:</h3>
+                                <h3 id="modal-buy-detatils">Details:</h3>
                                 <div class="service-buy-item hidden" id="buy-pkg-basic">
                                     <p class="service-buy-item-p"><i id="pkg-buy-basic" class="service-icon fa fa-users"></i></p>
                                     <h4 id="a-pkg-buy-basic">Enterprise Basic</h4>
-                                    <p>License: <span id="buy-basic-license"></span></span></p>
+                                    <p id="modal-basic-license-title">License: <span id="buy-basic-license"></span></span></p>
                                 </div>
                                 <div class="service-buy-item hidden" id="buy-pkg-company">
                                     <p class="service-buy-item-p"><i class="service-icon fa fa-building-o" id="pkg-buy-company"></i></p>
                                     <h4 id="a-pkg-buy-company">Enterprise Company</h4>
-                                    <p>License: <span id="buy-company-license"> 1 month</span></p>
+                                    <p id="modal-company-license-title">License: <span id="buy-company-license"> 1 month</span></p>
                                 </div>
                                 <div class="service-buy-item hidden" id="buy-pkg-agency">
                                     <p class="service-buy-item-p disabled"> <i class="service-icon fa fa-university" id="pkg-buy-agency"></i></p>
                                     <h4 id="a-pkg-buy-agency">Enterprise Agency</h4>
-                                    <p>License: <span id="buy-agency-license"> </span></p>
+                                    <p id="modal-agency-license-title">License: <span id="buy-agency-license"> </span></p>
                                 </div>
 
-                                <p>Expiration date (dd/mm/aaaa): <span id="expiration-date-buy">-/-/-</span></p>
-                                <p>Price: <span id="details-buy-price"></span></p>
-                                <p>AccountID: <span id="user-id"></span></p>
+                                <p id="modal-buy-expiration">Expiration date (dd/mm/aaaa): <span id="expiration-date-buy">-/-/-</span></p>
+                                <p id="modal-buy-price">Price: <span id="details-buy-price"></span></p>
+                                <p id="modal-buy-account">AccountID: <span id="user-id"></span></p>
                             </div>
 
                             <!--<form class="form-group">
@@ -278,8 +278,8 @@
 
                         <!-- modal right -->
                         <div class="col-lg-6">
-                            <h3>Instructions:</h3>
-                            <div class="form-group">
+                            <h3 id="modal-instructions-title">Instructions:</h3>
+                            <div class="form-group" id="modal-instructions-text">
                                 Neste momento já temos recolhido o seu AccountID do Facebook, que usaremos para o podermos identificar como utilizador do serviço.<br>
                                 No entanto, para podermos ativar o serviço necessitamos de receber o comprovativo da transferência (por email).<br>
                                 O tempo de ativação demora até 24 horas.<br>
@@ -339,14 +339,14 @@
 
                             <div class="form-group">
                                 <div class="well well-sm bg-info">
-                                    <label>Por favor use o seguinte endereço para envio do comprovativo da transferência, juntamente com os dados para faturação:</label>
-                                    <p>buy@interrelate.pt</p>
+                                    <label id="modal-transfer-label">Por favor use o seguinte endereço para envio do comprovativo da transferência, juntamente com os dados para faturação:</label>
+                                    <p id="modal-transfer-email">buy@interrelate.pt</p>
                                 </div>
                             </div>
 
                             <div id="payment-bank">
-                                <h4>Amount to transfer (€): <br>
-                                    <span><strong>100</strong></span>
+                                <h4 id="modal-transfer-amount">Amount to transfer (€): <br>
+                                    <span><strong id="modal-amount">100</strong></span>
                                 </h4>
                             </div>
                         </div>
@@ -355,13 +355,13 @@
                         <!-- modal right -->
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <h3 style="margin-top: 0;">National Transfers:</h3>
+                                <h3 style="margin-top: 0;" id="modal-national-title">National Transfers:</h3>
                                 <p><strong>NIB:</strong> 0010  0000  5031807001 96</p>
                                 <p><strong>Em nome de:</strong> INTERRELATE, Lda</p>
                             </div>
 
                             <div class="form-group">
-                                <h3>International Transfers:</h3>
+                                <h3 id="modal-international-title">International Transfers:</h3>
                                 <p><strong>IBAN:</strong> PT50  0010  0000  5031  8070  0019 6</p>
                                 <p><strong>SWIFT/BIC:</strong> BBPIPTPL</p>
                             </div>
