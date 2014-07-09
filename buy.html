@@ -42,8 +42,9 @@
             <ul id="navbar-user" class="nav navbar-nav navbar-right user-nav hide">
                 <li class="dropdown profile_menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img alt="Avatar" src="img/profile-img.jpg"> <span>Lorem Ipsum</span> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                        <img alt="Avatar" src="img/profile-img.jpg"> <span>Lorem Ipsum</span> <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
                         <li><a href="#">Sign Out</a></li>
                     </ul>
                 </li>
@@ -261,6 +262,13 @@
                         <!-- modal right -->
                         <div class="col-lg-6">
                             <h3>Instructions:</h3>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="cb-confirm-terms"> I have read and agreed with the <a href="#">terms and conditions</a>.
+                                </label>
+                              </div>
+                            </div>
                         </div>
                         <!-- ./modal right -->
                     </div>
@@ -269,7 +277,9 @@
                     <!-- modal footer -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-success">Confirm payment</button>
+                        <button type="button" id="btn-confirm-payment" class="btn btn-success" disabled>
+                            <span class="glyphicon glyphicon-ok"></span> Confirm and proceed
+                        </button>
                     </div>
                     <!-- ./modal footer -->
                 </div>
