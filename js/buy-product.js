@@ -90,21 +90,25 @@ $("#btn-login").click(function(e)
 /** Changes colors of the package selected to give feedback */
 function changeColor(e)
 {
-    var color = $(this).css('border-color');
 
     var id= $(this).attr('id');
-
-    if(color === 'rgb(66, 139, 202)')
+    var ap_id = $(ACTIVE_PACKAGE).attr('id');
+    if(id != ap_id)
     {
-        $("#" + id).css('border', 'solid 3px #449d44');
-        $("#a-" + id).css('font-weight' , 'bold');
-        $("#a-" + id).css('font-size' , '20px');
+        $("#" + id).removeClass("inactive-package");
+        $("#" + id).addClass("active-package");
 
-        $(ACTIVE_PACKAGE).css('border', 'solid 3px #428bca');
-        var ap_id = $(ACTIVE_PACKAGE).attr('id');
-        $("#a-" + ap_id).css('font-weight' , 'none');
-        $("#a-" + id).css('font-size' , '18px');
+        $("#a-" + id).removeClass("h4-inactive-package");
+        $("#a-" + id).addClass("h4-active-package");
 
+        $(ACTIVE_PACKAGE).removeClass("active-package");
+        $(ACTIVE_PACKAGE).addClass("inactive-package");
+
+
+
+
+        $("#a-" + ap_id).removeClass("h4-active-package");
+        $("#a-" + ap_id).addClass("h4-inactive-package");
         if(ap_id === 'pkg-basic')
         {
             $('#basic-license').removeClass('show');
@@ -116,17 +120,16 @@ function changeColor(e)
         $('#buy-' + ap_id).removeClass('show');
         $('#buy-' + ap_id).addClass('hidden');
 
+        ACTIVE_PACKAGE = this;
 
+        if(id === 'pkg-basic')
+        {
+            $('#basic-license').removeClass('hidden');
+            $('#basic-license').addClass('show');
+        }
+
+        setPrice(this);
     }
-    ACTIVE_PACKAGE = this;
-
-    if(id === 'pkg-basic')
-    {
-        $('#basic-license').removeClass('hidden');
-        $('#basic-license').addClass('show');
-    }
-
-    setPrice(this);
 
 }
 
@@ -159,11 +162,9 @@ function setPrice(element)
 /** Sets the initial product **/
 function setProduct(id)
 {
-    $("#" + id).css('border', 'solid 3px #449d44');
 
-    $("#a-" + id).css('font-weight' , 'bold');
-    $("#a-" + id).css('font-size' , '20px');
-
+    $("#" + id).addClass("active-package");
+    $("#a-" + id).addClass("h4-active-package");
     //Activate package description in modal
     $("#buy-" + id).removeClass('hidden');
     $("#buy-" + id).addClass("show");
