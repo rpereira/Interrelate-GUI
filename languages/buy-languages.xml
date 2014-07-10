@@ -157,9 +157,10 @@
         </portuguese>
     </translation>
     <translation id="modal-instructions-text">
-        <english><![CDATA[At this time we already collected your Facebook's AccountID, we will use it so that we can identify you as an user of the service. <br/> However, in order to activate the service, we need to receive proof of the transfer (by email). <br/> The activastions takes up to 24 hours. <br/> If you need data billing, please fill in the fields beside.<br/> If you wish to purchase, we will delete the date already entered in our database. ]]>
+        <english><![CDATA[To activate the service we need to receive confirmation of the bank transfer by email.<br/> If you need data billing information, please send them along as well, in the email.]]>
         </english>
-        <portuguese><![CDATA[Neste momento já temos recolhido o seu AccountID do Facebook, que usaremos para o podermos identificar como utilizador do serviço.<br> No entanto, para podermos ativar o serviço necessitamos de receber o comprovativo da transferência (por email).<br>O tempo de ativação demora até 24 horas.<br> Se necessitar de dados de faturação, por favor preencha os campos ao lado.<br>Se desejar cancelar a compra, eliminaremos os dados que já introduziu na nossa base de dados.]]>
+        <portuguese><![CDATA[Para podermos ativar o servi&cceedil;o necessitamos de receber comprovativo da transferência banc&aacute;ria, por email.<br/>
+Se necessitar de dados de fatura&ccedil;&atilde;o, por favor envie-os juntamente com o comprovativo.]]>
         </portuguese>
     </translation>
     <translation id="lbl-confirm-age">
@@ -198,12 +199,39 @@
         <portuguese><![CDATA[Termine o seu Pagamento]]>
         </portuguese>
     </translation>
-    <translation id="modal-transfer-label">
-        <english><![CDATA[Please use the following address to send the proof of transfer, together with the data for invoicing: ]]>
+    <translation id="modal-transfer-label-title">
+        <english><![CDATA[What you need to do now:]]>
         </english>
-        <portuguese><![CDATA[Por favor use o seguinte endere&ccedil;o para envio do comprovativo da transfer&ecirc;ncia, juntamente com os dados para fatura&ccedil;&atilde;o:]]>
+        <portuguese><![CDATA[O que precisa agora de fazer:]]>
         </portuguese>
     </translation>
+    <translation id="modal-transfer-label">
+        <english><![CDATA[ Send an email to <strong>buy@interrelate.pt</strong> with the following information: ]]>
+        </english>
+        <portuguese><![CDATA[Enviar um email para  <strong>buy@interrelate.pt</strong> incluindo a informa&ccedil;&atilde;o:]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-transfer-li1">
+        <english><![CDATA[Confirmation of the bank transfer]]>
+        </english>
+        <portuguese><![CDATA[Comprovativo de transfer&ecirc;ncia banc&aacute;ria]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-transfer-li2">
+        <english><![CDATA[The number (AccountID) to help us identify you]]>
+        </english>
+        <portuguese><![CDATA[O n&uacute;mero (AccountID) para nos auxiliar a identific&aacute;-lo]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-transfer-li3">
+        <english><![CDATA[Should you need data billing information, please send it in the email as well.]]>
+        </english>
+        <portuguese><![CDATA[Se necessitar de informa&ccedil;&atilde;o de fatura&ccedil;&atilde;o, por favor inclua-a no email.]]>
+        </portuguese>
+    </translation>
+    <li ></li>
+                                        <li id="modal-transfer-li2"></li>
+                                        <li ></li>
     <translation id="modal-transfer-amount">
         <english><![CDATA[Amount to transfer (€):]]>
         </english>
