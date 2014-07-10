@@ -5,6 +5,8 @@ body, html {
     font-family: "MyriadPro-Regular", sans-serif;
 }
 
+body { overflow-x: hidden;}
+
 /*************************************
  * Fonts
  *************************************/
@@ -81,8 +83,8 @@ p {
 }
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+       -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
@@ -91,23 +93,23 @@ p {
     background-color: rgba(255, 255, 255, .2);
 }
 .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #fff;
+    padding:    4px 6px;
+    font-size:  16px;
+    color:      #fff;
 }
 .navbar-toggle:focus,
 .navbar-toggle:active {
     outline: 0;
 }
-@media(min-width:767px) {
+@media (min-width: 768px) {
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
+           -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
     .top-nav-collapse {
         padding: 0;
@@ -858,6 +860,7 @@ i.service-icon {
         margin-bottom: 0;
     }
 }
+
 
 /***********************************************************/
 /*                   Theme: text shadows                   */
