@@ -57,6 +57,16 @@ body > .container {
     color:  rgba(255, 255, 255, .8);
 }
 
+/*@media(min-width:767px) {
+    .navbar {
+        padding:        20px 0;
+        border-bottom:  0;
+
+        letter-spacing: 1px;
+        background:     0 0;
+    }
+}*/
+
 
 /*************************************
  * section
@@ -263,4 +273,26 @@ code {
 .h4-inactive-package{
    font-weight : normal !important;
    font-size : 20px        !important;
+}
+
+
+/** Buttons and text for tablets **/
+@media (min-width: 768px) and (max-width : 991px) {
+    .page-header {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header {
+        padding-bottom: 0;
+    }
+
+    .page-header {
+        margin: 0;
+    }
+
+    .intro-packages {
+        height: auto;
+    }
 }
