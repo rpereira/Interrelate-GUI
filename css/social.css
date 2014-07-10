@@ -835,18 +835,27 @@ i.service-icon {
     #home-row-1 h1
     {
         /*margin-top: 15px;*/
-        font-size: 19px;
+        font-size: 25px;
     }
 
     #home-row-1 h4
     {
         /*margin-top: 15px;*/
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .section-header
     {
         padding-bottom: 10px;
+    }
+
+    .intro-packages
+    {
+        margin-top: 0;
+    }
+
+    .service-item {
+        margin-bottom: 0;
     }
 }
 
