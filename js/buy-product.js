@@ -143,7 +143,7 @@ function setPrice(element)
     if(id === 'pkg-company')
     {
         var today           = new Date();
-        var nextMonth       = new Date(new Date(today).setMonth(today.getMonth()+1));
+        var nextMonth       = new Date(new Date(today).setMonth(today.getMonth()+2));
         var expiration      = nextMonth.getDate() + '/' + nextMonth.getMonth() + '/' + nextMonth.getFullYear();
 
         $('#expiration-date').html(expiration);
@@ -202,7 +202,7 @@ function setBasicPayValue()
     {
         var firstDay        = new Date();
         var nextWeek        = new Date(firstDay.getTime() + 7 * 24 * 60 * 60 * 1000);
-        var expiration      = nextWeek.getDate() + '/' + nextWeek.getMonth() + '/' + nextWeek.getFullYear();
+        var expiration      = nextWeek.getDate() + '/' + (nextWeek.getMonth()+1) + '/' + nextWeek.getFullYear();
 
         $('#expiration-date').html(expiration);
         $("#price-package").html('0,00 €');
@@ -219,7 +219,7 @@ function setBasicPayValue()
     {
         var firstDay        = new Date();
         var nextWeek        = new Date(firstDay.getTime() + 14 * 24 * 60 * 60 * 1000);
-        var expiration      = nextWeek.getDate() + '/' + nextWeek.getMonth() + '/' + nextWeek.getFullYear();
+        var expiration      = nextWeek.getDate() + '/' + (nextWeek.getMonth()+1) + '/' + nextWeek.getFullYear();
 
         $('#expiration-date').html(expiration);
         $("#price-package").html('5,00 €');
@@ -237,7 +237,7 @@ function setBasicPayValue()
     {
         var today           = new Date();
         var nextMonth       = new Date(new Date(today).setMonth(today.getMonth()+1));
-        var expiration      = nextMonth.getDate() + '/' + nextMonth.getMonth() + '/' + nextMonth.getFullYear();
+        var expiration      = nextMonth.getDate() + '/' + (nextMonth.getMonth()+1) + '/' + nextMonth.getFullYear();
 
         $('#expiration-date').html(expiration);
         $("#price-package").html('9,00 €');
