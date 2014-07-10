@@ -181,6 +181,12 @@ Se necessitar de dados de fatura&ccedil;&atilde;o, por favor envie-os juntamente
         <portuguese><![CDATA[termos e condi&ccedil;&otilde;es]]>
         </portuguese>
     </translation>
+    <translation id="lbl-confirm-policy">
+        <english><![CDATA[our privacy policy]]>
+        </english>
+        <portuguese><![CDATA[a nossa pol&iacute;tica de privacidade]]>
+        </portuguese>
+    </translation>
     <translation id="modal-cancel-button">
         <english><![CDATA[Cancel]]>
         </english>
