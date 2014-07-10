@@ -1,4 +1,10 @@
 
+
+html
+{
+    overflow-x: hidden;
+}
+
 body, html {
     min-height: 100%;
     font-family: "MyriadPro-Regular", sans-serif;
@@ -8,8 +14,9 @@ body, html {
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
-    overflow-x: hidden;
+
 }
+
 
 #body_analytics {
     overflow: hidden;
