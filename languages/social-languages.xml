@@ -495,5 +495,11 @@
         <portuguese><![CDATA[Enviar]]>
         </portuguese>
     </translation>
+    <translation id="contacts-more-info">
+        <english><![CDATA[For more info, contact us to the email above:]]>
+        </english>
+        <portuguese><![CDATA[Para mais informa&ccedil;&otilde;es, contacte-nos para o email abaixo:]]>
+        </portuguese>
+    </translation>
 
 </translations>
