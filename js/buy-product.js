@@ -4,6 +4,7 @@ var ACTIVE_PACKAGE = '';
 
 $('#btn-login').click(function(e)
 {
+    $("#btn-toggle").removeClass("hide");
     console.log("yay")
 });
 
