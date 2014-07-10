@@ -142,7 +142,7 @@ function getUrlPage()
             return 'index';
         }
     }
-    else if(buy_parser !== undefined){
+    else if(buy_parser.length > 1){
         if(buy_parser[0] === 'index.html')
         {
             return 'index';

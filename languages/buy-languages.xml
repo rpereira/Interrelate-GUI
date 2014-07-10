@@ -159,7 +159,7 @@
     <translation id="modal-instructions-text">
         <english><![CDATA[To activate the service we need to receive confirmation of the bank transfer by email.<br/> If you need data billing information, please send them along as well, in the email.]]>
         </english>
-        <portuguese><![CDATA[Para podermos ativar o servi&cceedil;o necessitamos de receber comprovativo da transferência banc&aacute;ria, por email.<br/>
+        <portuguese><![CDATA[Para podermos ativar o servi&ccedil;o necessitamos de receber comprovativo da transferência banc&aacute;ria, por email.<br/>
 Se necessitar de dados de fatura&ccedil;&atilde;o, por favor envie-os juntamente com o comprovativo.]]>
         </portuguese>
     </translation>
