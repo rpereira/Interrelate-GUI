@@ -64,34 +64,33 @@
 
             <!-- login -->
             <form class="row" id="form-login">
-                <div class="col-lg-12">
 
-                    <div class="col-lg-4"></div>
+                <div class="col-md-4"></div>
 
-                    <div class="col-lg-4">
-                        <br>
-                        <a id="btn-login" class="btn btn-block btn-social btn-facebook">
-                            <i class="fa fa-facebook"></i> Sign in
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4"></div>
-
+                <div class="col-md-4">
+                    <br>
+                    <a id="btn-login" class="btn btn-block btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i> Sign in
+                    </a>
                 </div>
+
+                <div class="col-md-4"></div>
+
             </form>
             <!-- /.login -->
 
+            <!-- payment content -->
             <div id="payment-content" class="hide">
                 <!-- packages -->
                 <div class="row">
                     <h1 class="page-header" id="buy-title">Package</h1>
                     <div class="intro-packages">
 
-                        <div class="col-xs-4 col-sm-4"></div>
+                        <div class="col-md-4"></div>
 
                         <!-- basic package-->
-                        <div class="col-xs-4 col-sm-4">
-                            <div class="text-center">
+                        <div class="col-md-4">
+                            <div class="col-md-4 text-center">
                                 <div class="service-item">
                                     <p><i id="pkg-basic" class="service-icon fa fa-users"></i></p>
                                     <h4 id="a-pkg-basic" >Basic</h4>
@@ -103,7 +102,7 @@
                             </div>
 
                             <!-- company package-->
-                            <div class="text-center">
+                            <div class="col-md-4 text-center">
                                 <div class="service-item">
                                     <p><i class="service-icon fa fa-building-o" id="pkg-company"></i></p>
                                     <h4 id="a-pkg-company" >Company</h4>
@@ -113,7 +112,7 @@
                             <!-- /.company package-->
 
                             <!-- Agency package-->
-                            <div class="text-center">
+                            <div class="col-md-4 text-center">
                                 <div class="service-item inactive media" id="pkg-agency-disabled">
                                     <p id="pkg-agency-p"> <i class="service-icon fa fa-university" id="pkg-agency"><span class="badge label-soon"  >SOON!</span></i></p>
                                     <h4 id="a-pkg-agency" >Agency</h4>
@@ -124,48 +123,55 @@
                         </div>
                         <!-- /.basic package-->
 
-                        <div class="col-xs-4 col-sm-4"></div>
+                        <div class="col-md-4"></div>
 
                     </div>
                     <!-- /.packages -->
-
-
-                    <div class="row">
-
-                        <div class="col-lg-4"></div>
-
-                        <div class="col-lg-4">
-                            <div class="form-group hidden" id="basic-license">
-                                <h4 id="license-title">Choose your license</h4>
-                                <select id="basic-pay-plans" class="form-control" required>
-                                    <option id="license-op1">1 Week</option>
-                                    <option id="license-op2">2 Weeks</option>
-                                    <option id="license-op3">1 Month</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4"></div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-lg-4"></div>
-
-                        <div class="col-lg-4 form-group">
-                            <p><span id="pkg-license-title">License:</span> <span id="package-license"></span></p>
-                            <p><span id="pkg-expiration-title"></span><span id="expiration-date">-/-/-</span></p>
-                            <p><span id="pkg-price-title"></span><span id="price-package"></span></p>
-                        </div>
-
-                        <div class="col-lg-4"></div>
-
-                    </div>
-
                 </div>
                 <!-- /.packages -->
 
+                <div class="clearfix visible-md-block"></div>
+
+                <!-- licence -->
+                <div class="row">
+
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4">
+                        <div class="form-group hidden" id="basic-license">
+                            <h4 id="license-title">Choose your license</h4>
+                            <select id="basic-pay-plans" class="form-control" required>
+                                <option id="license-op1">1 Week</option>
+                                <option id="license-op2">2 Weeks</option>
+                                <option id="license-op3">1 Month</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4"></div>
+
+                </div>
+                <!-- ./licence -->
+
+                <div class="clearfix visible-md-block"></div>
+
+                <!-- details -->
+                <div class="row">
+
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4 form-group">
+                        <p><span id="pkg-license-title">License:</span> <span id="package-license"></span></p>
+                        <p><span id="pkg-expiration-title"></span><span id="expiration-date">-/-/-</span></p>
+                        <p><span id="pkg-price-title"></span><span id="price-package"></span></p>
+                    </div>
+
+                    <div class="col-md-4"></div>
+
+                </div>
+                <!-- ./details -->
+
+                <div class="clearfix visible-md-block"></div>
 
                 <!-- payment method -->
                 <div class="row">
@@ -206,6 +212,7 @@
                 </div>
 
             </div>
+            <!-- ./payment content -->
         </div>
         <!-- /.container -->
 
