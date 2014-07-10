@@ -291,4 +291,8 @@ code {
     .page-header {
         margin: 0;
     }
+
+    .intro-packages {
+        height: auto;
+    }
 }
