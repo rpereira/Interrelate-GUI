@@ -148,13 +148,14 @@ function setPrice(element)
         $('#expiration-date').html(expiration);
         $("#price-package").html('75,00 €');
         $("#payment-amount-value").html('75,00 €');
+
         if(language === 'english'){
-            $("#buy-basic-license").html("1 Month");
+            $("#buy-company-license").html("1 Month");
             $("#package-license").html("1 Month");
         }
         else
         {
-            $("#buy-basic-license").html("1 M&ecirc;s");
+            $("#buy-company-license").html("1 M&ecirc;s");
             $("#package-license").html("1 M&ecirc;s");
         }
 
