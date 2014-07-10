@@ -79,8 +79,6 @@ $(document).ready(function()
     var xml_file = 'languages/' + page + '-languages.xml';
 
     var language = localStorage.getItem('lang');
-    alert(xml_file)
-    alert(language)
     if(language === null)
     {
         language = 'english';

@@ -78,11 +78,11 @@ $(document).ready(function()
 
 $("#btn-login").click(function(e)
 {
-    $("#payment-content").addClass('show');
-    $("#navbar-user").addClass('show');
-
     $("#payment-content").removeClass('hide');
     $("#navbar-user").removeClass('hide');
+
+    $("#payment-content").addClass('show');
+    $("#navbar-user").addClass('show');
 
     $("#btn-login").addClass('hide');
 });
