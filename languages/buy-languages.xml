@@ -64,6 +64,24 @@
         <portuguese><![CDATA[Licen&ccedil;a: ]]>
         </portuguese>
     </translation>
+    <translation id="modal-company-license-title">
+        <english><![CDATA[License: ]]>
+        </english>
+        <portuguese><![CDATA[Licen&ccedil;a: ]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-basic-license-title">
+        <english><![CDATA[License: ]]>
+        </english>
+        <portuguese><![CDATA[Licen&ccedil;a: ]]>
+        </portuguese>
+    </translation>
+    <translation id="modal-agency-license-title">
+        <english><![CDATA[License: ]]>
+        </english>
+        <portuguese><![CDATA[Licen&ccedil;a: ]]>
+        </portuguese>
+    </translation>
     <translation id="pkg-expiration-title">
         <english><![CDATA[Expiration Date: ]]>
         </english>
@@ -112,25 +130,6 @@
         <portuguese><![CDATA[Detalhes]]>
         </portuguese>
     </translation>
-    <translation id="modal-basic-license-title">
-        <english><![CDATA[License]]>
-        </english>
-        <portuguese><![CDATA[Licen&ccedil;a]]>
-        </portuguese>
-    </translation>
-    <translation id="modal-company-license-title">
-        <english><![CDATA[License]]>
-        </english>
-        <portuguese><![CDATA[Licen&ccedil;a]]>
-        </portuguese>
-    </translation>
-    <translation id="modal-agency-license-title">
-        <english><![CDATA[License]]>
-        </english>
-        <portuguese><![CDATA[Licen&ccedil;a]]>
-        </portuguese>
-    </translation>
-
 
     <translation id="modal-buy-expiration">
         <english><![CDATA[Expiration Date (dd/mm/aaaa): ]]>
