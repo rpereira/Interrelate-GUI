@@ -148,10 +148,15 @@ function getUrlPage()
         {
             return 'social';
         }
-        else
+        else if(parser[0] === 'buy.html')
         {
 
             return 'buy';
+        }
+        else
+
+        {
+            return 'index';
         }
     }
 
