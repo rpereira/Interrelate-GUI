@@ -79,7 +79,6 @@ $(document).ready(function()
     var xml_file = 'languages/' + page + '-languages.xml';
 
     var language = localStorage.getItem('lang');
-
     if(language === null)
     {
         language = 'english';
@@ -121,7 +120,8 @@ function getUrlPage()
     var _URL        = document.URL;
     var parsed_url  = _URL.split('/');
 
-    var parser = parsed_url[parsed_url.length-1].split('#');
+    var parser      = parsed_url[parsed_url.length-1].split('#');
+    var buy_parser  = parsed_url[parsed_url.length-1].split('?');
 
     if(parser === undefined){
         if(parsed_url[parsed_url.length-1] === 'index.html')
@@ -132,9 +132,31 @@ function getUrlPage()
         {
             return 'social';
         }
+        else if(parsed_url[parsed_url.length-1] === 'buy.html')
+        {
+            return 'buy';
+        }
         else
         {
 
+            return 'index';
+        }
+    }
+    else if(buy_parser !== undefined){
+        if(buy_parser[0] === 'index.html')
+        {
+            return 'index';
+        }
+        else if(buy_parser[0] === 'social.html')
+        {
+            return 'social';
+        }
+        else if(buy_parser[0] === 'buy.html')
+        {
+            return 'buy';
+        }
+        else
+        {
             return 'index';
         }
     }
@@ -154,7 +176,6 @@ function getUrlPage()
             return 'buy';
         }
         else
-
         {
             return 'index';
         }

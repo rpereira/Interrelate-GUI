@@ -243,4 +243,25 @@
     </translation>
 
 
+    <!-- =========== PACKAGES TITLES ========= -->
+
+    <translation id="a-pkg-buy-basic">
+        <english><![CDATA[Enterprise Basic ]]>
+        </english>
+        <portuguese><![CDATA[Empresa B&aacute;sico]]>
+        </portuguese>
+    </translation>
+    <translation id="a-pkg-buy-company">
+        <english><![CDATA[Company]]>
+        </english>
+        <portuguese><![CDATA[Empresa]]>
+        </portuguese>
+    </translation>
+    <translation id="a-pkg-buy-agency">
+        <english><![CDATA[Agency]]>
+        </english>
+        <portuguese><![CDATA[Ag&ecirc;ncia]]>
+        </portuguese>
+    </translation>
+
 </translations>
