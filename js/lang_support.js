@@ -132,6 +132,10 @@ function getUrlPage()
         {
             return 'social';
         }
+        else if(parsed_url[parsed_url.length-1] === 'buy.html')
+        {
+            return 'buy';
+        }
         else
         {
 
@@ -154,7 +158,6 @@ function getUrlPage()
             return 'buy';
         }
         else
-
         {
             return 'index';
         }
